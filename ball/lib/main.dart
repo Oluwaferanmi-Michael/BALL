@@ -9,8 +9,9 @@ void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
       systemNavigationBarColor: Colors.transparent,
       statusBarColor: Colors.transparent));
-  runApp(ScoreProvider(
-    notifier: ScoreNotifier(0),
+  runApp(
+    ScoreProvider(
+    notifier: ScoreNotifier(),
     child: const MainApp()));
 }
 

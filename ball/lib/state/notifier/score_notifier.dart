@@ -1,9 +1,17 @@
+import 'package:ball/state/models/game_enititty.dart';
 import 'package:flutter/material.dart';
 
-class ScoreNotifier extends ValueNotifier<int> {
-  ScoreNotifier(super.value);
+class ScoreNotifier extends ValueNotifier<Game> {
+  ScoreNotifier() : super(Game.none()) {}
 
-  void incrementByTwo() => value = value += 2;
-  void incrementByThree() => value = value += 3;
+  void incrementByTwo() {}
 
+  void incrementByOne() {}
+
+  void incrementByThree({
+    required GameTeams gameTeam,
+    required Score score,
+  }) {
+    // value = value.copyWith()..homeTeamScore += score;
+  }
 }
