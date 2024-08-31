@@ -1,5 +1,5 @@
 import 'package:ball/pages/score_page.dart';
-import 'package:ball/state/notifier/score_notifier.dart';
+import 'package:ball/state/notifier/game_notifier.dart';
 import 'package:ball/state/provider/score_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -10,8 +10,8 @@ void main() {
       systemNavigationBarColor: Colors.transparent,
       statusBarColor: Colors.transparent));
   runApp(
-    ScoreProvider(
-    notifier: ScoreNotifier(),
+    GameProvider(
+    notifier: GameNotifier(),
     child: const MainApp()));
 }
 
