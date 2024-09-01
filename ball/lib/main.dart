@@ -1,4 +1,5 @@
-import 'package:ball/pages/score_page.dart';
+import 'package:ball/pages/game_summary.dart';
+
 import 'package:ball/state/notifier/game_notifier.dart';
 import 'package:ball/state/provider/score_provider.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(body: SafeArea(child: ScorePage())),
+      home: Scaffold(body: SafeArea(child: GameSummary())),
     );
   }
 }

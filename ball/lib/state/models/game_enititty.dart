@@ -17,8 +17,7 @@ class Game {
       this.scoreLimit,
       this.awayTeamName,
       this.homeTeamName,
-      this.time
-      });
+      this.time});
 
   Game.none()
       : homeTeamName = '',
@@ -36,17 +35,15 @@ class Game {
         time = data[GameConstants.time],
         scoreLimit = data[GameConstants.scoreLimit];
 
-  Map<String, dynamic> toDatabase(
-    GameId id,
-    Score homeTeamScore,
-    Score awayTeamScore,
-    ScoreLimit scoreLimit,
-    TeamName awayTeamName,
-    TeamName homeTeamName,
-    GameDuration time,
-  ) {
+  Map<String, dynamic> toDatabase({
+    required Score homeTeamScore,
+    required Score awayTeamScore,
+    ScoreLimit? scoreLimit,
+    required TeamName awayTeamName,
+    required TeamName homeTeamName,
+    GameDuration? time,
+  }) {
     return {
-      GameConstants.id: id,
       GameConstants.homeTeamName: homeTeamName,
       GameConstants.awayTeamName: awayTeamName,
       GameConstants.homeTeamScore: homeTeamScore,
@@ -74,6 +71,7 @@ class Game {
 
 class GameConstants {
   static const id = 'id';
+  static const gameData = 'gameData';
   static const time = 'time';
   static const homeTeamScore = 'homeTeamScore';
   static const awayTeamScore = 'awayTeamScore';
@@ -88,7 +86,4 @@ typedef ScoreLimit = int;
 typedef TeamName = String;
 typedef GameDuration = int;
 
-enum GameTeams {
-  home,
-  away
-}
+enum GameTeams { home, away }
