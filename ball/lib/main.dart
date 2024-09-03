@@ -1,4 +1,4 @@
-import 'package:ball/pages/game_summary.dart';
+import 'package:ball/pages/game_list.dart';
 
 import 'package:ball/state/notifier/game_notifier.dart';
 import 'package:ball/state/provider/score_provider.dart';
@@ -8,12 +8,11 @@ import 'package:flutter/services.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarIconBrightness: Brightness.light,
+      systemNavigationBarContrastEnforced: false,
       systemNavigationBarColor: Colors.transparent,
       statusBarColor: Colors.transparent));
-  runApp(
-    GameProvider(
-    notifier: GameNotifier(),
-    child: const MainApp()));
+  runApp(GameProvider(notifier: GameNotifier(), child: const MainApp()));
 }
 
 class MainApp extends StatelessWidget {
@@ -22,7 +21,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(body: SafeArea(child: GameSummary())),
+      home: Scaffold(body: SafeArea(child: GameList())),
     );
   }
 }

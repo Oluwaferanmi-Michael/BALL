@@ -1,110 +1,69 @@
-import 'package:ball/pages/score_page.dart';
+import 'package:ball/pages/game_list.dart';
+import 'package:ball/state/models/game_enititty.dart';
 import 'package:flutter/material.dart';
 
-import '../state/notifier/game_notifier.dart';
-import '../state/provider/score_provider.dart';
+import '../components/winner_card.dart';
 
 class GameSummary extends StatelessWidget {
-  const GameSummary({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final gameNotifier = GameProvider.of<GameNotifier>(context);
-
-    return Scaffold(
-        floatingActionButton: FloatingActionButton.extended(
-            onPressed: () {
-              showDialog(
-                  context: context,
-                  builder: (context) {
-                    return AlertDialog.adaptive(
-                      content: Container(
-                        padding: EdgeInsets.all(12),
-                        child: Column(
-                          children: [],
-                        ),
-                      ),
-                      actions: [
-                        TextButton(
-                            onPressed: () => Navigator.pop(context),
-                            child: Text('cancel')),
-                        TextButton(
-                            onPressed: () {
-                              Navigator.push(context, MaterialPageRoute(builder: (context) => ScorePage(
-                                homeTeamName: '', awayTeamName: '', scoreLimit: null, duration: null,
-                                )));
-                            },
-                            child: Text('start game'))
-                      ],
-                    );
-                  });
-            },
-            label: Text('New game')),
-        body: gameNotifier.value.isEmpty
-            ? Center(child: Text('empty data'))
-            : Padding(
-                padding: const EdgeInsets.all(12),
-                child: ListView.builder(
-                  itemBuilder: (context, index) {
-                    return Container(
-                        padding: EdgeInsets.all(12),
-                        decoration: BoxDecoration(
-                            color: Colors.blueGrey,
-                            borderRadius: BorderRadius.circular(12)),
-                        child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Flexible(child: ScoreValueComponent()),
-                                  SizedBox(
-                                    width: 12,
-                                  ),
-                                  Flexible(child: ScoreValueComponent()),
-                                  SizedBox(
-                                    width: 12,
-                                  ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 4,
-                              ),
-                              Text('Duration: ')
-                            ]));
-                  },
-                  itemCount: gameNotifier.value.length,
-                )));
-  }
-}
-
-class ScoreValueComponent extends StatelessWidget {
-  const ScoreValueComponent({
+  final GameTeams winner;
+  final TeamName homeTeamName;
+  final TeamName awayTeamName;
+  final Score homeScore;
+  final Score awayScore;
+  const GameSummary({
     super.key,
+    required this.homeTeamName,
+    required this.awayTeamName,
+    required this.winner,
+    required this.homeScore,
+    required this.awayScore,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text('HomeTeam',
-              style: TextStyle(
-                fontSize: 10,
-              )),
-          Center(
-              child: Text(
-            '16',
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
-          )),
-        ],
-      ),
-      padding: EdgeInsets.all(8),
-      decoration: BoxDecoration(
-          color: Colors.amberAccent, borderRadius: BorderRadius.circular(12)),
+    return PopScope(
+      onPopInvokedWithResult: (value, _) {
+        return Navigator.popUntil(context, (value) {
+          MaterialPageRoute(builder: (context) => GameList());
+          return true;
+        });
+      },
+      child: Scaffold(
+          body: Container(
+              margin: EdgeInsets.all(16),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Flexible(
+                    child: Opacity(
+                      opacity: winner == GameTeams.home ? 1 : .5,
+                      child: WinnerCard(
+                        teamName: homeTeamName,
+                        team: winner == GameTeams.home
+                            ? GameTeams.home
+                            : GameTeams.away,
+                        score: winner == GameTeams.home ? homeScore : awayScore,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 12,
+                  ),
+                  Flexible(
+                    child: Opacity(
+                      opacity: winner == GameTeams.away ? .5 : 1,
+                      child: WinnerCard(
+                        teamName: homeTeamName,
+                        team: winner == GameTeams.away
+                            ? GameTeams.home
+                            : GameTeams.away,
+                        score: winner == GameTeams.home ? homeScore : awayScore,
+                      ),
+                    ),
+                  )
+                ],
+              ))),
     );
   }
 }

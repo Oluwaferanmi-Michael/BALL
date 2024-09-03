@@ -20,6 +20,8 @@ class GameNotifier extends ValueNotifier<Iterable<Game>> {
     ScoreLimit? scoreLimit,
     required TeamName homeTeamName,
     required TeamName awayTeamName,
+    required bool draw,
+    required TeamName? winner,
     required Score awayTeamScore,
     required Score homeTeamScore,
   }) async {
@@ -31,7 +33,9 @@ class GameNotifier extends ValueNotifier<Iterable<Game>> {
       scoreLimit: scoreLimit,
       awayTeamName: awayTeamName,
       homeTeamName: homeTeamName,
+      winner: draw ? GameTeams.none.name : winner!,
       time: duration,
+      draw: draw,
     );
 
     await offlineStore.create(gameData);
