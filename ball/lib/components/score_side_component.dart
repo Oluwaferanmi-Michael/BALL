@@ -24,9 +24,7 @@ class _ScoreSideComponentState extends State<ScoreSideComponent> {
   Widget build(BuildContext context) {
     return GestureDetector(
         onTap: () {
-          
-            widget.score.value += 2;
-          
+          widget.score.value += 2;
         },
         child: Container(
           // padding: EdgeInsets.all(12),
@@ -53,55 +51,55 @@ class _ScoreSideComponentState extends State<ScoreSideComponent> {
                 )),
                 Expanded(
                   child: ValueListenableBuilder(
-                    valueListenable: widget.score,
-                    builder: (context, value, child) {
-                      return Text(
-                        '${widget.score.value}',
-                        style: GoogleFonts.bebasNeue(
-                            color: Colors.white,
-                            fontSize: 102,
-                            fontWeight: FontWeight.w900),
-                      );
-                    }
-                  ),
+                      valueListenable: widget.score,
+                      builder: (context, value, child) {
+                        return Text(
+                          '${widget.score.value}',
+                          style: GoogleFonts.bebasNeue(
+                              color: Colors.white,
+                              fontSize: 102,
+                              fontWeight: FontWeight.w900),
+                        );
+                      }),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    TextButton(
-                        style: ButtonStyle(
-                          padding: WidgetStatePropertyAll(
-                              EdgeInsets.symmetric(vertical: 24)),
-                          textStyle: WidgetStatePropertyAll(TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.w600)),
-                          backgroundColor:
-                              WidgetStateProperty.all(Colors.white),
-                        ),
-                        onPressed: () {
-                          setState(() {
-                            widget.score.value++;
-                          });
-                        },
-                        child: Text('+1')),
-                    SizedBox(
-                      width: 24,
-                    ),
-                    TextButton(
-                        style: ButtonStyle(
-                          padding: WidgetStatePropertyAll(
-                              EdgeInsets.symmetric(vertical: 24)),
-                          textStyle: WidgetStatePropertyAll(TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.w600)),
-                          backgroundColor:
-                              WidgetStateProperty.all(Colors.white),
-                        ),
-                        onPressed: () {
-                          
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      TextButton(
+                          style: ButtonStyle(
+                            padding: WidgetStatePropertyAll(
+                                EdgeInsets.symmetric(vertical: 24)),
+                            textStyle: WidgetStatePropertyAll(TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.w600)),
+                            backgroundColor:
+                                WidgetStateProperty.all(Colors.white),
+                          ),
+                          onPressed: () {
+                            setState(() {
+                              widget.score.value++;
+                            });
+                          },
+                          child: Text('+1')),
+                      SizedBox(
+                        width: 24,
+                      ),
+                      TextButton(
+                          style: ButtonStyle(
+                            padding: WidgetStatePropertyAll(
+                                EdgeInsets.symmetric(vertical: 24)),
+                            textStyle: WidgetStatePropertyAll(TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.w600)),
+                            backgroundColor:
+                                WidgetStateProperty.all(Colors.white),
+                          ),
+                          onPressed: () {
                             widget.score.value += 3;
-                          
-                        },
-                        child: Text('+3')),
-                  ],
+                          },
+                          child: Text('+3')),
+                    ],
+                  ),
                 )
               ],
             ),

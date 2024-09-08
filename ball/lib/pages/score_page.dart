@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'package:ball/pages/game_summary.dart';
 import 'package:ball/state/models/game_enititty.dart';
+import 'package:ball/state/notifier/game_notifier.dart';
+import 'package:ball/state/provider/score_provider.dart';
 
 import 'package:flutter/material.dart';
 
@@ -28,6 +30,7 @@ class _ScorePageState extends State<ScorePage> {
   late StreamController<String> timerStreamController;
   late Timer timer;
 
+// Init State
   @override
   void initState() {
     timerStreamController = StreamController();
@@ -52,6 +55,26 @@ class _ScorePageState extends State<ScorePage> {
       (timer) {
         if (durationInSeconds <= 0) {
           timer.cancel();
+          GameTeams winningTeam() {
+            if (awayScore.value > homeScore.value) {
+              return GameTeams.away;
+            } else if (awayScore.value < homeScore.value) {
+              return GameTeams.home;
+            } else {
+              return GameTeams.none;
+            }
+          }
+
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => GameSummary(
+                        awayTeamName: widget.awayTeamName,
+                        homeTeamName: widget.homeTeamName,
+                        winner: winningTeam(),
+                        awayScore: awayScore.value,
+                        homeScore: homeScore.value,
+                      )));
         } else {
           durationInSeconds--;
           final newSeconds = (durationInSeconds % 60).floor().toString();
@@ -126,6 +149,46 @@ class _ScorePageState extends State<ScorePage> {
                     )));
       }
     });
+
+    void stopGame() {
+      if (timer.isActive) {
+        timer.cancel();
+      }
+
+      GameTeams winningTeam() {
+        if (awayScore.value > homeScore.value) {
+          return GameTeams.away;
+        } else if (awayScore.value < homeScore.value) {
+          return GameTeams.home;
+        } else {
+          return GameTeams.none;
+        }
+      }
+
+      // TeamName winnerName
+
+      GameProvider.of<GameNotifier>(context).saveGameData(
+          homeTeamName: widget.homeTeamName,
+          awayTeamName: widget.awayTeamName,
+          draw: winningTeam() == GameTeams.none ? true : false,
+          winner: '',
+          awayTeamScore: awayScore.value,
+          homeTeamScore: homeScore.value);
+
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => GameSummary(
+                    awayTeamName: widget.awayTeamName,
+                    homeTeamName: widget.homeTeamName,
+                    winner: winningTeam(),
+                    awayScore: awayScore.value,
+                    homeScore: homeScore.value,
+                  )));
+    }
+
+    ;
+
     return Scaffold(
         body: Stack(
       alignment: Alignment.center,
@@ -154,12 +217,18 @@ class _ScorePageState extends State<ScorePage> {
           bottom: (MediaQuery.sizeOf(context).height / 2) - 200,
           child: Column(
             children: [
-              TextButton(onPressed: () {}, child: Text('Stop Game')),
               TimerOrLimitComponent(
                 timerStreamController: timerStreamController,
                 scoreLimit: widget.scoreLimit,
                 duration: widget.duration,
               ),
+              TextButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        WidgetStateProperty.all(Colors.amberAccent),
+                  ),
+                  onPressed: () => stopGame(),
+                  child: Text('Stop Game')),
             ],
           ),
         ),

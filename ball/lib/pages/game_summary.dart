@@ -1,16 +1,18 @@
 import 'package:ball/pages/game_list.dart';
 import 'package:ball/state/models/game_enititty.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../components/winner_card.dart';
 
+// ignore: must_be_immutable
 class GameSummary extends StatelessWidget {
-  final GameTeams winner;
+  GameTeams? winner = GameTeams.none;
   final TeamName homeTeamName;
   final TeamName awayTeamName;
   final Score homeScore;
   final Score awayScore;
-  const GameSummary({
+  GameSummary({
     super.key,
     required this.homeTeamName,
     required this.awayTeamName,
@@ -29,41 +31,80 @@ class GameSummary extends StatelessWidget {
         });
       },
       child: Scaffold(
-          body: Container(
-              margin: EdgeInsets.all(16),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Flexible(
-                    child: Opacity(
-                      opacity: winner == GameTeams.home ? 1 : .5,
+          body: SafeArea(
+        child: Stack(
+          children: [
+            Container(
+                margin: EdgeInsets.all(16),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Flexible(
                       child: WinnerCard(
-                        teamName: homeTeamName,
+                        teamName: winner == GameTeams.home
+                            ? homeTeamName
+                            : awayTeamName,
                         team: winner == GameTeams.home
                             ? GameTeams.home
                             : GameTeams.away,
-                        score: winner == GameTeams.home ? homeScore : awayScore,
+                        score: winner == GameTeams.away ? awayScore : homeScore,
                       ),
                     ),
-                  ),
-                  SizedBox(
-                    height: 12,
-                  ),
-                  Flexible(
-                    child: Opacity(
-                      opacity: winner == GameTeams.away ? .5 : 1,
-                      child: WinnerCard(
-                        teamName: homeTeamName,
-                        team: winner == GameTeams.away
-                            ? GameTeams.home
-                            : GameTeams.away,
-                        score: winner == GameTeams.home ? homeScore : awayScore,
-                      ),
+                    SizedBox(
+                      height: 12,
                     ),
-                  )
-                ],
-              ))),
+                    Flexible(
+                      child: Opacity(
+                        opacity: winner == GameTeams.none ? 1 : .5,
+                        child: WinnerCard(
+                          // Needs to be loosing team
+                          teamName: winner == GameTeams.home
+                              ? awayTeamName
+                              : homeTeamName,
+                          team: winner == GameTeams.home
+                              ? GameTeams.away
+                              : GameTeams.home,
+                          score:
+                              winner != GameTeams.home ? homeScore : awayScore,
+                        ),
+                      ),
+                    )
+                  ],
+                )),
+            Positioned(
+                child: Center(
+                    child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                  Visibility(
+                      visible: winner != GameTeams.none ? true : false,
+                      maintainState: false,
+                      child: Text('WINNER',
+                          style: GoogleFonts.bebasNeue(
+                              color: Colors.amberAccent,
+                              fontSize: 48,
+                              fontWeight: FontWeight.w800))),
+                  Visibility(
+                      visible: winner == GameTeams.none ? true : false,
+                      maintainState: false,
+                      child: Text('DRAW',
+                          style: GoogleFonts.bebasNeue(
+                              color: Colors.purple,
+                              fontSize: 48,
+                              fontWeight: FontWeight.w800))),
+                  Visibility(
+                      visible: winner != GameTeams.none ? true : false,
+                      maintainState: false,
+                      child: Text('LOSER',
+                          style: GoogleFonts.bebasNeue(
+                              color: Colors.amberAccent,
+                              fontSize: 48,
+                              fontWeight: FontWeight.w800))),
+                ])))
+          ],
+        ),
+      )),
     );
   }
 }

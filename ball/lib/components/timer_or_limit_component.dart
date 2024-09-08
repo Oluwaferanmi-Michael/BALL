@@ -21,11 +21,11 @@ class _TimerOrLimitComponentState extends State<TimerOrLimitComponent> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(8),
+      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(8)),
       child: widget.duration == null
-          ? Text('${widget.scoreLimit}')
+          ? Text('${widget.scoreLimit}', style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500))
           : StreamBuilder<String?>(
               stream: widget.timerStreamController.stream,
               builder: (context, snapshot) {
@@ -40,7 +40,7 @@ class _TimerOrLimitComponentState extends State<TimerOrLimitComponent> {
                 } else {
                   return Text(
                     '${snapshot.data}',
-                    style: TextStyle(fontSize: 24),
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
                   );
                 }
               }),

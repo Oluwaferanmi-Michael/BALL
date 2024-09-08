@@ -33,7 +33,7 @@ class GameNotifier extends ValueNotifier<Iterable<Game>> {
       scoreLimit: scoreLimit,
       awayTeamName: awayTeamName,
       homeTeamName: homeTeamName,
-      winner: draw ? GameTeams.none.name : winner!,
+      // winner: draw ? GameTeams.none.name : winner!,
       time: duration,
       draw: draw,
     );

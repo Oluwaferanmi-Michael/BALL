@@ -22,38 +22,35 @@ class WinnerCardState extends State<WinnerCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // padding: EdgeInsets.all(12),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
         color: widget.team == GameTeams.away
             ? Colors.blueAccent
             : Colors.redAccent,
       ),
-      child: SafeArea(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            SizedBox(height: 24),
-            Text(
-              widget.teamName,
-              style: GoogleFonts.bebasNeue(
-                  color: Colors.white70,
-                  fontSize: 24,
-                  fontWeight: FontWeight.w400),
-            ),
-            Expanded(
-              child: Center(
-                child: Text(
-                  '${widget.score}',
-                  style: GoogleFonts.bebasNeue(
-                      color: Colors.white,
-                      fontSize: 100,
-                      fontWeight: FontWeight.w900),
-                ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          SizedBox(height: 24),
+          Text(
+            widget.teamName,
+            style: GoogleFonts.bebasNeue(
+                color: Colors.white70,
+                fontSize: 24,
+                fontWeight: FontWeight.w400),
+          ),
+          Expanded(
+            child: Center(
+              child: Text(
+                '${widget.score}',
+                style: GoogleFonts.bebasNeue(
+                    color: Colors.white,
+                    fontSize: 100,
+                    fontWeight: FontWeight.w900),
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

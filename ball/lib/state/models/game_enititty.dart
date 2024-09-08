@@ -39,6 +39,20 @@ class Game {
         time = data[GameConstants.time],
         scoreLimit = data[GameConstants.scoreLimit];
 
+        // 
+        // TeamName get _getWinner{
+        //   if(awayTeamScore > homeTeamScore!) {
+        //     return awayTeamName!;
+        //   } else if(awayTeamScore < homeTeamScore!){
+        //     return homeTeamName!;
+        //   }
+        //   else {
+        //     return 'none';
+        //   }
+        //   }
+
+        // TODO: find a way to fix getting the winner of the game in the database
+
   Map<String, dynamic> toDatabase({
     required bool draw,
     required Score homeTeamScore,
@@ -46,7 +60,7 @@ class Game {
     ScoreLimit? scoreLimit,
     required TeamName awayTeamName,
     required TeamName homeTeamName,
-    required TeamName winner,
+    
     GameDuration? time,
   }) {
     return {
@@ -55,7 +69,7 @@ class Game {
       GameConstants.homeTeamScore: homeTeamScore,
       GameConstants.awayTeamScore: awayTeamScore,
       GameConstants.draw: draw,
-      GameConstants.winner: winner,
+      GameConstants.winner: '_getWinner',
       GameConstants.scoreLimit: scoreLimit,
       GameConstants.time: time,
     };
@@ -97,3 +111,4 @@ typedef TeamName = String;
 typedef GameDuration = int;
 
 enum GameTeams { home, away, none }
+enum GameConditions { timeLimit, scoreLimit, none }
