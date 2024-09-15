@@ -1,43 +1,39 @@
 import 'package:ball/state/models/game_enititty.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import '../data/offline_storage.dart';
 
-class GameNotifier extends ValueNotifier<Iterable<Game>> {
-  GameNotifier() : super([]) {
-    void start() async {
-      value = await offlineStore.read();
+// <Iterable<Game>>
+class GameNotifier extends ChangeNotifier {
+  GameNotifier() {
+    _readData();
+  }
+  
+  Iterable<Game> _value = [];
+  Iterable<Game> get value => _value;
+  set value(newValue) {
+    if (_value != value) {
+      _value = newValue;
+      notifyListeners();
     }
-
-    start();
   }
 
-  final offlineStore = OfflineStore(SharedPreferencesAsync());
+  Future<Iterable<Game>> _readData() async {
+    final values = await _offlineStore.readAll();
 
-  Future<void> saveGameData({
-    GameDuration? duration,
-    ScoreLimit? scoreLimit,
-    required TeamName homeTeamName,
-    required TeamName awayTeamName,
-    required bool draw,
-    required TeamName? winner,
-    required Score awayTeamScore,
-    required Score homeTeamScore,
-  }) async {
-    final game = Game();
+    final result = values.map((data) => Game.fromDatabase(data: data)).toList();
 
-    final gameData = game.toDatabase(
-      homeTeamScore: homeTeamScore,
-      awayTeamScore: awayTeamScore,
-      scoreLimit: scoreLimit,
-      awayTeamName: awayTeamName,
-      homeTeamName: homeTeamName,
-      // winner: draw ? GameTeams.none.name : winner!,
-      time: duration,
-      draw: draw,
-    );
+    _value = result;
+    notifyListeners();
 
-    await offlineStore.create(gameData);
+    return result;
+  }
+
+  final _offlineStore = OfflineStore.instance;
+
+  Future<void> saveGameData({required Game game}) async {
+    final gameData = game.toDatabase();
+    await _offlineStore.upload(gameData);
+    notifyListeners();
   }
 }

@@ -1,8 +1,11 @@
+import 'package:ball/state/models/game_enititty.dart';
 import 'package:flutter/material.dart';
 
 class ScoreValueComponent extends StatelessWidget {
+  final TeamName team;
+  final Score score;
   const ScoreValueComponent({
-    super.key,
+    super.key, required this.team, required this.score,
   });
 
   @override
@@ -12,13 +15,13 @@ class ScoreValueComponent extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text('HomeTeam',
+          Text(team,
               style: TextStyle(
                 fontSize: 10,
               )),
           Center(
               child: Text(
-            '16',
+            '$score',
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
           )),
         ],

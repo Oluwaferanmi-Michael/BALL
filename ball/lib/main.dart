@@ -1,11 +1,10 @@
 import 'package:ball/pages/game_list.dart';
+import 'package:ball/state/data/offline_storage.dart';
 
-import 'package:ball/state/notifier/game_notifier.dart';
-import 'package:ball/state/provider/score_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
       statusBarIconBrightness: Brightness.dark,
@@ -13,7 +12,13 @@ void main() {
       systemNavigationBarContrastEnforced: false,
       systemNavigationBarColor: Colors.transparent,
       statusBarColor: Colors.transparent));
-  runApp(GameProvider(notifier: GameNotifier(), child: const MainApp()));
+
+  await OfflineStore.instance.database;
+
+  runApp(
+    
+  const MainApp()
+  );
 }
 
 class MainApp extends StatelessWidget {

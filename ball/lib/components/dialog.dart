@@ -15,16 +15,7 @@ Future<void> Dialogsss(BuildContext context, {
           // GameConditions isDuration = GameConditions.timeLimit;
           Set<GameConditions> _selected = {GameConditions.scoreLimit};
 
-          String changeLabel(GameConditions gameCondition) {
-            switch (gameCondition) {
-              case GameConditions.timeLimit:
-                return 'Time Limit';
-              case GameConditions.scoreLimit:
-                return 'Score Limit';
-              case GameConditions.none:
-                return 'None';
-            }
-          }
+          
 
 
           return AlertDialog.adaptive(
@@ -59,16 +50,14 @@ Future<void> Dialogsss(BuildContext context, {
                                 onSelectionChanged: (value) {
                                   setState(() {
                                     _selected = value;
-                                    // value.first == GameConditions.timeLimit
-                                    //     ? isDuration = GameConditions.timeLimit
-                                    //     : isDuration = false;
+                          
                                   });
                                 },
                                 selected: _selected,
                                 segments: GameConditions.values
                                     .map((e) => ButtonSegment(
                                         value: e,
-                                        label: Text(changeLabel(e))))
+                                        label: Text(e.name)))
                                     .toList(),
                               )
                               
@@ -113,10 +102,10 @@ Future<void> Dialogsss(BuildContext context, {
                               borderRadius: BorderRadius.circular(10),
                             ),
                             suffix: Text(_selected.first == GameConditions.timeLimit ? 'min' : 'pts '),
-                            label: Text(changeLabel(_selected.first)),
+                            label: Text(_selected.first.name),
                             hintStyle: TextStyle(color: Colors.black54),
                             labelStyle: TextStyle(color: Colors.black54),
-                            hintText: changeLabel(_selected.first)),
+                            hintText: _selected.first.name),
                       ),
                     ),
                   ],

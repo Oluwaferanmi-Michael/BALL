@@ -1,39 +1,76 @@
-import 'dart:convert';
+import 'package:ball/state/models/game_constants.dart';
 
-import 'package:ball/state/models/game_enititty.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:path/path.dart';
+
+import 'package:sqflite/sqflite.dart';
 
 class OfflineStore {
-  const OfflineStore(this.database);
+  OfflineStore._init();
 
-  final SharedPreferencesAsync database;
+  static final OfflineStore instance = OfflineStore._init();
 
-  Future<void> create(Map<String, dynamic> gameData) async {
-    final jsonString = json.encode(gameData);
+  static Database? db;
 
-    await database.setStringList(GameConstants.gameData, [jsonString]);
+  Future<Database> get database async {
+    if (db != null) return db!;
+    db = await openGameDatabase();
+    return db!;
   }
 
-  Future<List<Game>> read() async {
+  Future<Database> openGameDatabase() async {
+    final path = await getDatabasesPath();
+    final database = await openDatabase(
+        join(path, '${GameDatabase.gameDatabase} DESC'),
+        onCreate: _createDatabase,
+        version: 1);
+
+    return database;
+  }
+
+  Future<void> _createDatabase(
+    Database db,
+    int version,
+  ) async {
+    final createTableCommand = '''CREATE TABLE ${GameDatabase.gameTable}(
+      ${GameDatabase.id} TEXT PRIMARY KEY, 
+      ${GameDatabase.homeTeamName} TEXT, 
+      ${GameDatabase.awayTeamName} TEXT, 
+      ${GameDatabase.homeTeamScore} INTEGER, 
+      ${GameDatabase.awayTeamScore} INTEGER, 
+      ${GameDatabase.scoreLimit} INTEGER, 
+      ${GameDatabase.time} INTEGER,
+      ${GameDatabase.winner} TEXT,
+      ${GameDatabase.winningTeam} TEXT,
+      ${GameDatabase.gameDate} TEXT
+      )
+      ''';
+
+    
+    await db.execute(createTableCommand);
+  }
+
+  Future<void> upload(Map<String, dynamic> gameData) async {
+    final db = await instance.database;
+
+    final id = await db.insert(GameDatabase.gameTable, gameData,
+        conflictAlgorithm: ConflictAlgorithm.replace);
+    print(id);
+  }
+
+  Future<List<Map<String, dynamic>>> readAll() async {
+    final db = await instance.database;
     try {
-      final dataRead = await database.getStringList(GameConstants.gameData);
-
-      var i;
-      final List<Game> dataList = [];
-
-      if (dataRead == null){
-        return [];
-      }
-
-      for (i in dataRead) {
-        final data = json.decode(i) as Map<String, dynamic>;
-        final game = Game.fromDatabase(data: data);
-        dataList.add(game);
-      }
-
-      return dataList;
+      final result = await db.query(
+        GameDatabase.gameTable,
+      );
+      return result;
     } catch (err) {
       return [];
     }
+  }
+
+  Future<void> close() async {
+    final db = await instance.database;
+    await db.close();
   }
 }

@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:ball/pages/game_summary.dart';
 import 'package:ball/state/models/game_enititty.dart';
 import 'package:ball/state/notifier/game_notifier.dart';
-import 'package:ball/state/provider/score_provider.dart';
+// import 'package:ball/state/provider/game_provider.dart';
 
 import 'package:flutter/material.dart';
 
@@ -101,56 +101,7 @@ class _ScorePageState extends State<ScorePage> {
 
   @override
   Widget build(BuildContext context) {
-    homeScore.addListener(() {
-      if (widget.scoreLimit == null) {
-        return;
-      }
-
-      final int limit = widget.scoreLimit!;
-
-      if (homeScore.value >= limit) {
-        if (timer.isActive) {
-          timer.cancel();
-        }
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => GameSummary(
-                      awayTeamName: widget.awayTeamName,
-                      homeTeamName: widget.homeTeamName,
-                      winner: GameTeams.home,
-                      awayScore: awayScore.value,
-                      homeScore: homeScore.value,
-                    )));
-      }
-    });
-
-    awayScore.addListener(() {
-      if (widget.scoreLimit == null) {
-        return;
-      }
-
-      final int limit = widget.scoreLimit!;
-
-      if (awayScore.value >= limit) {
-        if (timer.isActive) {
-          timer.cancel();
-        }
-
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => GameSummary(
-                      awayTeamName: widget.awayTeamName,
-                      homeTeamName: widget.homeTeamName,
-                      winner: GameTeams.away,
-                      awayScore: awayScore.value,
-                      homeScore: homeScore.value,
-                    )));
-      }
-    });
-
-    void stopGame() {
+    Future<void> stopGame() async {
       if (timer.isActive) {
         timer.cancel();
       }
@@ -165,15 +116,34 @@ class _ScorePageState extends State<ScorePage> {
         }
       }
 
-      // TeamName winnerName
+      final winningT = winningTeam();
 
-      GameProvider.of<GameNotifier>(context).saveGameData(
-          homeTeamName: widget.homeTeamName,
-          awayTeamName: widget.awayTeamName,
-          draw: winningTeam() == GameTeams.none ? true : false,
-          winner: '',
-          awayTeamScore: awayScore.value,
-          homeTeamScore: homeScore.value);
+      String win(GameTeams condition) {
+        if (winningT == GameTeams.home) {
+          return widget.homeTeamName;
+        } else if (winningT == GameTeams.away) {
+          return widget.awayTeamName;
+        } else {
+          return 'none';
+        }
+      }
+
+      final aScoreValue = awayScore.value;
+      final hScoreValue = homeScore.value;
+
+      final gameNotifier = GameNotifier();
+
+      await gameNotifier.saveGameData(
+          game: Game(
+        awayTeamName: widget.awayTeamName,
+        homeTeamName: widget.homeTeamName,
+        awayTeamScore: aScoreValue,
+        homeTeamScore: hScoreValue,
+        scoreLimit: widget.scoreLimit ?? 0,
+        time: widget.duration ?? 0,
+        winner: win(winningT),
+        winningTeam: winningT,
+      ));
 
       Navigator.push(
           context,
@@ -188,6 +158,30 @@ class _ScorePageState extends State<ScorePage> {
     }
 
     ;
+
+    homeScore.addListener(() async {
+      if (widget.scoreLimit == null) {
+        return;
+      }
+
+      final int limit = widget.scoreLimit!;
+
+      if (homeScore.value >= limit) {
+        await stopGame();
+      }
+    });
+
+    awayScore.addListener(() async {
+      if (widget.scoreLimit == null) {
+        return;
+      }
+
+      final int limit = widget.scoreLimit!;
+
+      if (awayScore.value >= limit) {
+        await stopGame();
+      }
+    });
 
     return Scaffold(
         body: Stack(
@@ -227,7 +221,7 @@ class _ScorePageState extends State<ScorePage> {
                     backgroundColor:
                         WidgetStateProperty.all(Colors.amberAccent),
                   ),
-                  onPressed: () => stopGame(),
+                  onPressed: () async => await stopGame(),
                   child: Text('Stop Game')),
             ],
           ),
