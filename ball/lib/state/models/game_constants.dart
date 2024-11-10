@@ -31,8 +31,8 @@ class GameDatabase {
   static const winner = 'winner';
   static const winningTeam = 'winningTeam';
   static const awayTeamName = 'awayTeamName';
-
   static const gameDate = 'gameDate';
   static const gameDatabase = 'games.db';
+  static const gameDatabaseName = 'gamesOfflineDatabase';
   static const gameTable = 'games';
 }

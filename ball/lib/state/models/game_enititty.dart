@@ -4,7 +4,7 @@ import 'package:uuid/uuid.dart';
 import 'game_constants.dart';
 
 class Game {
-  final GameId id = Uuid().v1();
+  final GameId id = const Uuid().v1();
   late final Score homeTeamScore;
   final Score awayTeamScore;
   final ScoreLimit? scoreLimit;
@@ -13,7 +13,8 @@ class Game {
   final TeamName? winner;
   final GameTeams? winningTeam;
   final GameDuration? time;
-  String gameDate = DateTime.now().toIso8601String();
+  DateTime gameDate = DateTime.now();
+  // .toIso8601String();
 
   Game({
     required this.homeTeamScore,
@@ -44,7 +45,7 @@ class Game {
         winner = data[GameConstants.winner],
         winningTeam = (data[GameConstants.winningTeam] as String).team,
         time = data[GameConstants.time],
-        gameDate = data[GameConstants.gameDate],
+        gameDate = DateTime.utc(data[GameConstants.gameDate]),
         scoreLimit = data[GameConstants.scoreLimit];
 
   //
@@ -59,7 +60,6 @@ class Game {
       }
     }
 
-    ;
     GameTeams _getWinningTeam() {
       if (awayTeamScore > homeTeamScore) {
         return GameTeams.away;
@@ -69,8 +69,6 @@ class Game {
         return GameTeams.none;
       }
     }
-
-    ;
 
     return {
       GameConstants.id: id,
@@ -94,29 +92,27 @@ class Game {
     Score? awayTeamScore,
   }) =>
       Game(
-          time: this.time,
-          scoreLimit: this.scoreLimit,
+          time: time,
+          scoreLimit: scoreLimit,
           homeTeamName: homeTeamName ?? this.homeTeamName,
           awayTeamName: awayTeamName ?? this.awayTeamName,
           homeTeamScore: homeTeamScore ?? this.homeTeamScore,
           awayTeamScore: awayTeamScore ?? this.awayTeamScore,
           winningTeam: winningTeam,
-          winner: this.winner);
+          winner: winner);
 
   @override
   bool operator ==(covariant Game other) {
-    return identical(other, this) || 
-    (
-      id == other.id &&
-      winner == other.winner &&
-      time == other.time &&
-      homeTeamName == other.homeTeamName &&
-      awayTeamName == other.awayTeamName &&
-      awayTeamScore == other.awayTeamScore &&
-      homeTeamScore == other.homeTeamScore &&
-      scoreLimit == other.scoreLimit &&
-      winningTeam == other.winningTeam
-    );
+    return identical(other, this) ||
+        (id == other.id &&
+            winner == other.winner &&
+            time == other.time &&
+            homeTeamName == other.homeTeamName &&
+            awayTeamName == other.awayTeamName &&
+            awayTeamScore == other.awayTeamScore &&
+            homeTeamScore == other.homeTeamScore &&
+            scoreLimit == other.scoreLimit &&
+            winningTeam == other.winningTeam);
   }
 
   @override
@@ -182,12 +178,3 @@ extension ToGameCondition on String {
     }
   }
 }
-
-
-// required bool draw,
-//     required Score homeTeamScore,
-//     required Score awayTeamScore,
-//     ScoreLimit? scoreLimit,
-//     required TeamName awayTeamName,
-//     required TeamName homeTeamName,
-//     GameDuration? time,

@@ -26,18 +26,20 @@ class GameSummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PopScope(
-      onPopInvokedWithResult: (value, _) {
-        return Navigator.popUntil(context, (value) {
-          MaterialPageRoute(builder: (context) => GameList());
-          return true;
-        });
-      },
+      canPop: false,
+      onPopInvokedWithResult: (didPop, result) => Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(builder: (context) => GameList()),
+        (route) => route == GameList()
+        ),
+      // push(context, MaterialPageRoute(builder: (context) => GameList())
+      
       child: Scaffold(
           body: SafeArea(
         child: Stack(
           children: [
             Container(
-                margin: EdgeInsets.all(16),
+                margin: const EdgeInsets.all(16),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -53,7 +55,7 @@ class GameSummary extends StatelessWidget {
                         score: winner == GameTeams.away ? awayScore : homeScore,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 12,
                     ),
                     Flexible(

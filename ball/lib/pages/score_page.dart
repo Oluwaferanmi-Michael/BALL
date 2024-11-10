@@ -2,13 +2,12 @@ import 'dart:async';
 
 import 'package:ball/pages/game_summary.dart';
 import 'package:ball/state/models/game_enititty.dart';
-import 'package:ball/state/notifier/game_notifier.dart';
-// import 'package:ball/state/provider/game_provider.dart';
 
 import 'package:flutter/material.dart';
 
 import '../components/score_side_component.dart';
 import '../components/timer_or_limit_component.dart';
+import '../global__parameters.dart';
 
 class ScorePage extends StatefulWidget {
   final GameDuration? duration;
@@ -34,7 +33,7 @@ class _ScorePageState extends State<ScorePage> {
   @override
   void initState() {
     timerStreamController = StreamController();
-    timer = Timer(Duration(seconds: 1), () {});
+    timer = Timer(const Duration(seconds: 1), () {});
     super.initState();
     timerPer(widget.duration);
   }
@@ -51,7 +50,7 @@ class _ScorePageState extends State<ScorePage> {
     int durationInSeconds = gameDuration.inSeconds;
 
     timer = Timer.periodic(
-      Duration(seconds: 1),
+      const Duration(seconds: 1),
       (timer) {
         if (durationInSeconds <= 0) {
           timer.cancel();
@@ -131,7 +130,7 @@ class _ScorePageState extends State<ScorePage> {
       final aScoreValue = awayScore.value;
       final hScoreValue = homeScore.value;
 
-      final gameNotifier = GameNotifier();
+      final gameNotifier = GlobalParameter.gameNotifier;
 
       await gameNotifier.saveGameData(
           game: Game(
@@ -145,43 +144,45 @@ class _ScorePageState extends State<ScorePage> {
         winningTeam: winningT,
       ));
 
-      Navigator.push(
-          context,
-          MaterialPageRoute(
-              builder: (context) => GameSummary(
-                    awayTeamName: widget.awayTeamName,
-                    homeTeamName: widget.homeTeamName,
-                    winner: winningTeam(),
-                    awayScore: awayScore.value,
-                    homeScore: homeScore.value,
-                  )));
+      if (context.mounted) {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => GameSummary(
+                      awayTeamName: widget.awayTeamName,
+                      homeTeamName: widget.homeTeamName,
+                      winner: winningTeam(),
+                      awayScore: awayScore.value,
+                      homeScore: homeScore.value,
+                    )));
+      }
+
+      homeScore.addListener(() async {
+        if (widget.scoreLimit == null) {
+          return;
+        }
+
+        final int limit = widget.scoreLimit!;
+
+        if (homeScore.value >= limit) {
+          await stopGame();
+        }
+      });
+
+      awayScore.addListener(() async {
+        if (widget.scoreLimit == null) {
+          return;
+        }
+
+        final int limit = widget.scoreLimit!;
+
+        if (awayScore.value >= limit) {
+          await stopGame();
+        }
+      });
     }
 
-    ;
-
-    homeScore.addListener(() async {
-      if (widget.scoreLimit == null) {
-        return;
-      }
-
-      final int limit = widget.scoreLimit!;
-
-      if (homeScore.value >= limit) {
-        await stopGame();
-      }
-    });
-
-    awayScore.addListener(() async {
-      if (widget.scoreLimit == null) {
-        return;
-      }
-
-      final int limit = widget.scoreLimit!;
-
-      if (awayScore.value >= limit) {
-        await stopGame();
-      }
-    });
+    
 
     return Scaffold(
         body: Stack(
@@ -209,21 +210,23 @@ class _ScorePageState extends State<ScorePage> {
         ),
         Positioned(
           bottom: (MediaQuery.sizeOf(context).height / 2) - 200,
-          child: Column(
-            children: [
-              TimerOrLimitComponent(
-                timerStreamController: timerStreamController,
-                scoreLimit: widget.scoreLimit,
-                duration: widget.duration,
-              ),
-              TextButton(
-                  style: ButtonStyle(
-                    backgroundColor:
-                        WidgetStateProperty.all(Colors.amberAccent),
-                  ),
-                  onPressed: () async => await stopGame(),
-                  child: Text('Stop Game')),
-            ],
+          child: SizedBox(
+            child: Column(
+              children: [
+                TimerOrLimitComponent(
+                  timerStreamController: timerStreamController,
+                  scoreLimit: widget.scoreLimit,
+                  duration: widget.duration,
+                ),
+                TextButton(
+                    style: ButtonStyle(
+                      backgroundColor:
+                          WidgetStateProperty.all(Colors.amberAccent),
+                    ),
+                    onPressed: () async => await stopGame(),
+                    child: const Text('Stop Game')),
+              ],
+            ),
           ),
         ),
       ],
