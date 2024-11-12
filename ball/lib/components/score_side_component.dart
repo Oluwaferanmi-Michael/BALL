@@ -38,7 +38,7 @@ class _ScoreSideComponentState extends State<ScoreSideComponent> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                SizedBox(height: 24),
+                const SizedBox(height: 24),
                 Expanded(
                     child: SizedBox(
                   child: Text(
@@ -63,15 +63,15 @@ class _ScoreSideComponentState extends State<ScoreSideComponent> {
                       }),
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       TextButton(
                           style: ButtonStyle(
-                            padding: WidgetStatePropertyAll(
+                            padding: const WidgetStatePropertyAll(
                                 EdgeInsets.symmetric(vertical: 24)),
-                            textStyle: WidgetStatePropertyAll(TextStyle(
+                            textStyle: const WidgetStatePropertyAll(TextStyle(
                                 fontSize: 16, fontWeight: FontWeight.w600)),
                             backgroundColor:
                                 WidgetStateProperty.all(Colors.white),
@@ -81,15 +81,15 @@ class _ScoreSideComponentState extends State<ScoreSideComponent> {
                               widget.score.value++;
                             });
                           },
-                          child: Text('+1')),
-                      SizedBox(
+                          child: const Text('+1')),
+                      const SizedBox(
                         width: 24,
                       ),
                       TextButton(
                           style: ButtonStyle(
-                            padding: WidgetStatePropertyAll(
+                            padding: const WidgetStatePropertyAll(
                                 EdgeInsets.symmetric(vertical: 24)),
-                            textStyle: WidgetStatePropertyAll(TextStyle(
+                            textStyle: const WidgetStatePropertyAll(TextStyle(
                                 fontSize: 16, fontWeight: FontWeight.w600)),
                             backgroundColor:
                                 WidgetStateProperty.all(Colors.white),
@@ -97,7 +97,7 @@ class _ScoreSideComponentState extends State<ScoreSideComponent> {
                           onPressed: () {
                             widget.score.value += 3;
                           },
-                          child: Text('+3')),
+                          child: const Text('+3')),
                     ],
                   ),
                 )

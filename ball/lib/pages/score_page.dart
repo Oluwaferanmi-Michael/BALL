@@ -28,12 +28,18 @@ class ScorePage extends StatefulWidget {
 class _ScorePageState extends State<ScorePage> {
   late StreamController<String> timerStreamController;
   late Timer timer;
+  late ValueNotifier<int> awayScore;
+  late ValueNotifier<int> homeScore;
 
 // Init State
   @override
   void initState() {
     timerStreamController = StreamController();
     timer = Timer(const Duration(seconds: 1), () {});
+
+    homeScore = ValueNotifier<int>(0);
+    awayScore = ValueNotifier<int>(0);
+
     super.initState();
     timerPer(widget.duration);
   }
@@ -92,11 +98,12 @@ class _ScorePageState extends State<ScorePage> {
   void dispose() {
     timerStreamController.close();
     timer.cancel();
+
+    homeScore.dispose();
+    awayScore.dispose();
+
     super.dispose();
   }
-
-  ValueNotifier<int> homeScore = ValueNotifier<int>(0);
-  ValueNotifier<int> awayScore = ValueNotifier<int>(0);
 
   @override
   Widget build(BuildContext context) {
@@ -156,33 +163,32 @@ class _ScorePageState extends State<ScorePage> {
                       homeScore: homeScore.value,
                     )));
       }
-
-      homeScore.addListener(() async {
-        if (widget.scoreLimit == null) {
-          return;
-        }
-
-        final int limit = widget.scoreLimit!;
-
-        if (homeScore.value >= limit) {
-          await stopGame();
-        }
-      });
-
-      awayScore.addListener(() async {
-        if (widget.scoreLimit == null) {
-          return;
-        }
-
-        final int limit = widget.scoreLimit!;
-
-        if (awayScore.value >= limit) {
-          await stopGame();
-        }
-      });
     }
 
-    
+    homeScore.addListener(() async {
+      if (widget.scoreLimit == null) {
+        return;
+      }
+
+      final int limit = widget.scoreLimit!;
+
+      if (homeScore.value >= limit) {
+        await stopGame();
+      }
+    });
+
+    awayScore.addListener(() async {
+      if (widget.scoreLimit == null) {
+        return;
+      }
+
+      final int limit = widget.scoreLimit!;
+      // print(limit);
+
+      if (awayScore.value >= limit) {
+        await stopGame();
+      }
+    });
 
     return Scaffold(
         body: Stack(

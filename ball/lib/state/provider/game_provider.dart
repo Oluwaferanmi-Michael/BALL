@@ -7,10 +7,9 @@ import '../../global__parameters.dart';
 class GameProvider extends InheritedNotifier<GameNotifier> {
   GameProvider({
     super.key, 
-    required Widget child,
+    required super.child,
     required GameNotifier notifier
   }) : super(
-    child: child,
     notifier: GlobalParameter.gameNotifier
   );
 

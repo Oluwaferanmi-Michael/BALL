@@ -1,4 +1,5 @@
 import 'package:ball/components/score_value_component.dart';
+// import 'package:ball/state/notifier/game_notifier.dart';
 import 'package:ball/state/notifier/riverpod_game_notifier.dart';
 import 'package:ball/state/provider/game_provider.dart';
 
@@ -24,6 +25,7 @@ class _GameListState extends State<GameList> {
 
   @override
   void initState() {
+    // Initializing Controllers for team names
     homeTeamNameController = TextEditingController();
     awayTeamNameController = TextEditingController();
     scoreLimitController = TextEditingController();
@@ -33,6 +35,7 @@ class _GameListState extends State<GameList> {
 
   @override
   void dispose() {
+    // disposeing controllers on end of lifecycle
     homeTeamNameController.dispose();
     awayTeamNameController.dispose();
     scoreLimitController.dispose();
@@ -47,7 +50,7 @@ class _GameListState extends State<GameList> {
     return Scaffold(
         floatingActionButton: FloatingActionButton.extended(
           onPressed: () {
-            Dialogsss(context,
+            createGameDialog(context,
                 homeTeamNameController: homeTeamNameController,
                 awayTeamNameController: awayTeamNameController,
                 scoreLimitController: scoreLimitController);
@@ -59,11 +62,10 @@ class _GameListState extends State<GameList> {
             notifier: GlobalParameter.gameNotifier,
             child: Consumer(
               builder: (context, ref, child) {
-                if (context.mounted);
+                // if (context.mounted);
                 final gameList = ref.watch(riverpodGameNotifierProvider);
                 return gameList.when(
                     data: (data) {
-                      // ref.invalidate(riverpodGameNotifierProvider);
                       return data.isEmpty
                           ? const Center(child: Text('empty data (riverpod)'))
                           : Padding(
@@ -136,52 +138,8 @@ class _GameListState extends State<GameList> {
                         const Center(child: Text('Something Went Wrong')),
                     loading: () => const Center(
                         child: SizedBox(
-                            width: 32, child: LinearProgressIndicator())
-                            )
-                          );
+                            width: 32, child: LinearProgressIndicator())));
               },
-            )
-            //   Builder(
-            //     builder:(context) {
-            //     return data.isEmpty
-            //         ? Center(child: Text('empty data'))
-            //         : Padding(
-            //             padding: const EdgeInsets.all(12),
-            //             child: ListView.builder(
-            //               itemCount: data.length,
-            //               itemBuilder: (context, index) {
-
-            //                 return Container(
-            //                     padding: EdgeInsets.all(12),
-            //                     decoration: BoxDecoration(
-            //                         color: Colors.blueGrey,
-            //                         borderRadius: BorderRadius.circular(12)),
-            //                     child: Column(
-            //                         crossAxisAlignment: CrossAxisAlignment.start,
-            //                         children: [
-            //                           Row(
-            //                             mainAxisAlignment:
-            //                                 MainAxisAlignment.spaceBetween,
-            //                             children: [
-            //                               Flexible(child: ScoreValueComponent(team: data.elementAt(index).homeTeamName,  score: data.elementAt(index).homeTeamScore,)),
-            //                               SizedBox(
-            //                                 width: 12,
-            //                               ),
-            //                               Flexible(child: ScoreValueComponent(team: data.elementAt(index).awayTeamName, score: data.elementAt(index).awayTeamScore,)),
-            //                               SizedBox(
-            //                                 width: 12,
-            //                               ),
-            //                             ],
-            //                           ),
-            //                           SizedBox(
-            //                             height: 4,
-            //                           ),
-            //                           Text('Duration: ')
-            //                         ]));
-            //               },
-            //             ));
-            //   }
-            // )
-            ));
+            )));
   }
 }

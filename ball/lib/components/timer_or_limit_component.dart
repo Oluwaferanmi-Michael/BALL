@@ -5,8 +5,8 @@ class TimerOrLimitComponent extends StatefulWidget {
   const TimerOrLimitComponent({
     super.key,
     required this.timerStreamController,
-    required this.scoreLimit,
-    required this.duration,
+    this.scoreLimit,
+    this.duration,
   });
 
   final StreamController<String> timerStreamController;
@@ -21,28 +21,33 @@ class _TimerOrLimitComponentState extends State<TimerOrLimitComponent> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(8)),
+      // check if score limt or duration is null
       child: widget.duration == null
           ? Visibility(
-            visible: widget.scoreLimit == null ? true : false,
-            child: Text('${widget.scoreLimit}', style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500)))
+              // display score limit if duration is null
+              visible: widget.scoreLimit != null ? true : false,
+              child: Text('${widget.scoreLimit}',
+                  style: const TextStyle(
+                      fontSize: 24, fontWeight: FontWeight.w500)))
           : StreamBuilder<String?>(
               stream: widget.timerStreamController.stream,
               builder: (context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
-                  return CircularProgressIndicator(); // Display a loading indicator when waiting for data.
+                  return const CircularProgressIndicator(); // Display a loading indicator when waiting for data.
                 } else if (snapshot.hasError) {
                   return Text(
                       'Error: ${snapshot.error}'); // Display an error message if an error occurs.
                 } else if (!snapshot.hasData) {
-                  return Text(
+                  return const Text(
                       'No data available'); // Display a message when no data is available.
                 } else {
                   return Text(
                     '${snapshot.data}',
-                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
+                    style: const TextStyle(
+                        fontSize: 24, fontWeight: FontWeight.w500),
                   );
                 }
               }),

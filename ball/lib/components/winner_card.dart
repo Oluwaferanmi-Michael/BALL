@@ -31,7 +31,7 @@ class WinnerCardState extends State<WinnerCard> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          SizedBox(height: 24),
+          const SizedBox(height: 24),
           Text(
             widget.teamName,
             style: GoogleFonts.bebasNeue(

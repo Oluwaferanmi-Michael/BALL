@@ -28,12 +28,10 @@ class GameSummary extends StatelessWidget {
     return PopScope(
       canPop: false,
       onPopInvokedWithResult: (didPop, result) => Navigator.pushAndRemoveUntil(
-        context,
-        MaterialPageRoute(builder: (context) => GameList()),
-        (route) => route == GameList()
-        ),
-      // push(context, MaterialPageRoute(builder: (context) => GameList())
-      
+          context,
+          MaterialPageRoute(builder: (context) => const GameList()),
+          (route) => route is GameList),
+
       child: Scaffold(
           body: SafeArea(
         child: Stack(

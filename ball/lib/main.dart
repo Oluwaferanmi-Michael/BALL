@@ -1,12 +1,12 @@
 import 'package:ball/pages/game_list.dart';
-import 'package:ball/state/data/offline_storage_functions.dart';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  //  Makes sure Systen UI [Task bars and Navigation UI are above the app with no background]
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
       statusBarIconBrightness: Brightness.dark,
       systemNavigationBarIconBrightness: Brightness.dark,
@@ -14,7 +14,7 @@ Future<void> main() async {
       systemNavigationBarColor: Colors.transparent,
       statusBarColor: Colors.transparent));
 
-  // await OfflineStoreFunctions.instance.database;
+  
 
   runApp(const ProviderScope(child: MainApp()));
 }

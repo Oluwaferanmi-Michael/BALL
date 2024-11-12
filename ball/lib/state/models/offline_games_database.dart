@@ -5,6 +5,8 @@ import 'game_constants.dart';
 
 part 'offline_games_database.g.dart';
 
+// Drift Table
+
 class OfflineGames extends Table {
   TextColumn get id => text().named('id')();
   IntColumn get homeTeamScore => integer().named('homeTeamScore')();
@@ -33,10 +35,5 @@ class AppDatabase extends _$AppDatabase {
 
   Future<List<OfflineGame>> get allGames => select(offlineGames).get();
 
-  // Stream<Iterable<OfflineGame>> watchGameTable() {
-  //   return (select(offlineGames)
-  //         ..orderBy([(value) => OrderingTerm(expression: value.gameDate)]))
-  //       .watch();
-  // }
 }
 

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../pages/score_page.dart';
 import '../state/models/game_enititty.dart';
 
-Future<void> Dialogsss(
+Future<void> createGameDialog(
   BuildContext context, {
   required TextEditingController homeTeamNameController,
   required TextEditingController awayTeamNameController,
@@ -41,6 +41,8 @@ Future<void> Dialogsss(
                         ),
                         Transform.scale(
                             scale: 1,
+
+                            // Button to Pick gamestyle options
                             child: SegmentedButton(
                               showSelectedIcon: false,
                               style: const ButtonStyle(),
@@ -95,6 +97,8 @@ Future<void> Dialogsss(
                             borderRadius: BorderRadius.circular(10),
                           ),
                           suffix: Text(
+                              // If selected item is Time Limit display [min]
+                              // If selected item is Score Limit display [pts]
                               selected.first == GameConditions.timeLimit
                                   ? 'min'
                                   : 'pts '),
@@ -109,52 +113,60 @@ Future<void> Dialogsss(
             ),
           )),
           actions: [
+            // cancel game creation
             TextButton(
                 onPressed: () {
-                  if (awayTeamNameController.text.isNotEmpty){
-                    awayTeamNameController.clear;}
-                  if (homeTeamNameController.text.isNotEmpty){
-                    homeTeamNameController.clear;}
-                  if (scoreLimitController.text.isNotEmpty){
-                    scoreLimitController.clear;}
+                  if (awayTeamNameController.text.isNotEmpty) {
+                    awayTeamNameController.clear;
+                  }
+                  if (homeTeamNameController.text.isNotEmpty) {
+                    homeTeamNameController.clear;
+                  }
+                  if (scoreLimitController.text.isNotEmpty) {
+                    scoreLimitController.clear;
+                  }
                   Navigator.pop(context);
                 },
                 child: const Text('cancel')),
+
+            //  start game
             TextButton(
                 onPressed: () {
-                  if (homeTeamNameController.text.isEmpty){
+                  if (homeTeamNameController.text.isEmpty) {
                     homeTeamNameController.text = 'Home';
                   }
-                  if (awayTeamNameController.text.isEmpty){
+                  if (awayTeamNameController.text.isEmpty) {
                     awayTeamNameController.text = 'Away';
                   }
 
                   final homeName = homeTeamNameController.text;
                   final awayName = awayTeamNameController.text;
 
+                  final intValue = int.parse(scoreLimitController.text);
+
+                  // check scoreLimitController for data and assign .text to
+                  final gameCondition =
+                      selected.first == GameConditions.scoreLimit;
+                  final scoreLimit = gameCondition == true ? intValue : null;
+                  final duration = gameCondition == false ? intValue : null;
 
                   Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (context) => ScorePage(
-                                homeTeamName: homeName,
-                                awayTeamName: awayName,
-                                scoreLimit:
-                                    selected.first != GameConditions.scoreLimit
-                                        ? null
-                                        : int.parse(scoreLimitController.text),
-                                duration:
-                                    selected.first != GameConditions.timeLimit
-                                        ? null
-                                        : int.parse(scoreLimitController.text),
-                              )));
-                  if (awayTeamNameController.text.isNotEmpty){
-                    awayTeamNameController.clear;}
-                  if (homeTeamNameController.text.isNotEmpty){
-                    homeTeamNameController.clear;}
-                  if (scoreLimitController.text.isNotEmpty){
-                    scoreLimitController.clear;
-                    }
+                              homeTeamName: homeName,
+                              awayTeamName: awayName,
+                              scoreLimit: scoreLimit,
+                              duration: duration)));
+
+                  
+
+                  // Clear Controllers
+                  awayTeamNameController.clear;
+
+                  homeTeamNameController.clear;
+
+                  scoreLimitController.clear;
                 },
                 child: const Text('start game'))
           ],

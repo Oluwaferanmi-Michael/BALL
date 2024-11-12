@@ -5,30 +5,32 @@ class ScoreValueComponent extends StatelessWidget {
   final TeamName team;
   final Score score;
   const ScoreValueComponent({
-    super.key, required this.team, required this.score,
+    super.key,
+    required this.team,
+    required this.score,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.all(8),
+      decoration: BoxDecoration(
+          color: Colors.amberAccent, borderRadius: BorderRadius.circular(12)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(team,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 10,
               )),
           Center(
               child: Text(
             '$score',
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
+            style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
           )),
         ],
       ),
-      padding: EdgeInsets.all(8),
-      decoration: BoxDecoration(
-          color: Colors.amberAccent, borderRadius: BorderRadius.circular(12)),
     );
   }
 }
