@@ -78,14 +78,11 @@ class _GameListState extends State<GameList> {
                                       ),
                                   itemBuilder: (context, index) {
                                     return Container(
-                                        padding: const EdgeInsets.all(12),
-                                        decoration: BoxDecoration(
-                                            color: Colors.blueGrey,
-                                            borderRadius:
-                                                BorderRadius.circular(12)),
+                                        padding: const EdgeInsets.all(8),
+                                        color: const Color(0xFFFCEEFF),
                                         child: Column(
                                             crossAxisAlignment:
-                                                CrossAxisAlignment.start,
+                                                CrossAxisAlignment.center,
                                             children: [
                                               Row(
                                                 mainAxisAlignment:

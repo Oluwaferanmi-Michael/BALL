@@ -21,6 +21,8 @@ class ScorePage extends StatefulWidget {
       required this.homeTeamName,
       required this.awayTeamName});
 
+      GameConditions get _scoreLimit => scoreLimit != null ? GameConditions.scoreLimit : GameConditions.timeLimit ;
+
   @override
   State<ScorePage> createState() => _ScorePageState();
 }

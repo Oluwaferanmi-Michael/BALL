@@ -145,8 +145,7 @@ Future<void> createGameDialog(
                   final intValue = int.parse(scoreLimitController.text);
 
                   // check scoreLimitController for data and assign .text to
-                  final gameCondition =
-                      selected.first == GameConditions.scoreLimit;
+                  final gameCondition = selected.first;
                   final scoreLimit = gameCondition == true ? intValue : null;
                   final duration = gameCondition == false ? intValue : null;
 
@@ -157,7 +156,8 @@ Future<void> createGameDialog(
                               homeTeamName: homeName,
                               awayTeamName: awayName,
                               scoreLimit: scoreLimit,
-                              duration: duration)));
+                              duration: duration
+                            )));
 
                   
 
