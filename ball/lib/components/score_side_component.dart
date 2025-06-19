@@ -1,109 +1,136 @@
-import 'package:ball/state/models/game_enititty.dart';
+import 'package:ball/state/models/game_enitity.dart';
+
 import 'package:flutter/material.dart';
+
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 // ignore: must_be_immutable
-class ScoreSideComponent extends StatefulWidget {
+class ScoreSideComponent extends HookConsumerWidget {
   final GameTeams team;
   final TeamName teamName;
-  ValueNotifier<int> score;
+  final String score;
+  final void Function(int value) increment;
 
-  ScoreSideComponent({
+  const ScoreSideComponent({
     super.key,
+    required this.score,
+    required this.increment,
     required this.teamName,
     required this.team,
-    required this.score,
   });
 
   @override
-  State<ScoreSideComponent> createState() => _ScoreSideComponentState();
+  Widget build(BuildContext context, WidgetRef ref) {
+    final scoreValue = ['1', '3'];
+    return GestureDetector(
+      onTap: () => increment(2),
+      child: Container(
+        width: MediaQuery.sizeOf(context).width / 2,
+        decoration: BoxDecoration(
+          // borderRadius: BorderRadius.circular(12),
+          color: team == GameTeams.away
+              ? Colors.blueAccent
+              : Colors.amberAccent,
+        ),
+        child: SafeArea(
+          child: Stack(
+            children: [
+              const SizedBox(height: 24),
+              Align(
+                alignment: Alignment.topCenter,
+                child: SizedBox(
+                  child: Text(
+                    teamName,
+                    style: GoogleFonts.bebasNeue(
+                      color: Colors.white70,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: Alignment.center,
+                child: Text(
+                  score,
+                  style: GoogleFonts.bebasNeue(
+                    color: Colors.white70,
+                    fontSize: 102,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
+              ),
+
+              Positioned(
+                bottom: kBottomNavigationBarHeight * 2.2,
+                left: 0,
+                child: SizedBox(
+                  width: MediaQuery.sizeOf(context).width * .5,
+                  child: Column(
+                    spacing: 8,
+                    children: scoreValue
+                        .map(
+                          (item) => AddScoreComponent(
+                            color: const Color(0xFFFFFDEF),
+                            onTap: () {
+                              // Take String Value turn it to score value then add to total score.
+                              final value = int.parse(item);
+                              increment(value);
+                            },
+                            team: team,
+                            value: item,
+                          ),
+                        )
+                        .toList(),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
 }
 
-class _ScoreSideComponentState extends State<ScoreSideComponent> {
+class AddScoreComponent extends StatelessWidget {
+  final GameTeams team;
+  final String value;
+  final Color color;
+  final void Function() onTap;
+  const AddScoreComponent({
+    required this.color,
+    required this.onTap,
+    super.key,
+    required this.team,
+    required this.value,
+  });
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-        onTap: () {
-          widget.score.value += 2;
-        },
-        child: Container(
-          // padding: EdgeInsets.all(12),
-          decoration: BoxDecoration(
-            // borderRadius: BorderRadius.circular(16),
-            color: widget.team == GameTeams.away
-                ? Colors.blueAccent
-                : Colors.redAccent,
-          ),
-          child: SafeArea(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const SizedBox(height: 24),
-                Expanded(
-                    child: SizedBox(
-                  child: Text(
-                    widget.teamName,
-                    style: GoogleFonts.bebasNeue(
-                        color: Colors.white70,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w400),
-                  ),
-                )),
-                Expanded(
-                  child: ValueListenableBuilder(
-                      valueListenable: widget.score,
-                      builder: (context, value, child) {
-                        return Text(
-                          '${widget.score.value}',
-                          style: GoogleFonts.bebasNeue(
-                              color: Colors.white,
-                              fontSize: 102,
-                              fontWeight: FontWeight.w900),
-                        );
-                      }),
-                ),
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      TextButton(
-                          style: ButtonStyle(
-                            padding: const WidgetStatePropertyAll(
-                                EdgeInsets.symmetric(vertical: 24)),
-                            textStyle: const WidgetStatePropertyAll(TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.w600)),
-                            backgroundColor:
-                                WidgetStateProperty.all(Colors.white),
-                          ),
-                          onPressed: () {
-                            setState(() {
-                              widget.score.value++;
-                            });
-                          },
-                          child: const Text('+1')),
-                      const SizedBox(
-                        width: 24,
-                      ),
-                      TextButton(
-                          style: ButtonStyle(
-                            padding: const WidgetStatePropertyAll(
-                                EdgeInsets.symmetric(vertical: 24)),
-                            textStyle: const WidgetStatePropertyAll(TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.w600)),
-                            backgroundColor:
-                                WidgetStateProperty.all(Colors.white),
-                          ),
-                          onPressed: () {
-                            widget.score.value += 3;
-                          },
-                          child: const Text('+3')),
-                    ],
-                  ),
-                )
-              ],
+      onTap: onTap,
+      child: Container(
+        margin: team == GameTeams.away
+            ? const EdgeInsets.only(left: 12)
+            : const EdgeInsets.only(right: 12),
+        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+        decoration: BoxDecoration(
+          color: color,
+          // borderRadius: const BorderRadius.all(Radius.circular(12)),
+        ),
+
+        child: Center(
+          child: Text(
+            '+ $value',
+            style: GoogleFonts.poppins(
+              fontSize: 12,
+              fontWeight: FontWeight.bold,
             ),
           ),
-        ));
+        ),
+      ),
+    );
   }
 }

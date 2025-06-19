@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "890717079194",
+    "project_id": "ball-91029",
+    "storage_bucket": "ball-91029.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890717079194:android:96ec3916320321b36a8123",
+        "android_client_info": {
+          "package_name": "com.example.ball"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDnCEK4QuYHmpK5OFdXRZYBFDxo3wGuEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

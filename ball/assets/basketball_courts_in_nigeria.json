@@ -1,0 +1,3975 @@
+[
+  {
+    "title": "Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "Ilupeju Basket Ball Court, Ilupeju Industrial Ave, Lagos, Nigeria",
+    "neighborhood": "Ilupeju",
+    "street": "Ilupeju Basket Ball Court, Ilupeju Industrial Ave",
+    "city": "Lagos",
+    "state": "Lagos",
+    "phone": "+234 810 040 3738",
+    "phoneUnformatted": "+2348100403738",
+    "location": {
+      "lat": 6.5461498,
+      "lng": 3.3584035
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJU31koeqNOxARAEphCT7fRRE",
+    "reviewsCount": 342,
+    "imagesCount": 163,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 7:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 7:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 7:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 7:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 7:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 7:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 7:30 PM"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 1,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noTvwBIJeuTqpkF_6_TN8Sp2gIb9rOlp5uRhWOddV3Esx_Imf2r9cbfhXpRojEciVnrC9Xu2Y3oqcZ5V43r9WCz49ogogugel8L2GxXEcO3m3WRqHkCikGMnmFUXoCPhGKvM2R2Pw=w408-h306-k-no"
+  },
+  {
+    "title": "Area 1 Basketball Court",
+    "price": null,
+    "categoryName": "Recreation center",
+    "address": "Area 1, Adjacent to African Safari Hotel, section 1, Garki, Abuja, Nigeria",
+    "neighborhood": "Garki",
+    "street": "Area 1, Adjacent to African Safari Hotel, section 1",
+    "city": "Abuja",
+    "state": "Federal Capital Territory",
+    "location": {
+      "lat": 9.0323865,
+      "lng": 7.4676575
+    },
+    "totalScore": 4.1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJHYWTfGQLThARaRu1ZU-jdY4",
+    "reviewsCount": 166,
+    "imagesCount": 50,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "4 to 10 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "4 to 10 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "4 to 10 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "4 to 10 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "4 to 10 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "4 to 10 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "4 to 10 PM"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 1,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqOLQc3ZJKx3NAKh_N51iZJyhVenlPTFAtZ2hk9NqDDi6mOtMTFOSjjW8i4vexUiqbdiU3dwo0YbWQZEoB93NQtgLYeAJDxLTWeY804ZAJ-LSUT_WUXMab8F2iO5IVMBsP81559=w408-h305-k-no"
+  },
+  {
+    "title": "Iponri Estate Basketball court",
+    "price": null,
+    "categoryName": "Playground",
+    "address": "Block 95, Flat 1, Iponri Estate, Iponri Rd, Surulere, Lagos, Nigeria",
+    "neighborhood": "Surulere",
+    "street": "Block 95, Flat 1, Iponri Estate, Iponri Rd",
+    "city": "Lagos",
+    "state": "Lagos",
+    "location": {
+      "lat": 6.4859719,
+      "lng": 3.3612664
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJoWGihkKNOxARQ6v59qSeQT4",
+    "reviewsCount": 26,
+    "imagesCount": 9,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 2,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noDo2rhwfe4Zl5M0SK4DfIXgXVxuK2LU32DEL4URCKuEczsv1RlT1fUSA-oe0EM77d89V3RInw3M1EgoiLdlldYQ3Zy4NecpK_CEn6JqHVCkGvidVNOk4U4AyqNYVY1YkPlotw=w408-h544-k-no"
+  },
+  {
+    "title": "Elekahia Basketball court, PH",
+    "price": null,
+    "categoryName": "Sports complex",
+    "address": "Elekahia Housing Estate, Godwin Abbey St, Rumuola, Port Harcourt 500101, Rivers, Nigeria",
+    "neighborhood": "Rumuola",
+    "street": "Elekahia Housing Estate, Godwin Abbey St",
+    "city": "Port Harcourt",
+    "state": "Rivers",
+    "phone": "+234 803 754 9170",
+    "phoneUnformatted": "+2348037549170",
+    "location": {
+      "lat": 4.8212021,
+      "lng": 7.0265444
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJZTp_icnNaRAR69XtOawEgYc",
+    "reviewsCount": 264,
+    "imagesCount": 76,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6 AM to 8:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6 AM to 8:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6 AM to 8:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6 AM to 8:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6 AM to 8:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6 AM to 8:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6 AM to 8:30 PM"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 3,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nokrjZjRO761F1692c4Kup_Ie_mS6nGWh5HxTtq7wO251XLx1eh3RnXz1dVCs-0Qvh6xJR1njJXS3jWnDu8Mz3iOvNN_Nl6672E94_nogP8DR4NMj3NlU7zjhWfTzwKNf6aVKfm=w408-h544-k-no"
+  },
+  {
+    "title": "Dolphins Indoor Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "1 Olu Aboderin St, Idi Mangoro, Lagos 101233, Lagos, Nigeria",
+    "neighborhood": "Idi Mangoro",
+    "street": "1 Olu Aboderin St",
+    "city": "Lagos",
+    "state": "Lagos",
+    "phone": "+234 806 271 8287",
+    "phoneUnformatted": "+2348062718287",
+    "location": {
+      "lat": 6.6039859,
+      "lng": 3.3279029
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJnyWzRJuROxARDANkKFs-HRM",
+    "reviewsCount": 63,
+    "imagesCount": 27,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 5,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrkYsJhkT30nEsglcrUyHgVMykPtm_GSeoOpfp_5-fy_wXFQEbvsV1ot4wq96i-l-S6A44wYY3KYMETOuzXFHoAFNypKM87-TOtNzYO1BdaDZYK90dpvVEqr4fCtPFsIFu6sQiKFQ=w408-h306-k-no"
+  },
+  {
+    "title": "Basketball court, University Of Ibadan",
+    "price": null,
+    "categoryName": "Stadium",
+    "address": "CVPQ+88W, Barth Road, Ibadan 200132, Oyo, Nigeria",
+    "neighborhood": null,
+    "street": "CVPQ+88W, Barth Road",
+    "city": "Ibadan",
+    "state": "Oyo",
+    "website": "http://ui.edu.ng/",
+    "phone": "+234 907 510 8503",
+    "phoneUnformatted": "+2349075108503",
+    "location": {
+      "lat": 7.43585,
+      "lng": 3.8883267
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJV7soaUvzORARmFMWe9a2sdI",
+    "reviewsCount": 83,
+    "imagesCount": 62,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 6,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrJia3zeCDB8q1XUk15xe3NhtEh95ZYC4GkCoXK1xQGfWJjalpHTju4vY8_xwME2qkoAd7rzQmrjz_c045Nc7-AQGA6UdpOrUwEZATsxeSZHLiSUDWij1yYviqUsC2pMnEMXkojWw=w426-h240-k-no"
+  },
+  {
+    "title": "Border Basketball Court",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "J9RG+2W6, Olowora, Ojodu Berger 102109, Ogun State, Nigeria",
+    "neighborhood": "Olowora",
+    "street": "J9RG+2W6",
+    "city": "Ojodu Berger",
+    "state": "Ogun State",
+    "phone": "+234 704 384 1419",
+    "phoneUnformatted": "+2347043841419",
+    "location": {
+      "lat": 6.640038,
+      "lng": 3.3772688
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ4UXwGZ2TOxARQNnoCjLYQGQ",
+    "reviewsCount": 21,
+    "imagesCount": 7,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 7,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nq7ksKOu9M7iORjoXDqSb6kD7WO3lAOc244BxoT5mZ0Efz6pHkVkxHBNpjiXt6DW7urijKNfwa5o7Nq6I5YmtGk9p3Hf-A5nwUI-Jk-oDwKPtqbcdu5-VytO_SWcjbDpWcIppmi=w408-h725-k-no"
+  },
+  {
+    "title": "Zone 6 Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "3F95+WW4, Wuse 1, Abuja 904101, Federal Capital Territory, Nigeria",
+    "neighborhood": "Wuse 1",
+    "street": "3F95+WW4",
+    "city": "Abuja",
+    "state": "Federal Capital Territory",
+    "phone": "+234 908 267 8734",
+    "phoneUnformatted": "+2349082678734",
+    "location": {
+      "lat": 9.0697678,
+      "lng": 7.459813
+    },
+    "totalScore": 3.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJqyrqAOAKThARG0M4PWy5c1w",
+    "reviewsCount": 69,
+    "imagesCount": 15,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 8,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npbLiAesWsyY1ITEekvYj9mLIC8bOpLxnkdwECdPavEGTfOhX8GGkYfm3lsgOtETGZ7JHDgQn6rx_OizYpGNnqCpkQp3pPJWCOnBfVUK_foFYnhR1VmfL-L2xRD1n9XSJzb_DCB=w478-h240-k-no"
+  },
+  {
+    "title": "Area 11 Neighborhood Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "Emeka Anyaoku St, Shendam Cl, Garki 1, Abuja 900247, Federal Capital Territory, Nigeria",
+    "neighborhood": "Garki 1",
+    "street": "Emeka Anyaoku St, Shendam Cl",
+    "city": "Abuja",
+    "state": "Federal Capital Territory",
+    "phone": "+234 707 050 8107",
+    "phoneUnformatted": "+2347070508107",
+    "location": {
+      "lat": 9.0437688,
+      "lng": 7.4970374
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJs2Kyda8LThARrQiO-TzdI70",
+    "reviewsCount": 128,
+    "imagesCount": 35,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 9,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOrklRULT5rIEf9_JqFhSzCq84-nYp7EIRZlQR4=w408-h612-k-no"
+  },
+  {
+    "title": "Basketball court",
+    "price": null,
+    "categoryName": "Adventure sports center",
+    "address": "7 Hassan Ibrahim Cl, Ifako-Ijaiye, Street 101232, Lagos, Nigeria",
+    "neighborhood": "Ifako-Ijaiye",
+    "street": "7 Hassan Ibrahim Cl",
+    "city": "Street",
+    "state": "Lagos",
+    "phone": "+234 912 117 8050",
+    "phoneUnformatted": "+2349121178050",
+    "location": {
+      "lat": 6.6775138,
+      "lng": 3.2920014
+    },
+    "totalScore": 3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJJfP7Bb2XOxARJNXpkLx6vWg",
+    "reviewsCount": 2,
+    "imagesCount": 1,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 10,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=ZVJTJmn8WIP_I-n8HXCvxQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=126.35022&pitch=0&thumbfov=100"
+  },
+  {
+    "title": "Hilltop Life Camp Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "Jabi, Abuja 900108, Federal Capital Territory, Nigeria",
+    "neighborhood": "Jabi",
+    "street": null,
+    "city": "Abuja",
+    "state": "Federal Capital Territory",
+    "phone": "+234 808 320 7954",
+    "phoneUnformatted": "+2348083207954",
+    "location": {
+      "lat": 9.0757551,
+      "lng": 7.3965682
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJd8TAbLd1ThARiPVta3RMR0A",
+    "reviewsCount": 81,
+    "imagesCount": 58,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 8:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 8:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 8:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 8:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "10 AM to 8:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 11,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqly3uFi9X76aunt6zvIteOjD_K--J4atd11h0RqkDzhGP8xLpHHpQXT3vhl3xOxn7ln44ydVxme1ZKLiw0AXHoeah7eXj4NTv072MX1yIt_FeXz1L_qX5u6jkKc4w4zSEL3OGc=w408-h544-k-no"
+  },
+  {
+    "title": "IBA WOLVES BASKETBALL COURT",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "Iba Housing Estate, zoneA carpark2, Ojo, Lagos 102101, Lagos, Nigeria",
+    "neighborhood": "Ojo",
+    "street": "Iba Housing Estate, zoneA carpark2",
+    "city": "Lagos",
+    "state": "Lagos",
+    "phone": "+234 811 203 0417",
+    "phoneUnformatted": "+2348112030417",
+    "location": {
+      "lat": 6.4927023,
+      "lng": 3.1974915
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ4X1JXoqFOxARuhbEC361htI",
+    "reviewsCount": 10,
+    "imagesCount": 90,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 12,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqC9sw73OKDzzTKRvG5D3foZhN9KJ52wu066OXVrKzA9JNVZp2ijOSbX66klnINx8aAMoRyJMpzCdzLf_ghiWTAaf5vDeECXGAoCGOkFxt7_03epQejxz9RjkdVl3zTkzJ5sIme=w408-h269-k-no"
+  },
+  {
+    "title": "Civic Center Basketball Court",
+    "price": null,
+    "categoryName": "Sports complex",
+    "address": "Niger St, Port Harcourt, 500101, Rivers, Nigeria",
+    "neighborhood": "Port Harcourt",
+    "street": "Niger St",
+    "city": "Port Harcourt",
+    "state": "Rivers",
+    "location": {
+      "lat": 4.7601404,
+      "lng": 7.0221564
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ8Rffr-7LaRARHMUVQsQD89w",
+    "reviewsCount": 78,
+    "imagesCount": 26,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7:30 AM to 9:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7:30 AM to 9:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7:30 AM to 9:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7:30 AM to 9:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7:30 AM to 9:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7:30 AM to 9:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7:30 AM to 9:30 PM"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 13,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nriuI4v0dl6-Dho8Dm85mTwc2VEnerHxMsNNz_VfeP0ktmuNHdwH-GTevfpe2yHFJV5KTCkuN56mE4c-52nY_0WKaJk2gqwpzP3n4lubjAtl2OqIkpAtpwqOSuGB3WU1_3ztlM=w408-h544-k-no"
+  },
+  {
+    "title": "Basket Ball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "51 Mambolo St, Wuse, Abuja 904101, Federal Capital Territory, Nigeria",
+    "neighborhood": "Wuse",
+    "street": "51 Mambolo St",
+    "city": "Abuja",
+    "state": "Federal Capital Territory",
+    "location": {
+      "lat": 9.0614499,
+      "lng": 7.4631882
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJVW-YCBkLThARIZPRGcJC9JM",
+    "reviewsCount": 38,
+    "imagesCount": 2,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 14,
+    "imageUrl": "https://lh3.googleusercontent.com/CwRstkU8dTurc-oEw76Vi9CqR2KfWEmjNoXtSnL4oVDaVirGJhlC8_eVZkLIa10a=w426-h240-k-no"
+  },
+  {
+    "title": "Basketball court",
+    "price": null,
+    "categoryName": "Sports club",
+    "address": "RV43+C9F, Wudil 713101, Kano, Nigeria",
+    "neighborhood": null,
+    "street": "RV43+C9F",
+    "city": "Wudil",
+    "state": "Kano",
+    "location": {
+      "lat": 11.8060573,
+      "lng": 8.8534214
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ8332wHgZrBERMXRJCzbAYwE",
+    "reviewsCount": 1,
+    "imagesCount": 3,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 15,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqYDPlOAsVqeuPu5VuBsY47Iojz7qGfzD1jdaE3VdWaNq6YOOzZ5Npl-_bVMIa9cCcOlPV-0k5_UBl5yZnwEV6701xQFQJmQ1PYfU1U4FLUzT_mFVwRm2PzsExG_q7nKZ97yoMq=w408-h725-k-no"
+  },
+  {
+    "title": "Zone 5 Basket Ball Court (Half Court)",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "Zone 5 Suite B13, Shopping Plaza, 2 Damanhur Cl, Wuse, Abuja 904101, Nigeria",
+    "neighborhood": "Wuse",
+    "street": "Zone 5 Suite B13, Shopping Plaza, 2 Damanhur Cl",
+    "city": "Abuja",
+    "state": "Federal Capital Territory",
+    "location": {
+      "lat": 9.0673989,
+      "lng": 7.4625961
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJy0PDr2QLThARw62DWdFzCtE",
+    "reviewsCount": 4,
+    "imagesCount": 5,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 16,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noxDz9tycGEK7HxKwWq2a4ey_WhDGEu4Q_wXaEjKzrUJmfBpt5AQvXhR7zLScWM5IJ7Y_kgemHjaUVXRT4uREbw0tJaIdfizyBV8mX9ykBjQvwz25iKGin7XnEt0B2-P5As7W99PA=w408-h544-k-no"
+  },
+  {
+    "title": "Pitch & Court Leisure Facilities",
+    "price": null,
+    "categoryName": "Recreation center",
+    "address": "Plot 10, Block 54 Adebayo Doherty Rd, Lekki Phase I, Lekki 106104, Lagos, Nigeria",
+    "neighborhood": "Lekki Phase I",
+    "street": "Plot 10, Block 54 Adebayo Doherty Rd",
+    "city": "Lekki",
+    "state": "Lagos",
+    "phone": "+234 802 091 3930",
+    "phoneUnformatted": "+2348020913930",
+    "location": {
+      "lat": 6.4459676,
+      "lng": 3.4637575
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJWZx-3Fb0OxARkzYpBDrc0uU",
+    "reviewsCount": 347,
+    "imagesCount": 284,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 17,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqAFQAN7F5KGuLwSDOHva_SXj_q5HpKUdP1LMgVyGLgD2xrJPQAttVo9uX-bLnKHOM4-Howj5SQkSJIz-9UH6A7jiyHfiilB4gRx-ICfIfEsobfYWTGoIuupNl5yxsA2oiYan3j=w408-h306-k-no"
+  },
+  {
+    "title": "Ahmadu Bello University Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "5M34+46M, Zaria 810106, Kaduna, Nigeria",
+    "neighborhood": null,
+    "street": "5M34+46M",
+    "city": "Zaria",
+    "state": "Kaduna",
+    "location": {
+      "lat": 11.1528496,
+      "lng": 7.6555476
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJI4kGdyyFshERn5URz5JoyYw",
+    "reviewsCount": 4,
+    "imagesCount": 18,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 18,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nq0V8_v73WaXTzn7KWEf5eruT-sAZSV2sZr3VkNdrx1psr0s0R6SNkLHZXyRE84vPvrcmtwFUt3J2-7WSXvYEoMo1kziViBkjw670GPGgbfScYWUc6meZulIDuTlAKBqJpZocE=w426-h240-k-no"
+  },
+  {
+    "title": "IBB SPORTS CENTER",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "Gbagada, Lagos 105102, Lagos, Nigeria",
+    "neighborhood": "Gbagada",
+    "street": null,
+    "city": "Lagos",
+    "state": "Lagos",
+    "phone": "+234 802 761 7227",
+    "phoneUnformatted": "+2348027617227",
+    "location": {
+      "lat": 6.5508202,
+      "lng": 3.3963862
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJTWo11muNOxARsD-C6nwMsK4",
+    "reviewsCount": 43,
+    "imagesCount": 16,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6:30 AM to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6:30 AM to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6:30 AM to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6:30 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6:30 AM to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6:30 AM to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 19,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrP9_33aWJyWeikCmUH8gvQl3W6EuFFZhMBWw1WtVw32sLAVhKwmqFx9EZFxfJjU2RLn_A9nva7qcvwBisfxUwWLyzIpPVuPVrFHasetll3YZvCsVkc4M1VAgwjLVXXbhXB-5ys-Q=w426-h240-k-no"
+  },
+  {
+    "title": "Area 10 Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "2FVP+5XP, Garki 1, Abuja 900103, Federal Capital Territory, Nigeria",
+    "neighborhood": "Garki 1",
+    "street": "2FVP+5XP",
+    "city": "Abuja",
+    "state": "Federal Capital Territory",
+    "phone": "+234 902 086 2675",
+    "phoneUnformatted": "+2349020862675",
+    "location": {
+      "lat": 9.0429715,
+      "lng": 7.4874418
+    },
+    "totalScore": 3.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ888QpQwLThAR6-ctldac_5w",
+    "reviewsCount": 14,
+    "imagesCount": 6,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 20,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4no1sPvak5z7rB7hYrLEkcXL7DsbtlCNap-B0QTsxMDGgW67Aha5fr3dNqOVdEDvUYmeuasXr-qa8jJI3WSa8VBFfiGW9HZDg6pYn3_NhRGQBgFAaP1XN-i6HhaB51h61qcV1VM=w493-h240-k-no"
+  },
+  {
+    "title": "Basketball court",
+    "price": null,
+    "categoryName": "Playground",
+    "address": "RQRG+XMC, Wukari 670102, Taraba, Nigeria",
+    "neighborhood": null,
+    "street": "RQRG+XMC",
+    "city": "Wukari",
+    "state": "Taraba",
+    "location": {
+      "lat": 7.8421583,
+      "lng": 9.77694
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ-b4EKcV7VxAR1dKCZDpx-RM",
+    "reviewsCount": 2,
+    "imagesCount": null,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 7,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrIW0nN-HJx4p1QIwkyXi3rOo36QW_Jl0hXBgZ6Mm0IaFYiRnconmU2FjY1qBl5Ulw8vx28ebZ5dSzk_G457QfPjYJPbtRoA8mdzSG2zjSi4nYwVfc8mhCtPjHdek7ps6GdERMc=w408-h725-k-no"
+  },
+  {
+    "title": "Uniport Basket Ball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "VWX9+WRJ, Alakahia 500102, Rivers, Nigeria",
+    "neighborhood": null,
+    "street": "VWX9+WRJ",
+    "city": "Alakahia",
+    "state": "Rivers",
+    "phone": "+234 90735562",
+    "phoneUnformatted": null,
+    "location": {
+      "lat": 4.8998447,
+      "lng": 6.9195253
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ16IGk63baRARctjL1WgWbyQ",
+    "reviewsCount": 11,
+    "imagesCount": 8,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "5 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "5 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "5 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "5 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "5 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "5 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 17,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrMd0T9HdtLR7a2ZH6FX2Rx-awGdQhiEdFMUfUSos0cCF6q15bWRazpzG4UpK_A7GB8gMsAbLfFSiG9Q0cUHT3BtnnUcTf77Z682rDVGjg4UkpAHxnw71ZFXr00YPp0XPDsJX_w=w426-h240-k-no"
+  },
+  {
+    "title": "Basket Ball Court",
+    "price": null,
+    "categoryName": "Sports complex",
+    "address": "University of Nigeria, Lawn tennis court, Nigeria",
+    "neighborhood": "Ihe Nsukka",
+    "street": "University of Nigeria, Lawn tennis court",
+    "city": "Nsukka",
+    "state": "Enugu",
+    "location": {
+      "lat": 6.8658685,
+      "lng": 7.4066847
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ-8BCiPPnRBARWmRTdoeiH1w",
+    "reviewsCount": 1,
+    "imagesCount": 1,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 18,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npt--jRVcyAd_flz2zBUBU8vKfwvJg9i572XPa-YH9wYAxIjejqw3xLwcIC092Hee15s8xgAFlEAb336KZocYzzqusBcXMVEkkOMaI-UCssn6tsOQ12TGI9QJgzllwkkMh1fgms=w426-h240-k-no"
+  },
+  {
+    "title": "Ndubuisi Park Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "Mobolaji Johnson Ave, Oregun, Ikeja 101233, Lagos, Nigeria",
+    "neighborhood": "Oregun",
+    "street": "Mobolaji Johnson Ave",
+    "city": "Ikeja",
+    "state": "Lagos",
+    "location": {
+      "lat": 6.6139417,
+      "lng": 3.3653841
+    },
+    "totalScore": 2.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJFSP9eBeTOxAR5Ggmb2r3uTg",
+    "reviewsCount": 4,
+    "imagesCount": 4,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "10 AM to 10:28 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "10 AM to 10:28 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "10 AM to 10:28 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "10 AM to 10:28 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "10 AM to 10:28 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "10 AM to 10:28 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "10 AM to 10:28 PM"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 19,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nonCw37cmc-1k9d1GyJbO-muJPOmMVKpOQq9Kzd_-lj7yDC2NQ0BEsThUHKMTMQnWwrws8XN9G-KIeRWXJ9sKL59PPBlNSmuW6dvvp5ZIClegj3_PVUVas0VPT3pCR4k4XdOcg=w408-h306-k-no"
+  },
+  {
+    "title": "Y’s Men’s Club of Lagos",
+    "price": null,
+    "categoryName": "Club",
+    "address": "77 Awolowo Rd, Ikoyi, Lagos 106104, Lagos, Nigeria",
+    "neighborhood": "Ikoyi",
+    "street": "77 Awolowo Rd",
+    "city": "Lagos",
+    "state": "Lagos",
+    "phone": "+234 906 491 7972",
+    "phoneUnformatted": "+2349064917972",
+    "location": {
+      "lat": 6.4426827,
+      "lng": 3.4194722
+    },
+    "totalScore": 4.1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJkYWVNCuLOxARxibc0ZUXRRU",
+    "reviewsCount": 21,
+    "imagesCount": 167,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 20,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nryQCXWi0E7Z9X21rOyWTjoS0SvPXJe5jm_QEeA4dnnWW0xxcD56t7RljNn9VJK2Wq3wvpbWe4asNaRFScnBNVTrBWHhXLeuT00lFZ45LCpW4tCNC2KhU_nmzHeA0JRNFL8w-eO=w426-h240-k-no"
+  },
+  {
+    "title": "Eket Sports Club",
+    "price": null,
+    "categoryName": "Lodging",
+    "address": "105, Liverpool Road, Eket, Nigeria",
+    "neighborhood": null,
+    "street": "105, Liverpool Road",
+    "city": "Eket",
+    "state": "Akwa Ibom",
+    "phone": "+234 810 186 8043",
+    "phoneUnformatted": "+2348101868043",
+    "location": {
+      "lat": 4.6453211,
+      "lng": 7.9213156
+    },
+    "totalScore": 3.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJBeUY2APdZxARj5tvvfhw8wY",
+    "reviewsCount": 47,
+    "imagesCount": 1,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 1,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=MCrLs47JAhfNNmfT7982Nw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=336.09756&pitch=0&thumbfov=100"
+  },
+  {
+    "title": "Nze Sunny Ogbu Memorial Basketball Concept",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "Nze Sunny Ogbu Memorial Basketball Concept, Umuzo Isinkpa, Isiala Ihie Autonomous Community, Ugwunagbo LGA, Asia Amanhie, Nigeria",
+    "neighborhood": null,
+    "street": "Nze Sunny Ogbu Memorial Basketball Concept, Umuzo Isinkpa, Isiala Ihie Autonomous Community, Ugwunagbo LGA",
+    "city": "Asia Amanhie",
+    "state": "Abia",
+    "phone": "+234 703 219 3832",
+    "phoneUnformatted": "+2347032193832",
+    "location": {
+      "lat": 5.0254158,
+      "lng": 7.3250495
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJjfVlOCqdQhARIeIPjneLzLo",
+    "reviewsCount": 3,
+    "imagesCount": null,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6:30 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6:30 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6:30 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6:30 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6:30 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "6:30 AM to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "6:30 AM to 6 PM"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 5
+  },
+  {
+    "title": "Basket Ball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "2WRF+XMV, University Of Uyo Town Campus, Sampson Udo Dr, Uyo, Nigeria",
+    "neighborhood": null,
+    "street": "2WRF+XMV, University Of Uyo Town Campus, Sampson Udo Dr",
+    "city": "Uyo",
+    "state": "Akwa Ibom",
+    "website": "http://uniuyo.edu.ng/",
+    "location": {
+      "lat": 5.0424796,
+      "lng": 7.9241728
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJob4dKbBXXRARvCViZS5Z42s",
+    "reviewsCount": 5,
+    "imagesCount": 3,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 7,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrXR0FhP5G83z0WPavqdawNKRfHBuNvytwJCI1Oaz7YPoq-IKteaeQnN2c5dfZOko8axb_7DVIY3Y_3iULI9wQUcdGSMRWVJCG0CG62C8hU8niZjr-fbm0lMlqdX4dCWJ3vKkKCyg=w408-h544-k-no"
+  },
+  {
+    "title": "JV Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "7 ilorin RA1 Bonny Bonny, island, Finima 503101, Rivers, Nigeria",
+    "neighborhood": "island",
+    "street": "7 ilorin RA1 Bonny Bonny",
+    "city": "Finima",
+    "state": "Rivers",
+    "location": {
+      "lat": 4.3921909,
+      "lng": 7.1821645
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJa7q_KQBXaBARcsJ2yE9MMss",
+    "reviewsCount": 2,
+    "imagesCount": 2,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "4 to 8 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "4 to 8 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "4 to 8 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "4 to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "4 to 8 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "4 to 8 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "4 to 8 PM"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 9,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqI9t8xyDWSZUtkg3qUmCC0ZPyiXodv2-pHguJI7HMP2S8uevdLZuZ4ssVMO8XKzhqPHQ98ksuKmQ2LNGGbnzhDmiLIDmgJCvuKJq5i8uwBTttcDixVHHaorutRFU0tdT_yiPGIQw=w408-h306-k-no"
+  },
+  {
+    "title": "Notore Garden Estate Onne",
+    "price": null,
+    "categoryName": "Corporate office",
+    "address": "A232, Onne 501101, Rivers, Nigeria",
+    "neighborhood": null,
+    "street": "A232",
+    "city": "Onne",
+    "state": "Rivers",
+    "website": "http://dansowieandsonsresources.wordpress.com/",
+    "location": {
+      "lat": 4.737168,
+      "lng": 7.1408092
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJDRh_A1Q0aBARaFrsXD2KIeY",
+    "reviewsCount": 296,
+    "imagesCount": 404,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 22,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npAd_8a2kpvh8PuYx-Cs5xucAHtXs98Pa89N0a_LNALG6B_eeFLeSjxAcQLNI5yZQftBhHYk8G3s6tgjBG6vL5YN1mxhMJLDUlzD2d7qFe84FMJrtT9g_tItSqFfBjK7i6YhovQ=w408-h306-k-no"
+  },
+  {
+    "title": "Prodeco Onne",
+    "price": null,
+    "categoryName": "Hotel",
+    "address": "P595+M27, Federal Ocean Terminal, Onne 501101, Rivers, Nigeria",
+    "neighborhood": null,
+    "street": "P595+M27, Federal Ocean Terminal",
+    "city": "Onne",
+    "state": "Rivers",
+    "location": {
+      "lat": 4.7191645,
+      "lng": 7.1575551
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ-_Xaf8c1aBAR4_KG7XTbHYQ",
+    "reviewsCount": 419,
+    "imagesCount": 201,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 23,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noketeSZBagvvcjtJDTcnv_UPQXBPvthO-gw8Sj9iLesyh5IRGJySXjOJImWCiFH5i9xwDns15idCnYbacY4IWxMZMM0epy7imKqPgYYG4LCW7yVqHzuCgTkFeTzaIPjyHVkyozqg=w408-h306-k-no"
+  },
+  {
+    "title": "Baskeball Court, BUK Kano",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "XFMJ+794, Kofar Dukayuwa, Kano 700282, Kano, Nigeria",
+    "neighborhood": "Kofar Dukayuwa",
+    "street": "XFMJ+794",
+    "city": "Kano",
+    "state": "Kano",
+    "location": {
+      "lat": 11.9831412,
+      "lng": 8.4809377
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ24wrKRR_rhERlGICCMKljhk",
+    "reviewsCount": 1,
+    "imagesCount": 1,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 14,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=7P_zekWJrWQ2UCqyAR3bOw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=9.27243&pitch=0&thumbfov=100"
+  },
+  {
+    "title": "FIAT Basketball Court",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "WHH3+482, Naibawa, Kano 700231, Kano, Nigeria",
+    "neighborhood": "Naibawa",
+    "street": "WHH3+482",
+    "city": "Kano",
+    "state": "Kano",
+    "location": {
+      "lat": 11.9277588,
+      "lng": 8.5532809
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJM9uZUJArrBEREnKdonj9VzI",
+    "reviewsCount": 2,
+    "imagesCount": 1,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 17,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=Eb-9PmLq81BlTYrpuPCtJA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=135.3096&pitch=0&thumbfov=100"
+  },
+  {
+    "title": "FCE KANO BASKETBALL COURT",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "XFMM+HVP, Kofar Kabuga, Kano 700282, Kano, Nigeria",
+    "neighborhood": "Kofar Kabuga",
+    "street": "XFMM+HVP",
+    "city": "Kano",
+    "state": "Kano",
+    "website": "http://naphersdfcekano.wordpress.com/",
+    "phone": "+234 806 339 1234",
+    "phoneUnformatted": "+2348063391234",
+    "location": {
+      "lat": 11.9839711,
+      "lng": 8.4847054
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJs5jnCdmBrhER4ZpOnldwopo",
+    "reviewsCount": 10,
+    "imagesCount": 20,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 18,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqtFjKAglFyvMfmLCkKemSvxuB1J-ocSJbates5kYynCkiWWk-DrhHVN9ax3YeAs4KU9EfJxkPueyH8JWHEqvjQTqrIz-LU_ZKHC1cs82-54iXXT9zMaLddOSxdTylCqdUK9LHW4Q=w408-h544-k-no"
+  },
+  {
+    "title": "Basketball Court",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "F888+Q87 Basketball court, Festac extension, Mile2 102102, Lagos, Nigeria",
+    "neighborhood": "Festac extension",
+    "street": "F888+Q87 Basketball court",
+    "city": "Mile2",
+    "state": "Lagos",
+    "location": {
+      "lat": 6.4669218,
+      "lng": 3.3158102
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJJZtBi7CJOxARuWNXE8vDTes",
+    "reviewsCount": 15,
+    "imagesCount": 1,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 19,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=dJXaCmhPb7JiISk21CSTCw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=56.850216&pitch=0&thumbfov=100"
+  },
+  {
+    "title": "North Campus Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "CVVH+FX7, Ibadan 200116, Oyo, Nigeria",
+    "neighborhood": null,
+    "street": "CVVH+FX7",
+    "city": "Ibadan",
+    "state": "Oyo",
+    "location": {
+      "lat": 7.4436535,
+      "lng": 3.879936
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJo1wW7-nyORARc5FIUxpOPwY",
+    "reviewsCount": 13,
+    "imagesCount": 1,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 2,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=fLuES4R4ahXG4GyGZC7LZQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=20.114878&pitch=0&thumbfov=100"
+  },
+  {
+    "title": "Basketball court",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "79 Adeyemi Kolade Street, Ibadan 200285, Oyo, Nigeria",
+    "neighborhood": null,
+    "street": "79 Adeyemi Kolade Street",
+    "city": "Ibadan",
+    "state": "Oyo",
+    "location": {
+      "lat": 7.4159334,
+      "lng": 3.924964
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ7cFz5taTORARM4MWZpm5g3I",
+    "reviewsCount": 5,
+    "imagesCount": 2,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 3,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=VeN0ro_eyCzg_rrb4meLsg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=17.389439&pitch=0&thumbfov=100"
+  },
+  {
+    "title": "Lead City University Sports Complex",
+    "price": null,
+    "categoryName": "Sports complex",
+    "address": "Expressway, Lagos, Ibadan 110115, Oyo, Nigeria",
+    "neighborhood": "Lagos",
+    "street": "Expressway",
+    "city": "Ibadan",
+    "state": "Oyo",
+    "location": {
+      "lat": 7.3274669,
+      "lng": 3.8797255
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJU-Wpc3GOORAR9Q5uf_pwSBM",
+    "reviewsCount": 757,
+    "imagesCount": 202,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 8 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 4,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npECQAlLNy9cwFminWRMzeWMpsDevc-a55gWa9N0p3L9I7SIBCBG5gU7CfzedrI7GMNL_kea4A4BDxjrbwOWJHtGuc7Tq3BBzmv7OKpa78UlRazzxrB9evcFbk-g2gGFAP93qO1fg=w421-h240-k-no"
+  },
+  {
+    "title": "Awolowo Stadium Sports complex",
+    "price": null,
+    "categoryName": "Stadium",
+    "address": "CVMQ+WWX, Oduduwa Road, Ibadan 200132, Oyo, Nigeria",
+    "neighborhood": null,
+    "street": "CVMQ+WWX, Oduduwa Road",
+    "city": "Ibadan",
+    "state": "Oyo",
+    "location": {
+      "lat": 7.4347517,
+      "lng": 3.8897502
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ0bhIdbnyORARUecRd2DaLTU",
+    "reviewsCount": 52,
+    "imagesCount": 24,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 5,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nozD8q3fVgXAJSaiit4oGsmpjqcjzxgGFlZ9GB1-1IDvEtyW9DQ2gjr_8dHH3-jnzXIsYq4QuafDt0oz1Laf-AFgONBFhOzC2tc2hMw0-1W0fRuQJlhAP1Ph_nxtTm-c4VE8kKGGA=w408-h244-k-no"
+  },
+  {
+    "title": "KIC Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "GWR2+866, Moniya Rd, Moniya 200136, Oyo, Nigeria",
+    "neighborhood": null,
+    "street": "GWR2+866, Moniya Rd",
+    "city": "Moniya",
+    "state": "Oyo",
+    "location": {
+      "lat": 7.5407881,
+      "lng": 3.9005029
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJda3GcO3xORAROHANqmJFy34",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 6,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npbstcgNDcifnXVaW8DLSs_FqFaVU1CpsNa7EsNdhqhcm9peMn_nWe_k18WV1vpTtUf3qdX-SgucssJEkY-WqmueT5C2D4eztXoSTpVN5Z2AG_HyKnVF71BNymWPT2VCGE8Z8SE=w533-h240-k-no"
+  },
+  {
+    "title": "ISI Basketball Court",
+    "price": null,
+    "categoryName": "High school",
+    "address": "CVMW+RWH, Barth Road, Ibadan 200132, Oyo, Nigeria",
+    "neighborhood": null,
+    "street": "CVMW+RWH, Barth Road",
+    "city": "Ibadan",
+    "state": "Oyo",
+    "location": {
+      "lat": 7.4345635,
+      "lng": 3.8973492
+    },
+    "totalScore": 3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ2y13q-PzORARicCemD4gqZw",
+    "reviewsCount": 1,
+    "imagesCount": 1,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 7,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=m-fY3qGVJy4WaWWekb_qgw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=153.82002&pitch=0&thumbfov=100"
+  },
+  {
+    "title": "J.M. Inienger Sports Complex",
+    "price": null,
+    "categoryName": "Sports complex",
+    "address": "FW8H+XRR, Adekunle Fajuyi Cantonment, Ojoo, Alaka, Nigeria",
+    "neighborhood": null,
+    "street": "FW8H+XRR, Adekunle Fajuyi Cantonment, Ojoo",
+    "city": "Alaka",
+    "state": "Oyo",
+    "phone": "+234 912 108 8736",
+    "phoneUnformatted": "+2349121088736",
+    "location": {
+      "lat": 7.4674879,
+      "lng": 3.9295049
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJW3rKCKHtORARbsVY32dpOhk",
+    "reviewsCount": 110,
+    "imagesCount": 61,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 8,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nowF0JtuMic3wvvrjX4ySujaWzm7IlLPDQdm7vBCT1mC88h-vwWH6V5mhW_iz0Tbbo32kYfaLLleNraOgX3XUpd_z4OxLQWmWDxUswF_9hO6EzK8FsHrUEnqzbmwwnh7UKg0kyc9Q=w408-h861-k-no"
+  },
+  {
+    "title": "Basketball Court, Mellanby Hall",
+    "price": null,
+    "categoryName": "Playground",
+    "address": "CVWX+5P8, Mellanby Hall Road, Ibadan 200132, Oyo, Nigeria",
+    "neighborhood": null,
+    "street": "CVWX+5P8, Mellanby Hall Road",
+    "city": "Ibadan",
+    "state": "Oyo",
+    "location": {
+      "lat": 7.4454241,
+      "lng": 3.8993432
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJAY4D92bzORARr0QNly-cIbo",
+    "reviewsCount": 0,
+    "imagesCount": 4,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 9,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nq4Ew2V4DHIJfi9hQ-K-HNMWUZDkmkksthjxXVfkROsJMQ9kfoLxJqKxLOIrUwZVBJ_a6R0KArTYnDgaz0nK21FIsVn2xILR3-_EPIM4uobKt5mNVGG9rzE92ZCGwUQCbHTJ7o4=w408-h725-k-no"
+  },
+  {
+    "title": "PIONEER SPORTS AND LEISURE CLUB",
+    "price": null,
+    "categoryName": "Sports club",
+    "address": "12 Akintola Maja Street, opposite Bayse One place, Akinola, Jericho, Ibadan 200284, Oyo, Nigeria",
+    "neighborhood": "Jericho",
+    "street": "12 Akintola Maja Street, opposite Bayse One place, Akinola",
+    "city": "Ibadan",
+    "state": "Oyo",
+    "phone": "+234 706 514 3409",
+    "phoneUnformatted": "+2347065143409",
+    "location": {
+      "lat": 7.3966522,
+      "lng": 3.8677918
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJjetj4I2NORARmsTBn1OYZ_8",
+    "reviewsCount": 136,
+    "imagesCount": 82,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "7 AM to 10 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "7 AM to 10 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "7 AM to 10 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "7 AM to 10 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "7 AM to 10 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 10 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "7 AM to 10 PM"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 10,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noVyzte3T6pqGeOFbVtABHLVB2TT3LPKN1-Vwnt4WlxNNcHt4CxDhTbr5lbM5RTkpkKNC4pjN4essC-5Z8eTB6cQ5afjA3bAsdZ7zoT89QRv1Tc4rNXT_2UqtJiJylOfYwR8cc=w408-h270-k-no"
+  },
+  {
+    "title": "ABH Volleyball Court",
+    "price": null,
+    "categoryName": "Volleyball court",
+    "address": "Agodi, Ibadan 200285, Oyo, Nigeria",
+    "neighborhood": "Agodi",
+    "street": null,
+    "city": "Ibadan",
+    "state": "Oyo",
+    "location": {
+      "lat": 7.4036123,
+      "lng": 3.9049261
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJH6Q-P1-NORARY81CarlNWeE",
+    "reviewsCount": 18,
+    "imagesCount": 5,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "4 to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Thursday",
+        "hours": "4 to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 1 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 11,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nq4nw_b4Da_ZqN7-zkLIaLfXGe8Pvl5cmEmL1C0NEgvZtimeb9BcPMboYtzTx8qzQoGLq-KIiwzKZZm7P7Km5aWPNtA8feZAtlM3V__pEEp9onFiN50ccbcaSsMUjBYO9ddQyiq=w408-h544-k-no"
+  },
+  {
+    "title": "Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "CVWV+FXV, Ibadan 200132, Oyo, Nigeria",
+    "neighborhood": null,
+    "street": "CVWV+FXV",
+    "city": "Ibadan",
+    "state": "Oyo",
+    "location": {
+      "lat": 7.4462364,
+      "lng": 3.8949272
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJVVUFbZfyORAR_7QTGhDsGxo",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 12,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=W15LCqQJaZrt9NwyVxrH2g&cb_client=search.gws-prod.gps&w=408&h=240&yaw=316.49982&pitch=0&thumbfov=100"
+  },
+  {
+    "title": "Awo Stadium",
+    "price": null,
+    "categoryName": "Stadium",
+    "address": "CVMQ+WWM, Barth Road, Ibadan 200132, Oyo, Nigeria",
+    "neighborhood": null,
+    "street": "CVMQ+WWM, Barth Road",
+    "city": "Ibadan",
+    "state": "Oyo",
+    "location": {
+      "lat": 7.4348322,
+      "lng": 3.8897819
+    },
+    "totalScore": 4.1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ0dKUGerzORAR8BFTBTdfeJ4",
+    "reviewsCount": 24,
+    "imagesCount": 23,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 13,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqJVCI9tUN1o_YukOdxvhm9jCvh4pcD0QeDBSluXQPKp7TQIKUb6vrqchThGYCzoJKV_Ky7ddF3jrLJFA9mWyidh9Ph3FrznpybBqK_eYfcwbl6SQpJjC2BGGPyiqIThxl0OTRt=w426-h240-k-no"
+  },
+  {
+    "title": "IITA Forest Center",
+    "price": null,
+    "categoryName": "Park",
+    "address": "Unnamed Road, Moniya 200136, Oyo, Nigeria",
+    "neighborhood": null,
+    "street": "Unnamed Road",
+    "city": "Moniya",
+    "state": "Oyo",
+    "website": "http://forestcenter.iita.org/",
+    "phone": "+234 815 953 9520",
+    "phoneUnformatted": "+2348159539520",
+    "location": {
+      "lat": 7.502234,
+      "lng": 3.9097077
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJe_4COqjtORARGQ1PkkTFLd4",
+    "reviewsCount": 71,
+    "imagesCount": 49,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 4:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 4:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 4:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 4:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 4:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 14,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqElfJfv1q-EgYGLjrLmc0ve9CK314n6VJAKp7EUkeEMTJlNux5iFiNaDsKWmCF87ye4R9F8dkblYeCODONn4Qss0X6ZVuvIX78rvNetw1lDP9Zfcb_FCdTqWm4EQv08eUSY7M=w408-h822-k-no"
+  },
+  {
+    "title": "Lead City University, Ibadan",
+    "price": null,
+    "categoryName": "University",
+    "address": "8VGG+PJ8 Toll-Gate Area, Off Oba Otudeko Ave, Ibadan 200255, Oyo, Nigeria",
+    "neighborhood": null,
+    "street": "8VGG+PJ8 Toll-Gate Area, Off Oba Otudeko Ave",
+    "city": "Ibadan",
+    "state": "Oyo",
+    "website": "http://www.lcu.edu.ng/",
+    "phone": "+234 815 331 8708",
+    "phoneUnformatted": "+2348153318708",
+    "location": {
+      "lat": 7.3264707,
+      "lng": 3.8765109
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJNd298nqOORARwsMAHVrTHMU",
+    "reviewsCount": 859,
+    "imagesCount": 356,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 4:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 4:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 4:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 4:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 4:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 15,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOkcneKzObOuU0Sm6GC38GiBdE5eci1q3h7WAAJ=w426-h240-k-no"
+  },
+  {
+    "title": "Tedder Hall, UI.",
+    "price": null,
+    "categoryName": "Hostel",
+    "address": "TEDDER HALL, University Of Ibadan Main Road, Ibadan, Oyo, Nigeria",
+    "neighborhood": null,
+    "street": "TEDDER HALL, University Of Ibadan Main Road",
+    "city": "Ibadan",
+    "state": "Oyo",
+    "website": "http://www.ui.edu.ng/",
+    "phone": "+234 807 107 4514",
+    "phoneUnformatted": "+2348071074514",
+    "location": {
+      "lat": 7.4456008,
+      "lng": 3.8989721
+    },
+    "totalScore": 4.1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJfVnS_5jyORARB2i1-UYGGQQ",
+    "reviewsCount": 307,
+    "imagesCount": 268,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 16,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrtliUVVjpMBqIpj7sKcOAWC4wiDrZPwhw5aTMp_uKfhPUDnsWUzodb1TUcrMZeSV3AflMdkNhV_3XV3d6nPSBY4bp_xxKrwAxPon1P0SyFhZw51_0K2B8yMm58q37ncRvgdkD6=w408-h306-k-no"
+  },
+  {
+    "title": "Obafemi Awolowo Hall",
+    "price": null,
+    "categoryName": "Student housing center",
+    "address": "CVPR+6R5, Ibadan 200132, Oyo, Nigeria",
+    "neighborhood": null,
+    "street": "CVPR+6R5",
+    "city": "Ibadan",
+    "state": "Oyo",
+    "website": "https://www.uiawohall.com/#about",
+    "location": {
+      "lat": 7.4355075,
+      "lng": 3.8921021
+    },
+    "totalScore": 3.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJW5iux7vyORARR8eUjxJYRi4",
+    "reviewsCount": 443,
+    "imagesCount": 77,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 17,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqV1aHGK68_AozDN8nohuL6iM-CeBBe3kVaxjF3V6OMHsqIWor3d8HN52H646nprskHRg5_qSfb4lMYjlu4742BIfpyN6dzuo8YAQksxqq-1ZEkU3E2M4IGchVy-8_TXvdT6hQC=w408-h306-k-no"
+  },
+  {
+    "title": "Ilaji Resorts, Hotels in Ibadan, Oyo State, Nigeria",
+    "price": "$17",
+    "categoryName": "Sports club",
+    "address": "Ilaji Hotels and Sports Resort, 1, Oloyo Village Off Ona-Ara Local Government Secretariat, Akanran, Ibadan 112106, Oyo, Nigeria",
+    "neighborhood": null,
+    "street": "Ilaji Hotels and Sports Resort, 1, Oloyo Village Off Ona-Ara Local Government Secretariat, Akanran",
+    "city": "Ibadan",
+    "state": "Oyo",
+    "website": "https://ilajiresort.ng/",
+    "phone": "+234 812 266 1511",
+    "phoneUnformatted": "+2348122661511",
+    "location": {
+      "lat": 7.2669472,
+      "lng": 4.022056
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJJdDfrhaZORARDO7FCr67nO8",
+    "reviewsCount": 1934,
+    "imagesCount": 4548,
+    "checkInDate": "2025-05-14",
+    "checkOutDate": "2025-05-15",
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 18,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipMYvzzTokf8TrO3LMRPmnkJApNSk7bBjKmeJe2-=w408-h306-k-no"
+  },
+  {
+    "title": "KSU Basketball Court",
+    "price": null,
+    "categoryName": "School",
+    "address": "F5MJ+WCC, Anyigba 272102, Kogi, Nigeria",
+    "neighborhood": null,
+    "street": "F5MJ+WCC",
+    "city": "Anyigba",
+    "state": "Kogi",
+    "location": {
+      "lat": 7.4848115,
+      "lng": 7.1810145
+    },
+    "totalScore": 3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJr0HsOnFxRRARzFwPfR7CZiQ",
+    "reviewsCount": 1,
+    "imagesCount": 4,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 1,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npURXDaOOoBA7DwqnlOpwMe1MvtPyVxoM4w3np3vBrg97HtiF-dGno4DZnTpudU-PWNSGmw1NSLtSZh_gVIWcwORPZstklJUHQMKUKMGYsNTesLPgEW_nlZi_izAvAcSs0Zo3Bq=w408-h306-k-no"
+  },
+  {
+    "title": "Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "Road E9, Ajaokuta, Nigeria",
+    "neighborhood": null,
+    "street": "Road E9",
+    "city": "Ajaokuta",
+    "state": "Kogi",
+    "location": {
+      "lat": 7.5581112,
+      "lng": 6.6414858
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJBZwB2_vvRRARO2v2XgEQgYI",
+    "reviewsCount": 4,
+    "imagesCount": 2,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 6,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqxGVIudfNeebMWKLULT02yuhme6noh-bhGNKbH5NdZhU29kWb9AJqz1gMzPY3BB1V43Bd3mVUCMgS9K6FDhxHJYMztJeG8NWeZ3QgbGcnIKhoKM0gPXwV7Mb5O0Lq-G6cUz5KL5A=w408-h544-k-no"
+  },
+  {
+    "title": "Basketball court federal University lokoja",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "QPVJ+234, Lokoja 260101, Kogi, Nigeria",
+    "neighborhood": null,
+    "street": "QPVJ+234",
+    "city": "Lokoja",
+    "state": "Kogi",
+    "location": {
+      "lat": 7.7927145,
+      "lng": 6.7303088
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ1TsdP_9fTxARjRRobsssLM8",
+    "reviewsCount": 1,
+    "imagesCount": 1,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 12,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrL1gVywY3hrhPCeln5eziUUn-O5MVRqVQDI7Ox1f5KKgi2QdLsVNq5aK7BiZSWz6JAcNYObbZL6_pQGcRoaTk60IBm-sg200vOzyfSszik9Vl3M9OPeETEr4CGqokIpaU_qiM7=w408-h544-k-no"
+  },
+  {
+    "title": "UNN Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "University of Nigeria, UNN Nsukka, Ihe Nsukka, Nsukka 410105, Enugu, Nigeria",
+    "neighborhood": "Ihe Nsukka",
+    "street": "University of Nigeria, UNN Nsukka",
+    "city": "Nsukka",
+    "state": "Enugu",
+    "location": {
+      "lat": 6.8682021,
+      "lng": 7.4101442
+    },
+    "totalScore": 4.1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ-wyWR9jnRBARVCsyoLkkdUo",
+    "reviewsCount": 7,
+    "imagesCount": 15,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 12 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 6:30 PM"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 17,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOyuhZITCLPcQYavJ7ZlvD3X9NNGoxpf7xvLLEv=w408-h408-k-no"
+  },
+  {
+    "title": "luth basket ball court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "Idi Oro, Lagos 102215, Lagos, Nigeria",
+    "neighborhood": "Idi Oro",
+    "street": null,
+    "city": "Lagos",
+    "state": "Lagos",
+    "phone": "+234 806 227 5385",
+    "phoneUnformatted": "+2348062275385",
+    "location": {
+      "lat": 6.5177041,
+      "lng": 3.3545959
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJz5-IyDaMOxARusEG-VU-WFM",
+    "reviewsCount": 38,
+    "imagesCount": 10,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9 AM to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "9 AM to 7 PM"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 20,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nou1L9heGwkQ5d_ETpdFEYUEsBrZZHTe9XuCpqycm3sMOoHOu-q0t4huzM8fhCsnUFZCg9WJ8G13ZDAQOyi-vUxBGhvUBcfVoIGsDDndMpb1fFEuUZBOCkNAZWnmYHdzyzCZd_6aA=w408-h305-k-no"
+  },
+  {
+    "title": "Suleja Bulldogs basketball court",
+    "price": null,
+    "categoryName": "Sports club",
+    "address": "1st gate Field base, Nigeria",
+    "neighborhood": "Kakuri",
+    "street": "1st gate Field base",
+    "city": "Tudun Wada",
+    "state": "Kaduna",
+    "phone": "+234 701 617 1128",
+    "phoneUnformatted": "+2347016171128",
+    "location": {
+      "lat": 10.5082117,
+      "lng": 7.4268966
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJmZrl6eY1TRARJLRLzHaL6pk",
+    "reviewsCount": 3,
+    "imagesCount": 90,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 10,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npGfNO4JE2PPNQ2AVs5xZJ4-7HDXiRrASP6vbsZ6VUPlqyC9TlhG_ArjNGWy9JTSIPJ-_upS7AxIhkag01BXrx7a96anHJHIBs3FfFk6idhwEpLzh6RGSDNjjbfX0OKnVYryXL1GE2_Jnbj=w408-h326-k-no"
+  },
+  {
+    "title": "MPAC Sports Nigeria",
+    "price": null,
+    "categoryName": "Basketball club",
+    "address": "2nd Floor, Nemy building, 93 Allen Ave, beside Glo, Allen, Ikeja 101233, Lagos, Nigeria",
+    "neighborhood": "Allen",
+    "street": "2nd Floor, Nemy building, 93 Allen Ave, beside Glo",
+    "city": "Ikeja",
+    "state": "Lagos",
+    "phone": "+234 906 000 7963",
+    "phoneUnformatted": "+2349060007963",
+    "location": {
+      "lat": 6.6047133,
+      "lng": 3.3501997
+    },
+    "totalScore": 4.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJlw8wguyTOxARFAz_lO6FFrw",
+    "reviewsCount": 10,
+    "imagesCount": 80,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "9 AM to 2 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 19,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPfW-_Jt9VLh5vlzcgEYkmrfo1OHSllddHwWqsn=w408-h272-k-no"
+  },
+  {
+    "title": "Basketball Court",
+    "price": null,
+    "categoryName": "Adult DVD store",
+    "address": "7XVP+HQ8, Oyo 932110, Plateau, Nigeria",
+    "neighborhood": null,
+    "street": "7XVP+HQ8",
+    "city": "Oyo",
+    "state": "Plateau",
+    "location": {
+      "lat": 9.2939207,
+      "lng": 8.9869391
+    },
+    "totalScore": 3.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJr0Vgf2HvUxARyXGBXEPtCy4",
+    "reviewsCount": 2,
+    "imagesCount": null,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "12 to 4:30 AM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Friday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 1
+  },
+  {
+    "title": "Joe Garba basketball court",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "WV2M+6GR, Jos 930105, Plateau, Nigeria",
+    "neighborhood": null,
+    "street": "WV2M+6GR",
+    "city": "Jos",
+    "state": "Plateau",
+    "location": {
+      "lat": 9.9006076,
+      "lng": 8.8837734
+    },
+    "totalScore": 3.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJr6lzJaFzUxARwVNfWiQMPRw",
+    "reviewsCount": 51,
+    "imagesCount": 12,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "4 to 7 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "4 to 7 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "4 to 7 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "4 to 7 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "4 to 7 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "4 to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 to 11 AM"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 16,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npqwsAnjEQFJqbP4NPjbXcVoy6vhVLlrZAjr55BozN7cHvQcAZJ0Sm7JkSmskeVlg7xbJ0eBTs-wNobo1Y9dHTbgJC9NzTN5lZkBHIRTO3yQf_8X7pEh6fpfg45tT46Rz-nlJsW_w=w427-h240-k-no"
+  },
+  {
+    "title": "Spartans basketball court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "HWMC+J3, Giwano 642104, Adamawa, Nigeria",
+    "neighborhood": null,
+    "street": "HWMC+J3",
+    "city": "Giwano",
+    "state": "Adamawa",
+    "location": {
+      "lat": 9.5841058,
+      "lng": 11.9201318
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJeQ5J4IyF_hARoEuAZWVAT9w",
+    "reviewsCount": 2,
+    "imagesCount": null,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 15
+  },
+  {
+    "title": "Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "CH88+PM4, Garkida 650109, Adamawa, Nigeria",
+    "neighborhood": null,
+    "street": "CH88+PM4",
+    "city": "Garkida",
+    "state": "Adamawa",
+    "location": {
+      "lat": 10.4167677,
+      "lng": 12.5666971
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJGUVRekN3AhERI0Ccse_RABo",
+    "reviewsCount": 2,
+    "imagesCount": 1,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 16,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqDEDq_u-23Eg70k4iaFyjRZN43WZ7KICTJQCfU9NqYSSNL1J-xd3z5-Kf98g-HdmIBQT0hvgH331l3KFEf6ytH50xpZR7rzScPAkBAlYmRUeSRkOfFDb8UoqF7nHNsdIUAd_1H=w408-h544-k-no"
+  },
+  {
+    "title": "Unimaid Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "R623+4QH, Maiduguri 600104, Borno, Nigeria",
+    "neighborhood": null,
+    "street": "R623+4QH",
+    "city": "Maiduguri",
+    "state": "Borno",
+    "location": {
+      "lat": 11.8002038,
+      "lng": 13.2034729
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJQ8Nez-ihBBERICpjRIDOUAU",
+    "reviewsCount": 2,
+    "imagesCount": 3,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 19,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npHdReSf5rkop0C_3HaK2EZ1jSYye5cRUKI2gmsMZBsiQFWVjMjycfVIgoN9wCHes5KjyAviLdZM2kUe-tm4T-A0wSBG0hbike4Z8pP4NMXiS7X_QQNxmVRKMQ8plZpcV5WeXMTIg=w520-h240-k-no"
+  },
+  {
+    "title": "Veritas University Abuja",
+    "price": null,
+    "categoryName": "University",
+    "address": "Hostel M, Veritas University, Bwari 901101, Federal Capital Territory, Nigeria",
+    "neighborhood": null,
+    "street": "Hostel M, Veritas University",
+    "city": "Bwari",
+    "state": "Federal Capital Territory",
+    "website": "http://veritas.edu.ng/",
+    "phone": "+234 912 430 9846",
+    "phoneUnformatted": "+2349124309846",
+    "location": {
+      "lat": 9.2908889,
+      "lng": 7.4162771
+    },
+    "totalScore": 3.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJA9TVXTXdTRARivbHkBMch9o",
+    "reviewsCount": 537,
+    "imagesCount": 295,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 4,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nr7_F9Q_UeLcr8X29tfgbpgVtbljt8jZ1Z1huCM0jtLKDVRXgk50fL00bc_eRVzxn2osEOhxMr1unWQzLvpmwpIa3M48Udf6juscER_w_q-Z6nNtiCr-bV39u5_9GTGNvyYmiDmag=w408-h725-k-no"
+  },
+  {
+    "title": "GSS Suleja Basketball Court",
+    "price": null,
+    "categoryName": "Gym",
+    "address": "GSS, Suleja, 910101, Niger, Nigeria",
+    "neighborhood": "Suleja",
+    "street": "GSS",
+    "city": "Suleja",
+    "state": "Niger",
+    "phone": "+234 705 448 8133",
+    "phoneUnformatted": "+2347054488133",
+    "location": {
+      "lat": 9.1691348,
+      "lng": 7.183454
+    },
+    "totalScore": 3.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJUaRj74PWTRARdYeqY2KhiPI",
+    "reviewsCount": 27,
+    "imagesCount": 11,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "4 to 6:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "4 to 6:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "4 to 6:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "4 to 6:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "4 to 6:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "4 to 6:30 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "4 to 6:30 PM"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 10,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrnmlS4YE7u0A_C6YtVF1rdNLBLZ1_q6phfNraYzKD0rhk8kYsBWhJ7LVMwu0pWXXf1fjQBeHFaKzFggWsCVJTdUOhwXIP7LnNgPlmDzBcYM8on20n6pMSUZT06bQ9rjYFHxsY=w408-h790-k-no"
+  },
+  {
+    "title": "Estate Basketball Court",
+    "price": null,
+    "categoryName": "Sports club",
+    "address": "49CJ+PM3, Gwarinpa Estate, Kubwa 900108, Federal Capital Territory, Nigeria",
+    "neighborhood": "Gwarinpa Estate",
+    "street": "49CJ+PM3",
+    "city": "Kubwa",
+    "state": "Federal Capital Territory",
+    "phone": "+234 813 627 2111",
+    "phoneUnformatted": "+2348136272111",
+    "location": {
+      "lat": 9.1217625,
+      "lng": 7.3816719
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJa_TPQtvfTRARBey1pOgm5DA",
+    "reviewsCount": 0,
+    "imagesCount": 2,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 18,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=w1KMBHxQZS3MlMC5qBMn2w&cb_client=search.gws-prod.gps&w=408&h=240&yaw=345.30432&pitch=0&thumbfov=100"
+  },
+  {
+    "title": "Karu HillTop Basketball Club",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "2HC5+4GW, Karu, Yanyan 900101, Federal Capital Territory, Nigeria",
+    "neighborhood": "Karu",
+    "street": "2HC5+4GW",
+    "city": "Yanyan",
+    "state": "Federal Capital Territory",
+    "phone": "+234 803 821 3452",
+    "phoneUnformatted": "+2348038213452",
+    "location": {
+      "lat": 9.0203716,
+      "lng": 7.5588345
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJx30c4-kPThARrbXYvA1UH-c",
+    "reviewsCount": 35,
+    "imagesCount": 32,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "4 to 6:45 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "4 to 6:45 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "4 to 6:45 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "4 to 6:45 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "4 to 6:45 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "7 AM to 12 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 19,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noNEnKgsP22EZnl18-DQPseM5CP8pJv9VhjHrPImpYAuykQYUKDj8EOTcqB66qf9qaWwJu1CF53emKTuiP20O2YZckaZg__cfJ7IvFG_Er-0VmlsYuQSPzYTgqwk8qUgfR3ugYV=w408-h408-k-no"
+  },
+  {
+    "title": "Basketball Court",
+    "price": null,
+    "categoryName": "Baseball field",
+    "address": "2C43+VWW, Abuja 900108, Federal Capital Territory, Nigeria",
+    "neighborhood": null,
+    "street": "2C43+VWW",
+    "city": "Abuja",
+    "state": "Federal Capital Territory",
+    "location": {
+      "lat": 9.007235,
+      "lng": 7.4048354
+    },
+    "totalScore": 3.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJRcghiXJzThARmesS5WCUBS4",
+    "reviewsCount": 7,
+    "imagesCount": 1,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 20,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nopN_qzVC6xspu_q3mTwwY1D_RlC1FsuRugWxDcJ3GgBlXPETOeR04W6KOoIeVybqMdjtGfLJQNOnRFgzznBWToj02hxX9ekBV0ZHHI6kIqlrYLwz1UOe4pkodvbrv5IiPMTArn=w408-h544-k-no"
+  },
+  {
+    "title": "FUTO Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "Hostel A, 460115, Ihiagwa 460115, Imo, Nigeria",
+    "neighborhood": null,
+    "street": "Hostel A, 460115",
+    "city": "Ihiagwa",
+    "state": "Imo",
+    "location": {
+      "lat": 5.3849321,
+      "lng": 7.0001478
+    },
+    "totalScore": 3.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJu7dFwIVdQhARlYHpsZRqURk",
+    "reviewsCount": 6,
+    "imagesCount": 37,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 1,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npgmKzIbRftPq6gUtbzYX16K1B3oMCp25IC7ZMlCdCr0Vch_Z7ngB_QvKBDSnHyHJIxWHTJrqxNuoy1InAGV93NSqedAESMhLF715iB75SyNRq4ZezZigod3Kmz5rFwKyFrK3LYoAPxP-I=w408-h461-k-no"
+  },
+  {
+    "title": "Aba Sports Club",
+    "price": null,
+    "categoryName": "Sports complex",
+    "address": "1 Club Road, Aba, 450102, Abia, Nigeria",
+    "neighborhood": "Aba",
+    "street": "1 Club Road",
+    "city": "Aba",
+    "state": "Abia",
+    "phone": "+234 913 158 7935",
+    "phoneUnformatted": "+2349131587935",
+    "location": {
+      "lat": 5.1204103,
+      "lng": 7.3666697
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ91GvOEKZQhAR_K1TubwfpmI",
+    "reviewsCount": 464,
+    "imagesCount": 233,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "8 AM to 10 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "8 AM to 10 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "8 AM to 10 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "8 AM to 10 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "8 AM to 10 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "8 AM to 10 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "8 AM to 10 PM"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 3,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrjolooT9n1_r7f641c3_ksC-V0Z1kkzQJj7T-G2EVmwa3Dh3dm9pXY9lZ0tziP-_TD4Cws8vrOthkV1suIulhAoHa-iEWZn5zhxu_WMU8K4v3HTxok5-e_xRG1B15EUTnFHYGT=w408-h306-k-no"
+  },
+  {
+    "title": "Dan Anyiam Stadium Owerri",
+    "price": null,
+    "categoryName": "Stadium",
+    "address": "Off Wetheral Rd, Owerri 460281, Imo, Nigeria",
+    "neighborhood": null,
+    "street": "Off Wetheral Rd",
+    "city": "Owerri",
+    "state": "Imo",
+    "location": {
+      "lat": 5.4837177,
+      "lng": 7.0437954
+    },
+    "totalScore": 3.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJFTN6ra5ZQhARXgV9ccfObPc",
+    "reviewsCount": 1403,
+    "imagesCount": 739,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 4,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noflzX8QJaM8EJzuI9c7KxkHK6yMZgKwPaGs5SuofM9h6Zc6HttWWi63L1BGuZUSN3UIiMPWxiDgKhoPGQFulRPxKOwmMNveeD0BubO9rD1_II0ryt1lMyUEEO0KQdL4U4TS-4=w426-h240-k-no"
+  },
+  {
+    "title": "Owerri Sports Club",
+    "price": null,
+    "categoryName": "Sports complex",
+    "address": "F29C+6Q Behind Banboli Hotel, Concord Avenue, New Owerri, Owerri 460281, Imo, Nigeria",
+    "neighborhood": "New Owerri",
+    "street": "F29C+6Q Behind Banboli Hotel, Concord Avenue",
+    "city": "Owerri",
+    "state": "Imo",
+    "phone": "+234 803 886 2468",
+    "phoneUnformatted": "+2348038862468",
+    "location": {
+      "lat": 5.4706003,
+      "lng": 7.024347
+    },
+    "totalScore": 4.1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJh1uFSnJZQhARcE5MwI_T1_8",
+    "reviewsCount": 58,
+    "imagesCount": 13,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 5,
+    "imageUrl": "https://lh6.googleusercontent.com/MjUHX2ILAsqqEBFGqL6klc4p3H5Io0Frdq0BppOYN_ygVQBqbt518wxQCH9p8E9_0w=w426-h240-k-no"
+  },
+  {
+    "title": "Basketball court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "C4MJ+796, Ulakwo 460109, Imo, Nigeria",
+    "neighborhood": null,
+    "street": "C4MJ+796",
+    "city": "Ulakwo",
+    "state": "Imo",
+    "location": {
+      "lat": 5.4331718,
+      "lng": 7.130889
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJBy2RLxL1QhARZB8vco2z110",
+    "reviewsCount": 0,
+    "imagesCount": 5,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 6,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrgLzR8OTo8y7GAkXvB1YJt2cxnje-niBlZ7GIvewQ5b61DSrz_e8uAh_ZWQvvgraLXk5TYQxuGMMQcIfSk9kOYwKoCi004qdcge1SghJbwItuTtCULDaM4lWFrXepFBKvqVJfltjrTANL4=w408-h461-k-no"
+  },
+  {
+    "title": "Fedponek Stadium",
+    "price": null,
+    "categoryName": "Stadium",
+    "address": "C2PJ+9GW, Owerri 460114, Imo, Nigeria",
+    "neighborhood": null,
+    "street": "C2PJ+9GW",
+    "city": "Owerri",
+    "state": "Imo",
+    "location": {
+      "lat": 5.4359977,
+      "lng": 7.0313416
+    },
+    "totalScore": 3.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJMf-DJsteQhARlBbvnfGJ_Gw",
+    "reviewsCount": 165,
+    "imagesCount": 64,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 7,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nocVw-0_C4tDJh73yz7lkDOjHTaX_rAuGk31BGWnXCEgIIFkzw8S3vfw6ihRwf5gRAZMzN3wvDAKuCYGzIx19uVn3ZwE_F0bPa7CpRsvPHx0eEmzp8WzKADD50PkoHuKIk6j80aXg=w408-h544-k-no"
+  },
+  {
+    "title": "University of Uyo Mini Stadium",
+    "price": null,
+    "categoryName": "Stadium",
+    "address": "2WRF+9FW, Ikpa Rd, Uyo 520103, Akwa Ibom, Nigeria",
+    "neighborhood": null,
+    "street": "2WRF+9FW, Ikpa Rd",
+    "city": "Uyo",
+    "state": "Akwa Ibom",
+    "website": "http://uniuyo.edu.ng/",
+    "location": {
+      "lat": 5.0409774,
+      "lng": 7.9237083
+    },
+    "totalScore": 3.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJt9LKsrFXXRARNWCgw7Xcefc",
+    "reviewsCount": 339,
+    "imagesCount": 63,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 2,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4no2mS0PQFZ2IUSupberiT-1GfCNsfjScCEE75r0M_9yLEdUoV5EeQ5BohjVlkGBMS6Zv50gxmcsDR5gS_O6nJz6_YaP_f1FnwpokYfGbk4sXw-9G5YiTrEb5j9tVvoH2idCKOcEvg=w408-h816-k-no"
+  },
+  {
+    "title": "University of Uyo Town Campus",
+    "price": null,
+    "categoryName": "Public university",
+    "address": "Ikpa Rd, Uyo 520103, Akwa Ibom, Nigeria",
+    "neighborhood": null,
+    "street": "Ikpa Rd",
+    "city": "Uyo",
+    "state": "Akwa Ibom",
+    "website": "http://www.uniuyo.edu.ng/",
+    "phone": "+234 808 221 8325",
+    "phoneUnformatted": "+2348082218325",
+    "location": {
+      "lat": 5.0421046,
+      "lng": 7.9241021
+    },
+    "totalScore": 4.1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJSdcjfLJXXRAR4vP6Xlv4Kbc",
+    "reviewsCount": 1073,
+    "imagesCount": 369,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 3,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npsjk3gH7WexbkMqcL8Y4JlM6DPhESh14oQRYJLw8tIOt3CmsYSsEyvqhTspG9VkEs3OgYxOh08x2XK616GtDMoTBUo0B41znGcEseiojHkByyeQG8F-d21yelT2S-7blPMOuhD=w408-h306-k-no"
+  },
+  {
+    "title": "Basket Ball Court",
+    "price": null,
+    "categoryName": "Stadium",
+    "address": "X88G+MF6 Millers Taekwondo Academy, Naval Base, Calabar 540281, Cross River, Nigeria",
+    "neighborhood": "Naval Base",
+    "street": "X88G+MF6 Millers Taekwondo Academy",
+    "city": "Calabar",
+    "state": "Cross River",
+    "location": {
+      "lat": 4.9666699,
+      "lng": 8.3261283
+    },
+    "totalScore": 3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJcxYAOzKHZxARWB3z73uwGPw",
+    "reviewsCount": 2,
+    "imagesCount": 5,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 7,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nr4MF9OOiGN8fgdnorHxuZaz1EP-wbJkEJtvmQ0zk6Bakrqk0L1Yh4_6R86rLtrLPPZH_VQcYoggpez_m9Z1Karm8zs8WIY_i1FBN3MKVO6NHCfjPaTIRt6xIus5DzsvVOP_oIM=w408-h544-k-no"
+  },
+  {
+    "title": "University of Calabar, Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "X82W+7F4, Mary Slessor Ave, University of Calaba, Calabar 540281, Cross River, Nigeria",
+    "neighborhood": "University of Calaba",
+    "street": "X82W+7F4, Mary Slessor Ave",
+    "city": "Calabar",
+    "state": "Cross River",
+    "location": {
+      "lat": 4.9506475,
+      "lng": 8.3462043
+    },
+    "totalScore": 3.1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJBTIdKsyHZxAR06ZBHBM-Pis",
+    "reviewsCount": 8,
+    "imagesCount": 19,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 9,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqx_0qqzt_A6OFCt90MGJ05AitWhDkJZLGZqumCZ5eWlMu1iUPS5ZN78VPvpI3lQzoRcVJ0-7Ai4TcKSipBoYTWVXq-9JO2uwH4E_SThNr7QaCSECQHvjK8nZ9tppI2dFV54GbO=w408-h408-k-no"
+  },
+  {
+    "title": "Dakkada Skills Acquisition Centre",
+    "price": null,
+    "categoryName": "School",
+    "address": "Ibiono Southern 1 520111, Akwa Ibom, Nigeria",
+    "neighborhood": null,
+    "street": null,
+    "city": "Ibiono Southern 1",
+    "state": "Akwa Ibom",
+    "phone": "+234 703 688 4766",
+    "phoneUnformatted": "+2347036884766",
+    "location": {
+      "lat": 5.0766085,
+      "lng": 7.8599489
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ8dSFmBdUXRAR9nqmZJFTBGk",
+    "reviewsCount": 5,
+    "imagesCount": 26,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 6 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 13,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nprMK0oeKAVlKNyY63iRJ6tdfxV_wyv0-0zYW-NKcE_4RRnfif0p7L1TnX0UQP0G2ubPiCLTXHHR76FMVkrVo-tEK6tNOFEO3J7r975rp5tgxAIV5z_pdC-7OpsjwE9gxBGLMI=w408-h259-k-no"
+  },
+  {
+    "title": "Naks Hotel and Towers",
+    "price": "$30",
+    "categoryName": "Hotel",
+    "address": "Ndidem Usang Iso Rd, Atekong, Calabar 540281, Cross River, Nigeria",
+    "neighborhood": "Atekong",
+    "street": "Ndidem Usang Iso Rd",
+    "city": "Calabar",
+    "state": "Cross River",
+    "phone": "+234 912 995 4312",
+    "phoneUnformatted": "+2349129954312",
+    "location": {
+      "lat": 4.9816804,
+      "lng": 8.3426614
+    },
+    "totalScore": 3.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ6zxTFDqHZxARNqnhwmjvpT4",
+    "reviewsCount": 310,
+    "imagesCount": 127,
+    "checkInDate": "2025-08-17",
+    "checkOutDate": "2025-08-18",
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 15,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noYCVzJ-DCqo1opkZKBjYPokwK5nhQWb-88l3L-boY5irh_Zvfphob0muvzVtOFACD11Kph2U4BOjxNFzqL6pj7NuayXb1pqlggzYgFrVlfHtrSjFqQk862F1QIh648Bw41l-p01Q=w408-h544-k-no"
+  },
+  {
+    "title": "babcock university basketball court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "Babcock University ICT Unit, Joseph Vavrineck Rd, Ilishan-Remo 121103, Ogun State, Nigeria",
+    "neighborhood": null,
+    "street": "Babcock University ICT Unit, Joseph Vavrineck Rd",
+    "city": "Ilishan-Remo",
+    "state": "Ogun State",
+    "location": {
+      "lat": 6.8939615,
+      "lng": 3.7284793
+    },
+    "totalScore": 3.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ40hvzBDYOxARmuBg1pAJYu0",
+    "reviewsCount": 113,
+    "imagesCount": 19,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 1,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npnAjtPUkLVyaEngunOnGSk4GR2YSpYtzcdT2r3Gx4fye4HaxfjBZtzsY4RjB4zeAnneHEE2LgESvGhs4VzNBopDchrRTZhnSn1h9SGWdJvygrPFq4mOLSzrE3P9ysL8rnJNlBm=w408-h544-k-no"
+  },
+  {
+    "title": "Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "Sports Complex Rd, Ako-Onigbagbo/Gelete 120107, Ogun State, Nigeria",
+    "neighborhood": null,
+    "street": "Sports Complex Rd",
+    "city": "Ako-Onigbagbo/Gelete",
+    "state": "Ogun State",
+    "location": {
+      "lat": 6.9274553,
+      "lng": 3.8703314
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJJYkYsuB6ORARgdPpqfe9H7A",
+    "reviewsCount": 4,
+    "imagesCount": 1,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 2,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noV18_no2C20IpthfGVltJf7qEkVfFN0oXXwXOr7oFPMpYXlRjMXjkymN4b8oyc7nUebW81pqmRK2d6cIBLgzQgelWvsJhZk1FZXs5kOUhoNWafDccC6wzmfWlZei17ARe0e1TO_A=w408-h544-k-no"
+  },
+  {
+    "title": "BUHS Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "VPRC+M43 Babcock University Ilishan Remo, Ilishan-Remo 121103, Ogun State, Nigeria",
+    "neighborhood": null,
+    "street": "VPRC+M43 Babcock University Ilishan Remo",
+    "city": "Ilishan-Remo",
+    "state": "Ogun State",
+    "location": {
+      "lat": 6.8916469,
+      "lng": 3.7202866
+    },
+    "totalScore": 3.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJIQpTkFrZOxARheUtkOiJadA",
+    "reviewsCount": 3,
+    "imagesCount": null,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 3
+  },
+  {
+    "title": "Babcock University Stadium",
+    "price": null,
+    "categoryName": "Stadium",
+    "address": "VPVH+X29, Joseph Vavrineck Rd, Ilishan-Remo 121103, Ogun State, Nigeria",
+    "neighborhood": null,
+    "street": "VPVH+X29, Joseph Vavrineck Rd",
+    "city": "Ilishan-Remo",
+    "state": "Ogun State",
+    "location": {
+      "lat": 6.8949029,
+      "lng": 3.727604
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJVwYB6tXZOxARTMEL5LfgFA4",
+    "reviewsCount": 261,
+    "imagesCount": 45,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 4,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqtLfGqrnRtFc_Z05oRE5AOCf4LVCQIJAzPDzeXfuSqF9sSl0Fweq7NSc24fAzgsGP1GgjNbCVs9sgh59fvdqGsdugDcegbfBfUmO8mjb3znkFdSH8poKswJVOTXwIt4zh6sgjB=w426-h240-k-no"
+  },
+  {
+    "title": "Gateway City Gate Monument Park",
+    "price": null,
+    "categoryName": "Park",
+    "address": "VHQ9+XJ, Logbara 110113, Ogun State, Nigeria",
+    "neighborhood": null,
+    "street": "VHQ9+XJ",
+    "city": "Logbara",
+    "state": "Ogun State",
+    "location": {
+      "lat": 6.889935,
+      "lng": 3.5690895
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJFW-WMgbFOxARz09Ww6Lu3ms",
+    "reviewsCount": 31,
+    "imagesCount": 94,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 5,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npnCuB3xq-h68ogaHaZlI-Bhhl5gaglFBmQGusqAT0ycJ70P4MIzI9QQTiZL9GxpbA2rcY7H5nzVhx7zd-EolsZPagxqVCrcgzP2ZbRvdE0_UXdUhIgnPY86loqkEWO0gAAlIMK=w408-h306-k-no"
+  },
+  {
+    "title": "Odogunyan volleyball court",
+    "price": null,
+    "categoryName": "Volleyball court",
+    "address": "MG47+RRP, Ikorodu, 104101, Lagos, Nigeria",
+    "neighborhood": "Ikorodu",
+    "street": "MG47+RRP",
+    "city": "Ikorodu",
+    "state": "Lagos",
+    "location": {
+      "lat": 6.6570875,
+      "lng": 3.5145732
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJJdFIzPjpOxAR1M01bAFe5DQ",
+    "reviewsCount": 2,
+    "imagesCount": 5,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Friday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Saturday",
+        "hours": "4 to 7 PM"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 6,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4no5e02IdSfzF0gqIRj2ZEAwfc7LHjVbLqPKHQBw0EodqqLPrZ8K9fCdv5elKKcu_A9TfywoftnR6TrSjkSawKJvOcKz4Y6mROdgUFYRjNiPwvuXDPgF0i6hYRULU0mlqKwOpX7vnA=w426-h240-k-no"
+  },
+  {
+    "title": "nestle basketball court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "JF99+C5R, Ikorodu Rd, Ilupeju, Lagos 104101, Lagos, Nigeria",
+    "neighborhood": "Ilupeju",
+    "street": "JF99+C5R, Ikorodu Rd",
+    "city": "Lagos",
+    "state": "Lagos",
+    "location": {
+      "lat": 6.6186228,
+      "lng": 3.4678922
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJCYrAZlDsOxARbSiKzEXDpzE",
+    "reviewsCount": 19,
+    "imagesCount": 1,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 8,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=NyNGlhXPviD1aOd9PINTfA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=268.66537&pitch=0&thumbfov=100"
+  },
+  {
+    "title": "Ikorodu basketball Academy",
+    "price": null,
+    "categoryName": "Sports school",
+    "address": "Ebute Iga, Laspark Garden Lagos, Ikorodu 102222, Nigeria",
+    "neighborhood": "Ikorodu",
+    "street": "Ebute Iga, Laspark Garden Lagos",
+    "city": "Ikorodu",
+    "state": "Lagos",
+    "phone": "+234 906 140 8690",
+    "phoneUnformatted": "+2349061408690",
+    "location": {
+      "lat": 6.5997401,
+      "lng": 3.4909695
+    },
+    "totalScore": 3.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJsXWQbbHtOxARJrJ6r8DUTho",
+    "reviewsCount": 2,
+    "imagesCount": 60,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "12 AM to 11:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 11,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipOIDwB2CEmhkIibseAOWxjGy5cwxaDRA6Fk3JDN=w408-h408-k-no"
+  },
+  {
+    "title": "Strong Tower Academy",
+    "price": null,
+    "categoryName": "College",
+    "address": "JGCC+WQW, Obafemi Awolowo Rd, Ikorodu, 104101, Lagos, Nigeria",
+    "neighborhood": "Ikorodu",
+    "street": "JGCC+WQW, Obafemi Awolowo Rd",
+    "city": "Ikorodu",
+    "state": "Lagos",
+    "location": {
+      "lat": 6.6223552,
+      "lng": 3.5219529
+    },
+    "totalScore": 3.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJGWX1BUjvOxARM8XXzx7a_iM",
+    "reviewsCount": 10,
+    "imagesCount": 24,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "6:30 AM to 5:30 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "6:30 AM to 5:30 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "6:30 AM to 5:30 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "6:30 AM to 5:30 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "6:30 AM to 5:30 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 15,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrbkAMKFG8Pv__t0U1I0C4wa8DPwKqsBmIexD-kkDMjl0XISte8W5NwYkW5RJzRrR_KtCAkY3GGCyyCLamF_j8Jxru0OXwH5wtTIGUg65M8AsStdFWqa64VKOFiWv3bxZ4VQfU=w408-h544-k-no"
+  },
+  {
+    "title": "Ikorodu Recreational Park",
+    "price": null,
+    "categoryName": "Park",
+    "address": "JF3M+RWC, near Nigerian Customs Service Lighter Terminal, Ikorodu, 104101, Lagos, Nigeria",
+    "neighborhood": "Ikorodu",
+    "street": "JF3M+RWC, near Nigerian Customs Service Lighter Terminal",
+    "city": "Ikorodu",
+    "state": "Lagos",
+    "website": "https://lasparkportal.lagosstate.gov.ng/parks/ikorodu-recreational-park/",
+    "location": {
+      "lat": 6.6045504,
+      "lng": 3.4847685
+    },
+    "totalScore": 3.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ3-hwADbsOxAR7l2nGBqj-Pw",
+    "reviewsCount": 289,
+    "imagesCount": 260,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 16,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npziJJcZMDUuRB-El7zBvM5R1tqlc8iWdbPzXLRkDSdDamHG5BvBCRBZiaooAQiJRuqOc5Es7sz5mRMfAohyjAArfa2ip6uQoOfXjy1QykC2e6rr7Q1de9EUWrhuQvhBj8Y81Zl=w426-h240-k-no"
+  },
+  {
+    "title": "Sports Center, University of Lagos Akoka",
+    "price": null,
+    "categoryName": "Sports complex",
+    "address": "University Of Lagos, University Rd, Yaba, Lagos 101245, Lagos, Nigeria",
+    "neighborhood": "Yaba",
+    "street": "University Of Lagos, University Rd",
+    "city": "Lagos",
+    "state": "Lagos",
+    "website": "https://bit.ly/3okRq0V",
+    "location": {
+      "lat": 6.5166212,
+      "lng": 3.3865737
+    },
+    "totalScore": 4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJWWSAKfuMOxARmY8SuRW5aek",
+    "reviewsCount": 3836,
+    "imagesCount": 1266,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 19,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noJX4DJ_1flTz_7iiVhwUigj9gmaDBdO-qzDeCfa9aTl8bkJ9ZFcZOZKVe_IAcbQzauijucxz3AoSvL8ZGoxSjVI8J1HYK4zBpvkz7L-mS-_ebhWcos6xcrHPja0YQ62HkI2X0=w424-h240-k-no"
+  },
+  {
+    "title": "Jubilee Chalets Epe",
+    "price": "$152",
+    "categoryName": "Resort hotel",
+    "address": "Ogunmule Akinlogba Street, Epe 106101, Lagos, Nigeria",
+    "neighborhood": null,
+    "street": "Ogunmule Akinlogba Street",
+    "city": "Epe",
+    "state": "Lagos",
+    "website": "http://www.jubileechalets.com/",
+    "phone": "+234 811 891 9913",
+    "phoneUnformatted": "+2348118919913",
+    "location": {
+      "lat": 6.5824728,
+      "lng": 3.9882031
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJA1oWlwpGORARwtoeSD67Gn4",
+    "reviewsCount": 892,
+    "imagesCount": 1817,
+    "checkInDate": "2025-05-14",
+    "checkOutDate": "2025-05-15",
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 20,
+    "imageUrl": "https://images.trvl-media.com/lodging/101000000/100890000/100887500/100887460/caa0d137_z.jpg"
+  },
+  {
+    "title": "Camac Basketball Club",
+    "price": null,
+    "categoryName": "Basketball club",
+    "address": "Bakare, Oriola St, Lagos 100243, Nigeria",
+    "neighborhood": "Ketu",
+    "street": "Bakare, Oriola St",
+    "city": "Lagos",
+    "state": "Lagos",
+    "phone": "+234 802 122 5321",
+    "phoneUnformatted": "+2348021225321",
+    "location": {
+      "lat": 6.5918619,
+      "lng": 3.3943327
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJ1-RVn5mTOxARn9Owfmag3gI",
+    "reviewsCount": 1,
+    "imagesCount": 32,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Thursday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Friday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Open 24 hours"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Open 24 hours"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 24,
+    "imageUrl": "https://lh3.googleusercontent.com/p/AF1QipPRtKJWaKVcm3ArEWgkaUPM2jUygWPBVVF0RqCo=w426-h240-k-no"
+  },
+  {
+    "title": "Basketball court, Kwasu",
+    "price": null,
+    "categoryName": "Sports complex",
+    "address": "PFFG+Q4F, Malete 241104, Kwara, Nigeria",
+    "neighborhood": null,
+    "street": "PFFG+Q4F",
+    "city": "Malete",
+    "state": "Kwara",
+    "location": {
+      "lat": 8.7244466,
+      "lng": 4.4752879
+    },
+    "totalScore": 3.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJYb-eEARfNhARdNBJLjWoG00",
+    "reviewsCount": 10,
+    "imagesCount": null,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 20
+  },
+  {
+    "title": "Ikom Stadium",
+    "price": null,
+    "categoryName": "Stadium",
+    "address": "Off Obudu-Ikom Rd, Ikom 562261, Cross River, Nigeria",
+    "neighborhood": null,
+    "street": "Off Obudu-Ikom Rd",
+    "city": "Ikom",
+    "state": "Cross River",
+    "phone": "+234 803 532 8465",
+    "phoneUnformatted": "+2348035328465",
+    "location": {
+      "lat": 5.9674775,
+      "lng": 8.7194398
+    },
+    "totalScore": 3.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJIfZa5UVCXBAREK-2w4tjGdA",
+    "reviewsCount": 153,
+    "imagesCount": 65,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 1,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqc9zQlHrnwC_UR_pFC7EA_g4NrdCSW3BHLgJcoiIyEoq9dy9OlKQNi5W-Z5-owduzkkk3cco-6aMHNCcWw6SY5GvOToGp7WU1GfX0nLQFm2TBPRWYPECS1hy-FhqdQS2cDLcqT=w426-h240-k-no"
+  },
+  {
+    "title": "Jorany Hotel Resort Ikom",
+    "price": "$11",
+    "categoryName": "Hotel",
+    "address": "XP84+WFR, Cross, Ikom 550556, Cross River, Nigeria",
+    "neighborhood": "Cross",
+    "street": "XP84+WFR",
+    "city": "Ikom",
+    "state": "Cross River",
+    "website": "https://www.naijahotnews.com.ng/",
+    "phone": "+234 807 177 7444",
+    "phoneUnformatted": "+2348071777444",
+    "location": {
+      "lat": 5.9673599,
+      "lng": 8.7061432
+    },
+    "totalScore": 3.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJdbDnGqlDXBAR1J4xky-9zQQ",
+    "reviewsCount": 199,
+    "imagesCount": 227,
+    "checkInDate": "2025-05-14",
+    "checkOutDate": "2025-05-15",
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 13,
+    "imageUrl": "https://images.trvl-media.com/lodging/15000000/14700000/14691800/14691734/92e3cf13_z.jpg"
+  },
+  {
+    "title": "Nnaji Family Foundation Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "15 Orji Nnaji Ave, Agbani 402004, Enugu, Nigeria",
+    "neighborhood": null,
+    "street": "15 Orji Nnaji Ave",
+    "city": "Agbani",
+    "state": "Enugu",
+    "website": "http://nnajifamilyfoundation.org/",
+    "phone": "+234 813 617 4755",
+    "phoneUnformatted": "+2348136174755",
+    "location": {
+      "lat": 6.3049636,
+      "lng": 7.5626411
+    },
+    "totalScore": 5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJpT3RZJVZQxARqWJ-zjdqDOI",
+    "reviewsCount": 3,
+    "imagesCount": 2,
+    "openingHours": [
+      {
+        "day": "Monday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Tuesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Wednesday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Thursday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Friday",
+        "hours": "9 AM to 5 PM"
+      },
+      {
+        "day": "Saturday",
+        "hours": "Closed"
+      },
+      {
+        "day": "Sunday",
+        "hours": "Closed"
+      }
+    ],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 14,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npHb-Uxph6zTVMeTCihxmFeEoqUOjHjFsMqrdg1fQjaRvI_WlHv3fxwP2tF6M4WCgJfXF3g3hNqF37h-80IAFkVhmCkNnvHXH9AMDdCEfebpwRRgIUAscvyxh4-sXumGPmNbMRUKw=w408-h408-k-no"
+  },
+  {
+    "title": "KHAIRUN Basketball Court",
+    "price": null,
+    "categoryName": "Basketball court",
+    "address": "XFHV+FCW, Kofar Bompai, Kano 700282, Kano, Nigeria",
+    "neighborhood": "Kofar Bompai",
+    "street": "XFHV+FCW",
+    "city": "Kano",
+    "state": "Kano",
+    "location": {
+      "lat": 11.978749,
+      "lng": 8.4935783
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJlXSkSwCBrhER05Euzl2BdQY",
+    "reviewsCount": 0,
+    "imagesCount": 5,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 3,
+    "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqsdGusxa3NSrN3cAjqHLGOpEbWHA4mi3IBSOtbaNrshZJChmidINvNgCvLKD1cyKGq5thvdioBwWPb8OHwgLg9lh30XDXoBB27CgYMhfUbyZEu3AKZfL58HTjmnBGjDds21uCV=w408-h306-k-no"
+  },
+  {
+    "title": "Basket Ball Court",
+    "price": null,
+    "categoryName": "Sports complex",
+    "address": "XFXW+PJ6, Kano City, Kano 700251, Kano, Nigeria",
+    "neighborhood": "Kano City",
+    "street": "XFXW+PJ6",
+    "city": "Kano",
+    "state": "Kano",
+    "location": {
+      "lat": 11.9992913,
+      "lng": 8.4965092
+    },
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJVVUV54-ArhER5BB-vjDQ1Mc",
+    "reviewsCount": 0,
+    "imagesCount": 1,
+    "openingHours": [],
+    "placesTags": [],
+    "gasPrices": [],
+    "language": "en",
+    "rank": 4,
+    "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=MLZwoEf25mpjPrTDRItxpA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=175.62631&pitch=0&thumbfov=100"
+  }
+]

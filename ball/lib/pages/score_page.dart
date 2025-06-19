@@ -1,243 +1,154 @@
-import 'dart:async';
-
-import 'package:ball/pages/game_summary.dart';
-import 'package:ball/state/models/game_enititty.dart';
-
+import 'package:ball/pages/results_page.dart';
+import 'package:ball/state/models/enums/enums.dart';
+import 'package:ball/state/models/utils/ext.dart';
+import 'package:ball/state/models/game_enitity.dart';
+import 'package:ball/state/models/scores.dart';
+import 'package:ball/state/notifier/game_notifiers/end_game_provider.dart';
+import 'package:ball/state/notifier/game_status_notifier.dart';
+import 'package:ball/state/notifier/scores_notifier.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import '../components/game_ui_component.dart';
 import '../components/score_side_component.dart';
-import '../components/timer_or_limit_component.dart';
-import '../global__parameters.dart';
+import '../state/models/game_team_names.dart';
 
-class ScorePage extends StatefulWidget {
+class ScorePage extends HookConsumerWidget {
   final GameDuration? duration;
   final ScoreLimit? scoreLimit;
-  final TeamName homeTeamName;
-  final TeamName awayTeamName;
-  const ScorePage(
-      {super.key,
-      this.duration,
-      this.scoreLimit,
-      required this.homeTeamName,
-      required this.awayTeamName});
+  final TeamNames teamNames;
 
-      GameConditions get _scoreLimit => scoreLimit != null ? GameConditions.scoreLimit : GameConditions.timeLimit ;
+  const ScorePage({
+    super.key,
+    this.duration,
+    this.scoreLimit,
+    required this.teamNames,
+  });
 
   @override
-  State<ScorePage> createState() => _ScorePageState();
-}
+  Widget build(BuildContext context, WidgetRef ref) {
+    // Providers
+    final gameStatus = ref.watch(gameStatusNotifierProvider);
 
-class _ScorePageState extends State<ScorePage> {
-  late StreamController<String> timerStreamController;
-  late Timer timer;
-  late ValueNotifier<int> awayScore;
-  late ValueNotifier<int> homeScore;
+    // Hooks
+    final homeScore = useState(0);
+    final awayScore = useState(0);
 
-// Init State
-  @override
-  void initState() {
-    timerStreamController = StreamController();
-    timer = Timer(const Duration(seconds: 1), () {});
+    if (gameStatus == GameStatus.completed) {
+      final game = Game(
+        homeTeamScore: homeScore.value,
+        awayTeamScore: awayScore.value,
+        scoreLimit: scoreLimit,
+        awayTeamName: teamNames.away,
+        homeTeamName: teamNames.home,
+        winningTeam: homeScore.value > awayScore.value
+            ? GameTeams.home
+            : GameTeams.away,
+      );
 
-    homeScore = ValueNotifier<int>(0);
-    awayScore = ValueNotifier<int>(0);
-
-    super.initState();
-    timerPer(widget.duration);
-  }
-
-  void timerPer(int? time) async {
-    if (time == null) {
-      return;
+      game.debugLog(message: 'game values');
+      
+      return ResultsPage(game: game);
+      // Navigator.of(
+      //   context,
+      // ).push(MaterialPageRoute(builder: (context) => ));
     }
 
-    String? duration = '00:00:00.0';
+    // UI
+    return Scaffold(
+      body: Stack(
+        children: [
+          Row(
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              // Home Side
+              Flexible(
+                child: ScoreSideComponent(
+                  score: '${homeScore.value}',
+                  increment: (value) {
+                    homeScore.value += value;
 
-    Duration gameDuration = Duration(minutes: time);
+                    Scores scores = Scores(awayScore: awayScore.value, homeScore: homeScore.value);
 
-    int durationInSeconds = gameDuration.inSeconds;
+                    ref.watch(scoresNotifierProvider.notifier).addScores(scores);
 
-    timer = Timer.periodic(
-      const Duration(seconds: 1),
-      (timer) {
-        if (durationInSeconds <= 0) {
-          timer.cancel();
-          GameTeams winningTeam() {
-            if (awayScore.value > homeScore.value) {
-              return GameTeams.away;
-            } else if (awayScore.value < homeScore.value) {
-              return GameTeams.home;
-            } else {
-              return GameTeams.none;
-            }
-          }
+                    '+ $value'.debugLog(
+                      message: 'away score: ${awayScore.value}',
+                    );
 
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => GameSummary(
-                        awayTeamName: widget.awayTeamName,
-                        homeTeamName: widget.homeTeamName,
-                        winner: winningTeam(),
-                        awayScore: awayScore.value,
-                        homeScore: homeScore.value,
-                      )));
-        } else {
-          durationInSeconds--;
-          final newSeconds = (durationInSeconds % 60).floor().toString();
-          final newMinutes =
-              ((durationInSeconds % 3600) / 60).floor().toString();
-          final newHour = (durationInSeconds / 3600).floor().toString();
+                    if (scoreLimit != null) {
+                      if (homeScore.value >= scoreLimit!) {
+                        final game = Game(
+                          homeTeamScore: homeScore.value,
+                          awayTeamScore: awayScore.value,
+                          scoreLimit: scoreLimit,
+                          awayTeamName: teamNames.away,
+                          homeTeamName: teamNames.home,
+                          duration: duration,
+                        );
 
-          duration = '$newHour:$newMinutes:$newSeconds';
-          timerStreamController.sink.add(duration!);
-        }
-      },
-    );
-  }
+                        ref.watch(endgameProvider(game: game));
 
-  @override
-  void dispose() {
-    timerStreamController.close();
-    timer.cancel();
+                        ref
+                            .watch(gameStatusNotifierProvider.notifier)
+                            .setGameStatus(status: GameStatus.completed);
+                        // homeScore.value.debugLog(message: 'stop game');
+                      }
+                    }
+                  },
+                  teamName: teamNames.home,
+                  team: GameTeams.home,
+                ),
+              ),
 
-    homeScore.dispose();
-    awayScore.dispose();
+              // Away Side
+              Flexible(
+                child: ScoreSideComponent(
+                  score: '${awayScore.value}',
+                  increment: (value) {
+                    awayScore.value += value;
 
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    Future<void> stopGame() async {
-      if (timer.isActive) {
-        timer.cancel();
-      }
-
-      GameTeams winningTeam() {
-        if (awayScore.value > homeScore.value) {
-          return GameTeams.away;
-        } else if (awayScore.value < homeScore.value) {
-          return GameTeams.home;
-        } else {
-          return GameTeams.none;
-        }
-      }
-
-      final winningT = winningTeam();
-
-      String win(GameTeams condition) {
-        if (winningT == GameTeams.home) {
-          return widget.homeTeamName;
-        } else if (winningT == GameTeams.away) {
-          return widget.awayTeamName;
-        } else {
-          return 'none';
-        }
-      }
-
-      final aScoreValue = awayScore.value;
-      final hScoreValue = homeScore.value;
-
-      final gameNotifier = GlobalParameter.gameNotifier;
-
-      await gameNotifier.saveGameData(
-          game: Game(
-        awayTeamName: widget.awayTeamName,
-        homeTeamName: widget.homeTeamName,
-        awayTeamScore: aScoreValue,
-        homeTeamScore: hScoreValue,
-        scoreLimit: widget.scoreLimit ?? 0,
-        time: widget.duration ?? 0,
-        winner: win(winningT),
-        winningTeam: winningT,
-      ));
-
-      if (context.mounted) {
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => GameSummary(
-                      awayTeamName: widget.awayTeamName,
-                      homeTeamName: widget.homeTeamName,
-                      winner: winningTeam(),
+                    Scores scores = Scores(
                       awayScore: awayScore.value,
                       homeScore: homeScore.value,
-                    )));
-      }
-    }
+                    );
 
-    homeScore.addListener(() async {
-      if (widget.scoreLimit == null) {
-        return;
-      }
+                    ref
+                        .watch(scoresNotifierProvider.notifier)
+                        .addScores(scores);
 
-      final int limit = widget.scoreLimit!;
+                    '+ $value'.debugLog(
+                      message: 'away score: ${awayScore.value}',
+                    );
 
-      if (homeScore.value >= limit) {
-        await stopGame();
-      }
-    });
-
-    awayScore.addListener(() async {
-      if (widget.scoreLimit == null) {
-        return;
-      }
-
-      final int limit = widget.scoreLimit!;
-      // print(limit);
-
-      if (awayScore.value >= limit) {
-        await stopGame();
-      }
-    });
-
-    return Scaffold(
-        body: Stack(
-      alignment: Alignment.center,
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Flexible(
-              child: ScoreSideComponent(
-                teamName: widget.awayTeamName,
-                team: GameTeams.away,
-                score: homeScore,
-              ),
-            ),
-            Flexible(
-              child: ScoreSideComponent(
-                teamName: widget.homeTeamName,
-                team: GameTeams.home,
-                score: awayScore,
-              ),
-            )
-          ],
-        ),
-        Positioned(
-          bottom: (MediaQuery.sizeOf(context).height / 2) - 200,
-          child: SizedBox(
-            child: Column(
-              children: [
-                TimerOrLimitComponent(
-                  timerStreamController: timerStreamController,
-                  scoreLimit: widget.scoreLimit,
-                  duration: widget.duration,
+                    if (scoreLimit != null) {
+                      if (awayScore.value >= scoreLimit!) {
+                        final game = Game(
+                          homeTeamScore: homeScore.value,
+                          awayTeamScore: awayScore.value,
+                          scoreLimit: scoreLimit,
+                          awayTeamName: teamNames.away,
+                          homeTeamName: teamNames.home,
+                        );
+                        ref.watch(endgameProvider(game: game));
+                        ref
+                            .watch(gameStatusNotifierProvider.notifier)
+                            .setGameStatus(status: GameStatus.completed);
+                      }
+                    }
+                  },
+                  teamName: teamNames.away,
+                  team: GameTeams.away,
                 ),
-                TextButton(
-                    style: ButtonStyle(
-                      backgroundColor:
-                          WidgetStateProperty.all(Colors.amberAccent),
-                    ),
-                    onPressed: () async => await stopGame(),
-                    child: const Text('Stop Game')),
-              ],
-            ),
+              ),
+            ],
           ),
-        ),
-      ],
-    ));
+          Positioned(
+            bottom: kBottomNavigationBarHeight * .2,
+            child: GameUIComponent(scoreLimit: scoreLimit, duration: duration),
+          ),
+        ],
+      ),
+    );
   }
 }

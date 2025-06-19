@@ -1,4 +1,5 @@
-import 'package:ball/state/models/game_enititty.dart';
+import 'package:ball/state/models/game_constants.dart';
+import 'package:ball/state/models/game_enitity.dart';
 
 import '../models/offline_games_database.dart';
 
@@ -11,19 +12,24 @@ class OfflineStoreFunctions {
 
   final appDatabase = AppDatabase();
 
-  Future<void> insertData({required Game gameData}) async {
+  Future<void> insertData({required Map<String, dynamic> gameData}) async {
     final db = appDatabase;
-    await appDatabase.into(db.offlineGames).insert(OfflineGame(
-        id: gameData.id,
-        homeTeamScore: gameData.homeTeamScore,
-        awayTeamScore: gameData.awayTeamScore,
-        scoreLimit: gameData.scoreLimit as ScoreLimit,
-        awayTeamName: gameData.awayTeamName,
-        homeTeamName: gameData.homeTeamName,
-        winner: gameData.winner ?? 'draw',
-        winningTeam: gameData.winningTeam?.name as TeamName,
-        time: gameData.time as GameDuration,
-        gameDate: gameData.gameDate));
+    await appDatabase
+        .into(db.offlineGames)
+        .insert(
+          OfflineGame(
+            id: gameData[GameConstants.id],
+            homeTeamScore: gameData[GameConstants.homeTeamScore],
+            awayTeamScore: gameData[GameConstants.awayTeamScore],
+            scoreLimit: gameData[GameConstants.scoreLimit] as ScoreLimit,
+            awayTeamName: gameData[GameConstants.awayTeamName],
+            homeTeamName: gameData[GameConstants.homeTeamName],
+            winner: gameData[GameConstants.winner] ?? 'draw',
+            winningTeam: gameData[GameConstants.winningTeam] as TeamName,
+            gameDate: gameData[GameConstants.gameDate],
+            duration: gameData[GameConstants.duration],
+          ),
+        );
   }
 
   // Stream of data in Database returned in JSON String [List<String>] made possible by [.watch]

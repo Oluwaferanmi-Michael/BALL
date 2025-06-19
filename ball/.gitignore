@@ -46,3 +46,5 @@ app.*.map.json
 # 
 *.g.dart
 *.env
+firebase.json
+local.properties

@@ -12,11 +12,11 @@ class OfflineGames extends Table {
   IntColumn get homeTeamScore => integer().named('homeTeamScore')();
   IntColumn get awayTeamScore => integer().named('awayTeamScore')();
   IntColumn get scoreLimit => integer().named('scoreLimit')();
+  IntColumn get duration => integer().named('duration')();
   TextColumn get awayTeamName => text().named('awayTeamName')();
   TextColumn get homeTeamName => text().named('homeTeamName')();
   TextColumn get winner => text().named('winner')();
   TextColumn get winningTeam => text().named('winningTeam')();
-  IntColumn get time => integer().named('time')();
   DateTimeColumn get gameDate => dateTime().named('gameDate')();
 }
 

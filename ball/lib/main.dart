@@ -1,4 +1,6 @@
-import 'package:ball/pages/game_list.dart';
+import 'package:ball/firebase_options.dart';
+import 'package:ball/pages/main_page.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -6,15 +8,18 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  //  Makes sure Systen UI [Task bars and Navigation UI are above the app with no background]
-  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+  //  Makes sure System UI [Task bars and Navigation UI are above the app with no background]
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
       statusBarIconBrightness: Brightness.dark,
       systemNavigationBarIconBrightness: Brightness.dark,
       systemNavigationBarContrastEnforced: false,
       systemNavigationBarColor: Colors.transparent,
-      statusBarColor: Colors.transparent));
+      statusBarColor: Colors.transparent,
+    ),
+  );
 
-  
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   runApp(const ProviderScope(child: MainApp()));
 }
@@ -24,8 +29,14 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(body: SafeArea(child: GameList())),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+
+      theme: ThemeData(
+        scaffoldBackgroundColor: const Color(0xFFFFFDEF),
+        useMaterial3: true,
+      ),
+      home: const Scaffold(body: SafeArea(child: MainPage())),
     );
   }
 }

@@ -1,9 +1,9 @@
-import 'state/notifier/game_notifier.dart';
+// import 'state/notifier/game_data_notifier.dart';
 
 
-//  Globally Accessible Classes
-class GlobalParameter {
-  GlobalParameter._();
+// //  Globally Accessible Classes
+// class GlobalParameter {
+//   GlobalParameter._();
 
-  static GameNotifier gameNotifier = GameNotifier();
-}
+//   static GameNotifier gameNotifier = GameNotifier();
+// }

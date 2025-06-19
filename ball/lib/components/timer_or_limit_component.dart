@@ -1,56 +1,96 @@
-import 'dart:async';
+import 'package:ball/pages/results_page.dart';
+import 'package:ball/state/models/enums/enums.dart';
+import 'package:ball/state/models/game_enitity.dart';
+import 'package:ball/state/notifier/game_notifiers/end_game_provider.dart';
+import 'package:ball/state/notifier/game_notifiers/game_score_limit_notifier.dart';
+import 'package:ball/state/notifier/game_status_notifier.dart';
+import 'package:ball/state/notifier/game_team_names_notifier.dart';
+import 'package:ball/state/notifier/game_time_notifier.dart';
+import 'package:ball/state/notifier/scores_notifier.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class TimerOrLimitComponent extends StatefulWidget {
+import 'floating_navbar_components/states_per_page/game_state/game_timer.dart';
+
+class TimerOrLimitComponent extends ConsumerWidget {
   const TimerOrLimitComponent({
     super.key,
-    required this.timerStreamController,
+    required this.duration,
     this.scoreLimit,
-    this.duration,
   });
 
-  final StreamController<String> timerStreamController;
+  // final StreamController<String> timerStreamController;
   final int? duration;
   final int? scoreLimit;
 
   @override
-  State<TimerOrLimitComponent> createState() => _TimerOrLimitComponentState();
-}
-
-class _TimerOrLimitComponentState extends State<TimerOrLimitComponent> {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-      decoration: BoxDecoration(
-          color: Colors.white, borderRadius: BorderRadius.circular(8)),
-      // check if score limt or duration is null
-      child: widget.duration == null
-          ? Visibility(
-              // display score limit if duration is null
-              visible: widget.scoreLimit != null ? true : false,
-              child: Text('${widget.scoreLimit}',
-                  style: const TextStyle(
-                      fontSize: 24, fontWeight: FontWeight.w500)))
-          : StreamBuilder<String?>(
-              stream: widget.timerStreamController.stream,
-              builder: (context, snapshot) {
-                if (snapshot.connectionState == ConnectionState.waiting) {
-                  return const CircularProgressIndicator(); // Display a loading indicator when waiting for data.
-                } else if (snapshot.hasError) {
-                  return Text(
-                      'Error: ${snapshot.error}'); // Display an error message if an error occurs.
-                } else if (!snapshot.hasData) {
-                  return const Text(
-                      'No data available'); // Display a message when no data is available.
-                } else {
-                  return Text(
-                    '${snapshot.data}',
-                    style: const TextStyle(
-                        fontSize: 24, fontWeight: FontWeight.w500),
-                  );
-                }
-              }),
+  Widget build(BuildContext context, WidgetRef ref) {
+    final timerProvider = ref.watch(
+      gameTimeNotifierProvider(gameDuration: duration).notifier,
     );
+
+    return duration == null
+        ? Visibility(
+            // display score limit if duration is null
+            visible: true,
+            child: Container(
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(16),
+                color: const Color(0xFFEDEDED),
+              ),
+              child: Text(
+                '$scoreLimit',
+                style: const TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ),
+          )
+        : ref
+              .watch(gameTimeNotifierProvider(gameDuration: duration!))
+              .when(
+                data: (data) {
+                  final gameStatus = ref.watch(gameStatusNotifierProvider);
+
+                  final scores = ref.watch(scoresNotifierProvider);
+                  final teamNames = ref.read(gameTeamNameNotifierProvider);
+                  final scoreLimit = ref.read(gameScoreLimitNotifierProvider);
+
+                  final game = Game(
+                    homeTeamScore: scores.homeScore,
+                    awayTeamScore: scores.awayScore,
+                    scoreLimit: scoreLimit,
+                    awayTeamName: teamNames.away,
+                    homeTeamName: teamNames.home,
+                  );
+
+                  if (gameStatus == GameStatus.completed) {
+                    ref.watch(endgameProvider(game: game));
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ResultsPage(game: game),
+                      ),
+                    );
+                  }
+
+                  return GestureDetector(
+                    onTap: () => timerProvider.pauseOrResumeTimer(),
+                    child: GameTimer(timeValue: data, gameDuration: duration!),
+                  );
+                },
+                error: (err, stck) => Text(err.toString()),
+                loading: () => Container(
+                  padding: const EdgeInsets.all(8),
+                  width: 32,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(100),
+                    color: const Color(0xFFEDEDED),
+                  ),
+                  child: const LinearProgressIndicator(),
+                ),
+              );
   }
 }
