@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:ball/state/data/offline_storage_functions.dart';
+import 'package:ball/state/data/offline_storage/offline_storage_functions.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import '../models/game_enitity.dart';

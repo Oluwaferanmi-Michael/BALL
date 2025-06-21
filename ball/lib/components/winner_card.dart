@@ -1,4 +1,5 @@
-import 'package:ball/state/models/game_enitity.dart';
+import 'package:ball/state/models/enums/enums.dart';
+// import 'package:ball/state/models/game_enitity.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

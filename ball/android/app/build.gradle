@@ -8,11 +8,23 @@ plugins {
     id "dev.flutter.flutter-gradle-plugin"
 }
 
+// Maps API Key Config
 Properties properties = new Properties()
 def file = project.rootProject.file("local.properties")
-properties.load(
-    new FileInputStream(file))
+if (file.exists()){
+    properties.load(new FileInputStream(file))
+}
+
 def mapsApiKey = properties.getProperty("MAPS_API_KEY")
+
+
+// Upload Key Config [App SIgning Configurations]
+Properties keyProperties = new Properties()
+def keyStorePropertiesFile = project.rootProject.file("key.properties")
+if (keyStorePropertiesFile.exists()) {
+    keyProperties.load(new FileInputStream(keyStorePropertiesFile))
+}
+
 
 
 android {
@@ -40,17 +52,33 @@ android {
         versionName = flutter.versionName
         
 
-        
+        // += works to add to the already exisiting manifestPlaceholders
+        // This is used to pass the Maps API Key to the AndroidManifest.xml
         manifestPlaceholders += [
             mapsApiKeyPlaceholder: mapsApiKey,
             
             ]
     }
 
+// App Signing Configurations Derived from key.properties
+    signingConfigs{
+        create("release") {
+            keyAlias = keyProperties["keyAlias"] as String
+            keyPassword = keyProperties["keyPassword"] as String
+            storeFile = keyProperties["storeFile"] as File
+            storePassword = keyProperties["storePassword"] as String
+            // project.rootProject.file(keyStoreProperties["storeFile"]) : null
+        }
+    }
+
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
+            
+            signingConfig = signingConfigs.getByName("release")
+            }
+        debug {
             signingConfig = signingConfigs.debug
         }
     }

@@ -1,12 +1,10 @@
+import 'package:ball/constants/data_constants.dart';
 import 'package:drift/drift.dart';
 import 'package:drift_flutter/drift_flutter.dart';
 
-import 'game_constants.dart';
+part 'offline_database.g.dart';
 
-part 'offline_games_database.g.dart';
-
-// Drift Table
-
+// Game Table
 class OfflineGames extends Table {
   TextColumn get id => text().named('id')();
   IntColumn get homeTeamScore => integer().named('homeTeamScore')();
@@ -20,20 +18,26 @@ class OfflineGames extends Table {
   DateTimeColumn get gameDate => dateTime().named('gameDate')();
 }
 
-@DriftDatabase(tables: [OfflineGames])
+// User Table
+class UserProfileData extends Table {
+  TextColumn get id => text().named('id')();
+  TextColumn get name => text().named('userName')();
+  TextColumn get team => text().named('userTeam')();
+  TextColumn get position => text().named('position')();
+  TextColumn get role => text().named('role')();
+
+  @override
+  Set<Column<Object>>? get primaryKey => {id};
+}
+
+@DriftDatabase(tables: [OfflineGames, UserProfileData])
 class AppDatabase extends _$AppDatabase {
-  AppDatabase() : super(_openConnection());
+  AppDatabase([QueryExecutor? executor]) : super(executor ?? _openConnection());
 
   @override
   int get schemaVersion => 1;
-// generate [filename].g.dart with build_runner makes the created Database from plural to singular (it's just convention)
+  // generate [filename].g.dart with build_runner makes the created Databas 
   static QueryExecutor _openConnection() {
-    return driftDatabase(name: GameDatabase.gameDatabaseName);
+    return driftDatabase(name: DataConstants.databaseName);
   }
-
-  Future<void> insert(OfflineGame game) => into(offlineGames).insert(game);
-
-  Future<List<OfflineGame>> get allGames => select(offlineGames).get();
-
 }
-

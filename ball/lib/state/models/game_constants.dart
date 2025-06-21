@@ -32,9 +32,10 @@ class GameDatabase {
   static const awayTeamName = 'awayTeamName';
   static const gameDate = 'gameDate';
   static const gameDatabase = 'games.db';
-  static const gameDatabaseName = 'gamesOfflineDatabase';
+  
   static const gameTable = 'games';
 }
+
 
 class AudioAssets {
   const AudioAssets._();

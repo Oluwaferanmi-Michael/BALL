@@ -1,5 +1,7 @@
 import 'package:ball/firebase_options.dart';
+import 'package:ball/pages/app_gateway.dart';
 import 'package:ball/pages/main_page.dart';
+import 'package:ball/pages/onboarding/onboarding.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -36,7 +38,8 @@ class MainApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color(0xFFFFFDEF),
         useMaterial3: true,
       ),
-      home: const Scaffold(body: SafeArea(child: MainPage())),
+      home: const Gateway(),
+      // const Scaffold(body: SafeArea(child: MainPage())),
     );
   }
 }

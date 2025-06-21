@@ -1,5 +1,6 @@
 import 'package:ball/components/timer_or_limit_component.dart';
 import 'package:ball/pages/results_page.dart';
+import 'package:ball/state/models/enums/enums.dart';
 import 'package:ball/state/notifier/game_notifiers/end_game_provider.dart';
 import 'package:ball/state/notifier/game_notifiers/game_score_limit_notifier.dart';
 import 'package:ball/state/notifier/game_sound_notifier.dart';

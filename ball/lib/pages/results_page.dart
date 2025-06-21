@@ -1,4 +1,5 @@
 import 'package:ball/components/floating_navbar_components/nav_bar_tile.dart';
+import 'package:ball/state/models/enums/enums.dart';
 
 import 'package:ball/state/models/game_enitity.dart';
 import 'package:flutter/material.dart';

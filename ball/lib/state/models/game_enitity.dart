@@ -1,4 +1,5 @@
 // import 'package:flutter/material.dart';
+import 'package:ball/state/models/enums/enums.dart';
 import 'package:ball/state/models/utils/ext.dart';
 import 'package:uuid/uuid.dart';
 
@@ -136,16 +137,7 @@ class Game {
   ]);
 }
 
-typedef Score = int;
-typedef GameId = String;
-typedef ScoreLimit = int;
-typedef TeamName = String;
-typedef GameDuration = int;
-typedef GameDate = DateTime;
 
-enum GameTeams { home, away, none }
-
-enum GameConditions { timeLimit, scoreLimit, none }
 
 extension ToGameCondition on String {
   GameConditions toGameCondition(String value) {

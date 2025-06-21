@@ -2,6 +2,7 @@ import 'package:ball/components/bottom_sheets/create_game_bottom_sheet.dart';
 import 'package:ball/components/floating_navbar_components/floating_navbar_items.dart';
 import 'package:ball/components/floating_navbar_components/nav_bar_tile.dart';
 import 'package:ball/state/models/enums/enums.dart';
+import 'package:dartz/dartz.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
@@ -108,6 +109,7 @@ class AppButtonComponent extends StatelessWidget {
     this.label,
     required this.type,
     this.icon,
+    this.trailingIcon,
     this.color,
   });
 
@@ -115,6 +117,7 @@ class AppButtonComponent extends StatelessWidget {
   final Text? label;
   final ButtonType type;
   final Icon? icon;
+  final Icon? trailingIcon;
   final Color? color;
 
   Widget _buildContent() {
@@ -123,10 +126,13 @@ class AppButtonComponent extends StatelessWidget {
       return Row(
         mainAxisSize: MainAxisSize.min, // Keep the row as small as possible
         mainAxisAlignment: MainAxisAlignment.center,
+        spacing: 8,
         children: [
-          icon!, // Use ! because we've checked for null
-          const SizedBox(width: 8), // Add spacing between icon and label
-          label!, // Use ! because we've checked for null
+          icon ??
+              const SizedBox.shrink(), // Use ! because we've checked for null
+          label!,
+          trailingIcon ??
+              const SizedBox.shrink(), // Use ! because we've checked for null
         ],
       );
     } else if (label != null) {
@@ -137,7 +143,7 @@ class AppButtonComponent extends StatelessWidget {
       return Center(
         heightFactor: 1,
         widthFactor: 1,
-        child: icon ?? const SizedBox.shrink(),
+        child: icon ?? trailingIcon ?? const SizedBox.shrink(),
       );
     }
   }
@@ -153,7 +159,7 @@ class AppButtonComponent extends StatelessWidget {
           borderRadius: BorderRadius.circular(100),
           color: Colors.amber,
         );
-        splashColor = Colors.white70;
+        splashColor = Colors.amberAccent;
         break;
 
       case ButtonType.secondary:

@@ -1,6 +1,6 @@
 import 'package:ball/constants/app_constans.dart';
+import 'package:ball/state/models/enums/enums.dart';
 
-import '../game_enitity.dart';
 import 'dart:developer' show log;
 
 extension GameConditionStrings on GameConditions {
@@ -48,4 +48,69 @@ extension IntegerToMonth on int {
 
   // Converts integer to day of week
   String intToDay() => Strings.days.elementAt(this - 1);
+}
+
+extension PositionToString on GamePositions {
+  String positionToAbbr() => switch (this) {
+    GamePositions.center => 'C',
+    GamePositions.pointGuard => 'PG',
+    GamePositions.shootingGuard => 'SG',
+    GamePositions.smallForward => 'SF',
+    GamePositions.powerForward => 'PF',
+    (_) => 'V',
+  };
+
+  String positionToString() => switch (this) {
+    GamePositions.center => 'Center',
+    GamePositions.pointGuard => 'Point Guard',
+    GamePositions.shootingGuard => 'Shooting Guard',
+    GamePositions.smallForward => 'Small Forward',
+    GamePositions.powerForward => 'Power Forward',
+    (_) => 'Versatile',
+  };
+}
+
+extension RoleToString on Role {
+  String get positionToAbbr => switch (this) {
+    Role.coach => 'Coach',
+    Role.enthusiasts => 'Enthusiasts',
+    Role.manager => 'Manager',
+    Role.player => 'Player',
+  };
+}
+
+extension StringToPosition on String {
+  GamePositions get position {
+    switch (this) {
+      case ('Center'):
+        return GamePositions.center;
+      case ('Point Guard'):
+        return GamePositions.pointGuard;
+      case ('Shooting Guard'):
+        return GamePositions.shootingGuard;
+      case ('Small Forward'):
+        return GamePositions.shootingGuard;
+      case ('Power Forward'):
+        return GamePositions.shootingGuard;
+      case ('Versatile'):
+        return GamePositions.versatile;
+      default:
+        return GamePositions.versatile;
+    }
+  }
+
+  Role get role {
+    switch (this) {
+      case ('Coach'):
+        return Role.coach;
+      case ('Enthusiasts'):
+        return Role.enthusiasts;
+      case ('Manager'):
+        return Role.manager;
+      case ('Player'):
+        return Role.player;
+      default:
+        return Role.enthusiasts;
+    }
+  }
 }

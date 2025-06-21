@@ -11,7 +11,7 @@ import 'package:ball/state/models/game_enitity.dart';
 
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-import '../../data/offline_storage_functions.dart';
+import '../../data/offline_storage/offline_storage_functions.dart';
 
 // <Iterable<Game>>
 // Game Notifier for CRUD Functions

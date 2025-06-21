@@ -1,4 +1,5 @@
 import 'package:ball/components/score_value_component.dart';
+import 'package:ball/state/models/enums/enums.dart';
 
 import 'package:ball/state/models/game_enitity.dart';
 import 'package:ball/state/models/utils/ext.dart';
