@@ -1,3 +1,5 @@
+import 'package:ball/components/dialog/confirm_game_stop_dialog.dart';
+import 'package:ball/components/dialog/dialogs.dart';
 import 'package:ball/pages/results_page.dart';
 import 'package:ball/state/models/enums/enums.dart';
 import 'package:ball/state/models/utils/ext.dart';
@@ -47,107 +49,142 @@ class ScorePage extends HookConsumerWidget {
       );
 
       game.debugLog(message: 'game values');
-      
+
       return ResultsPage(game: game);
-      // Navigator.of(
-      //   context,
-      // ).push(MaterialPageRoute(builder: (context) => ));
     }
 
     // UI
-    return Scaffold(
-      body: Stack(
-        children: [
-          Row(
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              // Home Side
-              Flexible(
-                child: ScoreSideComponent(
-                  score: '${homeScore.value}',
-                  increment: (value) {
-                    homeScore.value += value;
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, result) async {
+        if (didPop) {
+          return;
+        }
 
-                    Scores scores = Scores(awayScore: awayScore.value, homeScore: homeScore.value);
+        final bool shouldPop =
+            await ConfirmGameStopDialog(
+              context,
+              action: () {
+                final game = Game(
+                  homeTeamScore: homeScore.value,
+                  awayTeamScore: awayScore.value,
+                  scoreLimit: scoreLimit,
+                  awayTeamName: teamNames.away,
+                  homeTeamName: teamNames.home,
+                  duration: duration,
+                );
 
-                    ref.watch(scoresNotifierProvider.notifier).addScores(scores);
+                ref.watch(endgameProvider(game: game));
+              },
+            ).present(context) ??
+            false;
 
-                    '+ $value'.debugLog(
-                      message: 'away score: ${awayScore.value}',
-                    );
+        if (context.mounted && shouldPop) {
+          Navigator.pop(context);
+        }
+      },
+      child: Scaffold(
+        body: Stack(
+          children: [
+            Row(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                // Home Side
+                Flexible(
+                  child: ScoreSideComponent(
+                    score: '${homeScore.value}',
+                    increment: (value) {
+                      homeScore.value += value;
 
-                    if (scoreLimit != null) {
-                      if (homeScore.value >= scoreLimit!) {
-                        final game = Game(
-                          homeTeamScore: homeScore.value,
-                          awayTeamScore: awayScore.value,
-                          scoreLimit: scoreLimit,
-                          awayTeamName: teamNames.away,
-                          homeTeamName: teamNames.home,
-                          duration: duration,
-                        );
+                      Scores scores = Scores(
+                        awayScore: awayScore.value,
+                        homeScore: homeScore.value,
+                      );
 
-                        ref.watch(endgameProvider(game: game));
+                      ref
+                          .watch(scoresNotifierProvider.notifier)
+                          .addScores(scores);
 
-                        ref
-                            .watch(gameStatusNotifierProvider.notifier)
-                            .setGameStatus(status: GameStatus.completed);
-                        // homeScore.value.debugLog(message: 'stop game');
+                      '+ $value'.debugLog(
+                        message: 'away score: ${awayScore.value}',
+                      );
+
+                      if (scoreLimit != null) {
+                        if (homeScore.value >= scoreLimit!) {
+                          final game = Game(
+                            homeTeamScore: homeScore.value,
+                            awayTeamScore: awayScore.value,
+                            scoreLimit: scoreLimit,
+                            awayTeamName: teamNames.away,
+                            homeTeamName: teamNames.home,
+                            duration: duration,
+                          );
+
+                          ref.watch(endgameProvider(game: game));
+
+                          // ref
+                          //     .watch(gameStatusNotifierProvider.notifier)
+                          //     .setGameStatus(status: GameStatus.completed);
+                          // homeScore.value.debugLog(message: 'stop game');
+                        }
                       }
-                    }
-                  },
-                  teamName: teamNames.home,
-                  team: GameTeams.home,
+                    },
+                    teamName: teamNames.home,
+                    team: GameTeams.home,
+                  ),
                 ),
-              ),
 
-              // Away Side
-              Flexible(
-                child: ScoreSideComponent(
-                  score: '${awayScore.value}',
-                  increment: (value) {
-                    awayScore.value += value;
+                // Away Side
+                Flexible(
+                  child: ScoreSideComponent(
+                    score: '${awayScore.value}',
+                    increment: (value) {
+                      awayScore.value += value;
 
-                    Scores scores = Scores(
-                      awayScore: awayScore.value,
-                      homeScore: homeScore.value,
-                    );
+                      Scores scores = Scores(
+                        awayScore: awayScore.value,
+                        homeScore: homeScore.value,
+                      );
 
-                    ref
-                        .watch(scoresNotifierProvider.notifier)
-                        .addScores(scores);
+                      ref
+                          .watch(scoresNotifierProvider.notifier)
+                          .addScores(scores);
 
-                    '+ $value'.debugLog(
-                      message: 'away score: ${awayScore.value}',
-                    );
+                      '+ $value'.debugLog(
+                        message: 'away score: ${awayScore.value}',
+                      );
 
-                    if (scoreLimit != null) {
-                      if (awayScore.value >= scoreLimit!) {
-                        final game = Game(
-                          homeTeamScore: homeScore.value,
-                          awayTeamScore: awayScore.value,
-                          scoreLimit: scoreLimit,
-                          awayTeamName: teamNames.away,
-                          homeTeamName: teamNames.home,
-                        );
-                        ref.watch(endgameProvider(game: game));
-                        ref
-                            .watch(gameStatusNotifierProvider.notifier)
-                            .setGameStatus(status: GameStatus.completed);
+                      if (scoreLimit != null) {
+                        if (awayScore.value >= scoreLimit!) {
+                          final game = Game(
+                            homeTeamScore: homeScore.value,
+                            awayTeamScore: awayScore.value,
+                            scoreLimit: scoreLimit,
+                            awayTeamName: teamNames.away,
+                            homeTeamName: teamNames.home,
+                          );
+                          ref.watch(endgameProvider(game: game));
+                          // ref
+                          //     .watch(gameStatusNotifierProvider.notifier)
+                          //     .setGameStatus(status: GameStatus.completed);
+                        }
                       }
-                    }
-                  },
-                  teamName: teamNames.away,
-                  team: GameTeams.away,
+                    },
+                    teamName: teamNames.away,
+                    team: GameTeams.away,
+                  ),
                 ),
+              ],
+            ),
+            Positioned(
+              bottom: kBottomNavigationBarHeight * .2,
+              child: GameUIComponent(
+                scoreLimit: scoreLimit,
+                duration: duration,
               ),
-            ],
-          ),
-          Positioned(
-            bottom: kBottomNavigationBarHeight * .2,
-            child: GameUIComponent(scoreLimit: scoreLimit, duration: duration),
-          ),
-        ],
+            ),
+          ],
+        ),
       ),
     );
   }

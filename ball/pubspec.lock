@@ -1168,6 +1168,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.0"
+  show_custom_snackbar:
+    dependency: "direct main"
+    description:
+      name: show_custom_snackbar
+      sha256: "44d4141d45de662fbf783f3d86c849d72dcafbcf36b35b4fbd2e1b7701e92892"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.1"
   sky_engine:
     dependency: transitive
     description: flutter

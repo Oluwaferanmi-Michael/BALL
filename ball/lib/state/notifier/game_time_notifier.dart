@@ -1,10 +1,10 @@
 import 'dart:async';
-import 'package:ball/state/models/enums/enums.dart';
+
 import 'package:ball/state/models/utils/ext.dart';
 import 'package:ball/state/models/game_enitity.dart';
 import 'package:ball/state/notifier/game_notifiers/end_game_provider.dart';
 import 'package:ball/state/notifier/game_sound_notifier.dart';
-import 'package:ball/state/notifier/game_status_notifier.dart';
+
 import 'package:ball/state/notifier/game_team_names_notifier.dart';
 import 'package:ball/state/notifier/scores_notifier.dart';
 import 'package:pausable_timer/pausable_timer.dart';
@@ -61,14 +61,9 @@ class GameTimeNotifier extends _$GameTimeNotifier {
 
       if (timeInSeconds <= 0) {
         ref.read(gameSoundNotifierProvider.notifier).buzzer();
-       
 
         if (timer!.isActive) {
           dispose();
-          ref.watch(gameStatusNotifierProvider.notifier).setGameStatus(
-            status: GameStatus.completed,
-          );
-
           final teamNames = ref.watch(gameTeamNameNotifierProvider);
           final scores = ref.watch(scoresNotifierProvider);
 
@@ -78,7 +73,6 @@ class GameTimeNotifier extends _$GameTimeNotifier {
             duration: duration,
             awayTeamName: teamNames.away,
             homeTeamName: teamNames.home,
-            
           );
 
           game.debugLog(message: 'game values - ${game.toString()}');

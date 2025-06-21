@@ -41,7 +41,7 @@ class LastGameDataWidget extends StatelessWidget {
           ),
           Row(
             // spacing: 42,
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ScoreValueComponent(
@@ -57,22 +57,37 @@ class LastGameDataWidget extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      '${game.homeTeamScore} \t\t - \t\t ${game.awayTeamScore}',
+                      '${game.homeTeamScore} \t - \t ${game.awayTeamScore}',
                       style: GoogleFonts.bebasNeue(
                         fontSize: 36,
                         fontWeight: FontWeight.w600,
                         color: const Color.fromARGB(255, 43, 35, 44),
                       ),
                     ),
-                    Text(
-                      game.scoreLimit != 0
-                          ? '${game.scoreLimit} pts'
-                          : '${game.duration}:00 min',
-                      style: const TextStyle(
-                        fontSize: 11,
-                        fontWeight: FontWeight.w400,
-                        color: Color.fromARGB(255, 43, 35, 44),
-                      ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          game.scoreLimit != 0
+                              ? 'Score Limit'
+                              : 'Game Duration',
+                          style: const TextStyle(
+                            fontSize: 11,
+                            fontWeight: FontWeight.w500,
+                            color: Color.fromARGB(255, 43, 35, 44),
+                          ),
+                        ),
+                        Text(
+                          game.scoreLimit != 0
+                              ? '${game.scoreLimit} pts'
+                              : '${game.duration}:00 min',
+                          style: const TextStyle(
+                            fontSize: 11,
+                            fontWeight: FontWeight.w400,
+                            color: Color.fromARGB(255, 43, 35, 44),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),

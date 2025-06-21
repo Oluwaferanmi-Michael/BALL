@@ -1,12 +1,11 @@
 import 'package:ball/state/models/enums/enums.dart';
-import 'package:ball/state/models/game_enitity.dart';
+import 'package:ball/state/notifier/game_status_notifier.dart';
 
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-// ignore: must_be_immutable
 class ScoreSideComponent extends HookConsumerWidget {
   final GameTeams team;
   final TeamName teamName;
@@ -23,9 +22,14 @@ class ScoreSideComponent extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final gameStatus = ref.watch(gameStatusNotifierProvider);
     final scoreValue = ['1', '3'];
     return GestureDetector(
-      onTap: () => increment(2),
+      onTap: () {
+        if (gameStatus != GameStatus.completed) {
+          increment(2);
+        }
+      },
       child: Container(
         width: MediaQuery.sizeOf(context).width / 2,
         decoration: BoxDecoration(
@@ -77,7 +81,9 @@ class ScoreSideComponent extends HookConsumerWidget {
                             onTap: () {
                               // Take String Value turn it to score value then add to total score.
                               final value = int.parse(item);
-                              increment(value);
+                              if (gameStatus != GameStatus.completed) {
+                                increment(value);
+                              }
                             },
                             team: team,
                             value: item,

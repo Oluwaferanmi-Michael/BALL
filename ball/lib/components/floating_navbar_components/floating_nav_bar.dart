@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../app_bottom_sheet.dart';
 
@@ -114,14 +115,14 @@ class AppButtonComponent extends StatelessWidget {
   });
 
   final void Function() onTap;
-  final Text? label;
+  final String? label;
   final ButtonType type;
   final Icon? icon;
   final Icon? trailingIcon;
   final Color? color;
 
   Widget _buildContent() {
-    if (label != null && icon != null) {
+    if (label != null && (icon != null || trailingIcon != null)) {
       // Both label and icon are present, return a Row
       return Row(
         mainAxisSize: MainAxisSize.min, // Keep the row as small as possible
@@ -130,14 +131,28 @@ class AppButtonComponent extends StatelessWidget {
         children: [
           icon ??
               const SizedBox.shrink(), // Use ! because we've checked for null
-          label!,
-          trailingIcon ??
-              const SizedBox.shrink(), // Use ! because we've checked for null
+          Text(
+            label!,
+            style: GoogleFonts.poppins(
+              fontSize: 14,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          icon == null
+              ? trailingIcon ?? const SizedBox.shrink()
+              : const SizedBox.shrink(), // Use ! because we've checked for null
         ],
       );
     } else if (label != null) {
       // Only label is present
-      return Center(heightFactor: 1, widthFactor: 1, child: label!);
+      return Center(
+        heightFactor: 1,
+        widthFactor: 1,
+        child: Text(
+          label!,
+          style: GoogleFonts.poppins(fontSize: 14, fontWeight: FontWeight.w600),
+        ),
+      );
     } else {
       // Only icon is present
       return Center(
@@ -175,7 +190,7 @@ class AppButtonComponent extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Material(
-        color: Colors.transparent,
+        color: Colors.white,
         type: MaterialType.button,
         child: InkWell(
           borderRadius: BorderRadius.circular(
@@ -184,7 +199,7 @@ class AppButtonComponent extends StatelessWidget {
           splashColor: splashColor,
           highlightColor: Colors.transparent,
           child: Container(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(12),
             decoration: decoration,
             child: _buildContent(),
           ),

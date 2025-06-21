@@ -1,9 +1,10 @@
 import 'package:ball/components/timer_or_limit_component.dart';
-import 'package:ball/pages/results_page.dart';
+
 import 'package:ball/state/models/enums/enums.dart';
 import 'package:ball/state/notifier/game_notifiers/end_game_provider.dart';
 import 'package:ball/state/notifier/game_notifiers/game_score_limit_notifier.dart';
 import 'package:ball/state/notifier/game_sound_notifier.dart';
+
 
 import 'package:ball/state/notifier/game_team_names_notifier.dart';
 import 'package:ball/state/notifier/scores_notifier.dart';
@@ -46,10 +47,8 @@ class GameUIComponent extends ConsumerWidget {
             homeTeamName: teamNames.home,
           );
           ref.watch(endgameProvider(game: game));
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => ResultsPage(game: game)),
-          );
+         
+          
         },
       ),
       GameControlsItem(

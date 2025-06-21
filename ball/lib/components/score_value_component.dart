@@ -14,28 +14,33 @@ class ScoreValueComponent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      // crossAxisAlignment: CrossAxisAlignment.center,
-      // mainAxisAlignment: MainAxisAlignment.center,
-      mainAxisSize: MainAxisSize.min,
-      spacing: 8,
-      children: [
-        Center(
-          child: CircleAvatar(
-            backgroundColor: gameTeams == GameTeams.home
-                ? Colors.amberAccent
-                : Colors.blueAccent,
+    return SizedBox(
+      width: 80,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
+        spacing: 8,
+        children: [
+          Center(
+            child: CircleAvatar(
+              backgroundColor: gameTeams == GameTeams.home
+                  ? Colors.amberAccent
+                  : Colors.blueAccent,
+            ),
           ),
-        ),
-        Text(
-          team,
-          style: GoogleFonts.bebasNeue(
-            color: const Color.fromARGB(60, 43, 35, 44),
-            fontSize: 12,
-            fontWeight: FontWeight.w800,
+          Text(
+            team,
+            softWrap: true,
+            overflow: TextOverflow.ellipsis,
+            style: GoogleFonts.bebasNeue(
+              color: const Color.fromARGB(60, 43, 35, 44),
+              fontSize: 12,
+              fontWeight: FontWeight.w800,
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

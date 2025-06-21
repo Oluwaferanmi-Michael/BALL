@@ -43,133 +43,131 @@ class OnboardingScreens extends HookConsumerWidget {
 
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          spacing: 12,
-          children: [
-            Flexible(
-              child: PageView.builder(
-                controller: pageController,
-                onPageChanged: (value) => pageIndexState.value = value,
-                itemBuilder: (context, index) {
-                  if (items[index] == items.last) {
-                    return SingleChildScrollView(
-                      child: OnboardingScreenSignUp(
-                        nameController: nameController,
-                        positionController: positionController,
-                        roleController: roleController,
-                        onboardingData: items[index],
-                      ),
-                    );
-                  }
-                  return Column(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    spacing: 12,
-                    children: [
-                      Expanded(
-                        flex: 2,
-                        child: SizedBox(
-                          child: Image.asset(
-                            items[index].imagePath,
-                            fit: BoxFit.contain,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 16.0),
+          child: Column(
+            spacing: 24,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Flexible(
+                child: PageView.builder(
+                  controller: pageController,
+                  onPageChanged: (value) => pageIndexState.value = value,
+                  itemBuilder: (context, index) {
+                    if (items[index] == items.last) {
+                      return SingleChildScrollView(
+                        child: OnboardingScreenSignUp(
+                          nameController: nameController,
+                          positionController: positionController,
+                          roleController: roleController,
+                          onboardingData: items[index],
+                        ),
+                      );
+                    }
+                    return Column(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      spacing: 12,
+                      children: [
+                        Expanded(
+                          flex: 2,
+                          child: SizedBox(
+                            child: Image.asset(
+                              items[index].imagePath,
+                              fit: BoxFit.contain,
+                            ),
                           ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              items[index].title,
-                              style: GoogleFonts.poppins(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w600,
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                items[index].title,
+                                style: GoogleFonts.poppins(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w600,
+                                ),
                               ),
-                            ),
-                            Text(
-                              items[index].subtitle,
-                              style: GoogleFonts.poppins(
-                                fontSize: 12,
-                                // fontWeight: FontWeight.w600,
+                              Text(
+                                items[index].subtitle,
+                                style: GoogleFonts.poppins(
+                                  fontSize: 12,
+                                  // fontWeight: FontWeight.w600,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
-                    ],
-                  );
-                },
-                itemCount: items.length,
+                      ],
+                    );
+                  },
+                  itemCount: items.length,
+                ),
               ),
-            ),
 
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  SmoothPageIndicator(
-                    controller: pageController,
-                    count: items.length,
-                    effect: const ExpandingDotsEffect(
-                      dotHeight: 8,
-                      dotWidth: 8,
-                      dotColor: Color(0xFF440381),
-                      radius: 4,
-                      activeDotColor: Color(0xFF51E5FF),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    SmoothPageIndicator(
+                      controller: pageController,
+                      count: items.length,
+                      effect: const ExpandingDotsEffect(
+                        dotHeight: 8,
+                        dotWidth: 8,
+                        dotColor: Color(0xFF440381),
+                        radius: 4,
+                        activeDotColor: Color(0xFF51E5FF),
+                      ),
                     ),
-                  ),
-                  AppButtonComponent(
-                    onTap: () async {
-                      if (pageIndexState.value < items.length - 1) {
-                        pageController.animateToPage(
-                          pageIndexState.value + 1,
-                          duration: const Duration(milliseconds: 5),
-                          curve: Curves.easeInOut,
-                        );
-                        return;
-                      }
+                    AppButtonComponent(
+                      onTap: () async {
+                        if (pageIndexState.value < items.length - 1) {
+                          pageController.animateToPage(
+                            pageIndexState.value + 1,
+                            duration: const Duration(milliseconds: 5),
+                            curve: Curves.easeInOut,
+                          );
+                          return;
+                        }
 
-                      if (nameController.value.text.isNotEmpty) {
-                        final userProfile = UserProfile(
-                          name: nameController.value.text,
-                          position: positionController.value.text.position,
-                          // role: roleController.value.text.position
-                        );
+                        if (nameController.value.text.isNotEmpty) {
+                          final userProfile = UserProfile(
+                            name: nameController.value.text,
+                            position: positionController.value.text.position,
+                            // role: roleController.value.text.position
+                          );
 
-                        userProfile.debugLog();
+                          userProfile.debugLog();
 
-                        await ref
-                            .watch(userProfileNotifierProvider.notifier)
-                            .createUser(user: userProfile);
-                      }
+                          await ref
+                              .watch(userProfileNotifierProvider.notifier)
+                              .createUser(user: userProfile);
+                        }
 
-                      'please fill in your name'.debugLog();
-                    },
-                    type: pageIndexState.value < items.length - 1
-                        ? ButtonType.secondary
-                        : ButtonType.primary,
-                    trailingIcon: const Icon(Icons.arrow_forward_rounded),
-                    label: Text(
-                      pageIndexState.value < items.length - 1
+                        'please fill in your name'.debugLog();
+                      },
+                      type: pageIndexState.value < items.length - 1
+                          ? ButtonType.secondary
+                          : ButtonType.primary,
+                      trailingIcon: const Icon(Icons.arrow_forward_rounded),
+                      label: pageIndexState.value < items.length - 1
                           ? 'Next'
                           : 'Get Started',
-                      style: GoogleFonts.poppins(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w600,
-                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

@@ -1,4 +1,3 @@
-
 import 'package:ball/state/models/enums/enums.dart';
 import 'package:ball/state/models/splash_screen_data.dart';
 import 'package:ball/state/models/utils/ext.dart';
@@ -16,11 +15,16 @@ class OnboardingScreenSignUp extends HookConsumerWidget {
   final TextEditingController nameController;
   final TextEditingController positionController;
   final TextEditingController roleController;
-  const OnboardingScreenSignUp({required this.nameController, required this.positionController, required this.roleController, super.key, required this.onboardingData});
+  const OnboardingScreenSignUp({
+    required this.nameController,
+    required this.positionController,
+    required this.roleController,
+    super.key,
+    required this.onboardingData,
+  });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    
     final isPlayer = useState(false);
 
     return Column(
@@ -142,7 +146,6 @@ class OnboardingScreenSignUp extends HookConsumerWidget {
                   ),
 
                   // -------------------------------
-
                   Visibility(
                     visible: isPlayer.value,
                     child: DropdownMenu(

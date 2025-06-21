@@ -3,7 +3,7 @@ import 'package:ball/components/floating_navbar_components/floating_nav_bar.dart
 import 'package:ball/pages/score_page.dart';
 import 'package:ball/state/models/enums/enums.dart';
 import 'package:ball/state/models/utils/ext.dart';
-import 'package:ball/state/models/game_enitity.dart';
+
 import 'package:ball/state/models/game_team_names.dart';
 import 'package:ball/state/notifier/game_notifiers/game_duration_notifier.dart';
 import 'package:ball/state/notifier/game_notifiers/game_score_limit_notifier.dart';
@@ -85,6 +85,7 @@ class CreateGamePresentation extends HookConsumerWidget {
           ),
           // const SizedBox(height: 12),
           TextField(
+            onTap: () => ScaffoldMessenger.of(context).clearSnackBars(),
             controller: homeTeamNameController,
             decoration: InputDecoration(
               border: OutlineInputBorder(
@@ -108,6 +109,7 @@ class CreateGamePresentation extends HookConsumerWidget {
           ),
           // const SizedBox(height: 12),
           TextField(
+            onTap: () => ScaffoldMessenger.of(context).clearSnackBars(),
             controller: awayTeamNameController,
             decoration: InputDecoration(
               border: OutlineInputBorder(
@@ -134,6 +136,7 @@ class CreateGamePresentation extends HookConsumerWidget {
             visible: selected.value == GameConditions.none ? false : true,
             maintainState: false,
             child: TextField(
+              onTap: () => ScaffoldMessenger.of(context).clearSnackBars(),
               controller: scoreLimitController,
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
@@ -162,7 +165,7 @@ class CreateGamePresentation extends HookConsumerWidget {
                   clearControllers();
                   Navigator.pop(context);
                 },
-                label: const Text('cancel'),
+                label: 'cancel',
                 type: ButtonType.secondary,
               ),
               Expanded(
@@ -182,6 +185,26 @@ class CreateGamePresentation extends HookConsumerWidget {
                       int intValue;
 
                       if (selected.value != GameConditions.none) {
+                        if (scoreLimitController.value.text.isEmpty) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              dismissDirection: DismissDirection.up,
+                              margin: EdgeInsets.only(
+                                bottom: MediaQuery.of(context).size.height - 70,
+                                left: 10,
+                                right: 10,
+                              ),
+                              content: const Text(
+                                'add a score limit or time limit',
+                                textAlign: TextAlign.center,
+                              ),
+                              shape: const BeveledRectangleBorder(),
+                              behavior: SnackBarBehavior.floating,
+                            ),
+                          );
+
+                          return;
+                        }
                         intValue = int.parse(scoreLimitController.text);
 
                         // check scoreLimitController for data and assign .text to
@@ -242,7 +265,7 @@ class CreateGamePresentation extends HookConsumerWidget {
                       e.debugLog();
                     }
                   },
-                  label: const Text('start game'),
+                  label: 'Start Game',
                   type: ButtonType.primary,
                 ),
               ),

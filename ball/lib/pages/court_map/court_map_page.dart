@@ -159,136 +159,136 @@ class CourtMapPage extends HookConsumerWidget {
     }, [courtLocations.value, customIcon, mapsController.controller]);
 
     return Scaffold(
-      body: userLocation.when(
-        data: (location) {
-          return location.fold(
-            (err) {
-              err.debugLog(message: 'Left Side: unable to show userLocation');
-              return Center(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  spacing: 16,
+      body: SafeArea(
+        child: userLocation.when(
+          data: (location) {
+            return location.fold(
+              (err) {
+                err.debugLog(message: 'Left Side: unable to show userLocation');
+                return Center(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    spacing: 16,
+                    children: [
+                      SizedBox(
+                        width: MediaQuery.sizeOf(context).width * .8,
+                        child: Text(
+                          err.message,
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.poppins(fontSize: 12),
+                        ),
+                      ),
+                      AppButtonComponent(
+                        onTap: () {
+                          // ignore: unused_result
+                          ref.refresh(userLocationProvider);
+                        },
+                        type: ButtonType.primary,
+                        label: 'Enable Location Service',
+                      ),
+                    ],
+                  ),
+                );
+              },
+              (location) {
+                LatLng initialTarget = LatLng(location.lat, location.lng);
+
+                // add user marker
+                markerSet.value = {
+                  Marker(
+                    markerId: const MarkerId('user_location'),
+                    position: LatLng(location.lat, location.lng),
+                    zIndex: 5,
+                    icon: userIcon,
+                    // infoWindow: InfoWindow(
+                    //   title: 'Your Location',
+                    //   snippet: '${location.lat}, ${location.lng}',
+                    // ),
+                  ),
+                  ...markerSet.value,
+                };
+                return Stack(
                   children: [
-                    SizedBox(
-                      width: MediaQuery.sizeOf(context).width * .8,
-                      child: Text(
-                        err.message,
-                        textAlign: TextAlign.center,
-                        style: GoogleFonts.poppins(fontSize: 12),
+                    GoogleMap(
+                      cloudMapId: AssetConstants.cloudMapStyle,
+
+                      zoomControlsEnabled: false,
+                      compassEnabled: false,
+                      padding: const EdgeInsets.all(12),
+                      onMapCreated: mapsController.onMapCreated,
+                      initialCameraPosition: CameraPosition(
+                        target: initialTarget,
+                        tilt: 24.440717697143555,
+                        zoom: 12,
+                        // zoom: 10,
+                      ),
+                      markers: {...markerSet.value},
+                    ),
+
+                    Align(
+                      alignment: Alignment.topCenter,
+                      widthFactor: 1,
+                      child: Visibility(
+                        visible: isInformationVisible.value,
+                        replacement: const SizedBox.shrink(),
+                        child: LocationInfoWidget(
+                          locationInformation: locationInformation,
+                        ),
                       ),
                     ),
-                    AppButtonComponent(
-                      onTap: () {
-                        // ignore: unused_result
-                        ref.refresh(userLocationProvider);
-                      },
-                      type: ButtonType.primary,
-                      label: Text(
-                        'Enable Location Service',
 
-                        style: GoogleFonts.poppins(fontSize: 12),
+                    Positioned(
+                      bottom: kBottomNavigationBarHeight * 1.2,
+                      child: Container(
+                        margin: const EdgeInsets.symmetric(horizontal: 12),
+                        width: MediaQuery.sizeOf(context).width,
+                        height: 42,
+                        child: ListView.separated(
+                          controller: chipScrollController,
+                          itemCount: courtLocations.value!.length,
+                          // padding: EdgeInsets.only(left: 8),
+                          shrinkWrap: true,
+                          scrollDirection: Axis.horizontal,
+                          separatorBuilder: (context, index) =>
+                              const SizedBox(width: 8),
+                          itemBuilder: (context, index) {
+                            return ActionChip(
+                              onPressed: () async {
+                                isInformationVisible.value = true;
+                                final locationInfo = LocationInformation(
+                                  name: courtLocations.value![index].title,
+                                  address: courtLocations.value![index].address,
+                                  city: courtLocations.value![index].city,
+                                  price: courtLocations.value![index].price,
+                                  image: courtLocations.value![index].imageUrl,
+                                );
+                                locationInformation.value = locationInfo;
+
+                                await cameraUpdate(
+                                  courtLocations.value![index],
+                                );
+                              },
+                              label: Text(
+                                '${courtLocations.value![index].title}, ${courtLocations.value![index].city}',
+                                style: GoogleFonts.poppins(fontSize: 10),
+                              ),
+                            );
+                          },
+                        ),
                       ),
                     ),
                   ],
-                ),
-              );
-            },
-            (location) {
-              LatLng initialTarget = LatLng(location.lat, location.lng);
-
-              // add user marker
-              markerSet.value = {
-                Marker(
-                  markerId: const MarkerId('user_location'),
-                  position: LatLng(location.lat, location.lng),
-                  zIndex: 5,
-                  icon: userIcon,
-                  // infoWindow: InfoWindow(
-                  //   title: 'Your Location',
-                  //   snippet: '${location.lat}, ${location.lng}',
-                  // ),
-                ),
-                ...markerSet.value,
-              };
-              return Stack(
-                children: [
-                  GoogleMap(
-                    cloudMapId: AssetConstants.cloudMapStyle,
-
-                    zoomControlsEnabled: false,
-                    compassEnabled: false,
-                    padding: const EdgeInsets.all(12),
-                    onMapCreated: mapsController.onMapCreated,
-                    initialCameraPosition: CameraPosition(
-                      target: initialTarget,
-                      tilt: 24.440717697143555,
-                      zoom: 12,
-                      // zoom: 10,
-                    ),
-                    markers: {...markerSet.value},
-                  ),
-
-                  Align(
-                    alignment: Alignment.topCenter,
-                    widthFactor: 1,
-                    child: Visibility(
-                      visible: isInformationVisible.value,
-                      replacement: const SizedBox.shrink(),
-                      child: LocationInfoWidget(
-                        locationInformation: locationInformation,
-                      ),
-                    ),
-                  ),
-
-                  Positioned(
-                    bottom: kBottomNavigationBarHeight * 1.2,
-                    child: Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 12),
-                      width: MediaQuery.sizeOf(context).width,
-                      height: 42,
-                      child: ListView.separated(
-                        controller: chipScrollController,
-                        itemCount: courtLocations.value!.length,
-                        // padding: EdgeInsets.only(left: 8),
-                        shrinkWrap: true,
-                        scrollDirection: Axis.horizontal,
-                        separatorBuilder: (context, index) =>
-                            const SizedBox(width: 8),
-                        itemBuilder: (context, index) {
-                          return ActionChip(
-                            onPressed: () async {
-                              isInformationVisible.value = true;
-                              final locationInfo = LocationInformation(
-                                name: courtLocations.value![index].title,
-                                address: courtLocations.value![index].address,
-                                city: courtLocations.value![index].city,
-                                price: courtLocations.value![index].price,
-                                image: courtLocations.value![index].imageUrl,
-                              );
-                              locationInformation.value = locationInfo;
-
-                              await cameraUpdate(courtLocations.value![index]);
-                            },
-                            label: Text(
-                              '${courtLocations.value![index].title}, ${courtLocations.value![index].city}',
-                              style: GoogleFonts.poppins(fontSize: 10),
-                            ),
-                          );
-                        },
-                      ),
-                    ),
-                  ),
-                ],
-              );
-            },
-          );
-        },
-        error: (err, stack) {
-          err.debugLog(message: 'userlocation provider.when');
-          return Center(child: Text('err: $err, stack: $stack'));
-        },
-        loading: () => const Loadingindicator(),
+                );
+              },
+            );
+          },
+          error: (err, stack) {
+            err.debugLog(message: 'userlocation provider.when');
+            return Center(child: Text('err: $err, stack: $stack'));
+          },
+          loading: () => const Loadingindicator(),
+        ),
       ),
     );
   }

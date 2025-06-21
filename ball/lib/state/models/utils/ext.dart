@@ -57,7 +57,8 @@ extension PositionToString on GamePositions {
     GamePositions.shootingGuard => 'SG',
     GamePositions.smallForward => 'SF',
     GamePositions.powerForward => 'PF',
-    (_) => 'V',
+    GamePositions.versatile => 'V',
+    (_) => 'None',
   };
 
   String positionToString() => switch (this) {
@@ -66,7 +67,8 @@ extension PositionToString on GamePositions {
     GamePositions.shootingGuard => 'Shooting Guard',
     GamePositions.smallForward => 'Small Forward',
     GamePositions.powerForward => 'Power Forward',
-    (_) => 'Versatile',
+    GamePositions.versatile => 'Versatile',
+    (_) => 'None',
   };
 }
 
@@ -95,7 +97,7 @@ extension StringToPosition on String {
       case ('Versatile'):
         return GamePositions.versatile;
       default:
-        return GamePositions.versatile;
+        return GamePositions.none;
     }
   }
 

@@ -19,13 +19,13 @@ extension Present on AppBottomSheets {
       context: context,
       builder: (context) {
         return Padding(
-          padding: const EdgeInsetsGeometry.all(24),
+          padding: const EdgeInsetsGeometry.all(16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             spacing: 1,
             mainAxisSize: MainAxisSize.min,
             children: [
-              label.isEmpty
+              label.isNotEmpty
                   ? Text(
                       label,
                       style: GoogleFonts.poppins(

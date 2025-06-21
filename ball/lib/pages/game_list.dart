@@ -46,70 +46,75 @@ class GameList extends HookConsumerWidget {
                       AppButtonComponent(
                         onTap: () => CreateGameBottomSheet().present(context),
                         type: ButtonType.primary,
-                        label: const Text('new game'),
+                        label: 'new game',
                         icon: const Icon(FeatherIcons.plus),
                       ),
                     ],
                   ),
                 )
-              : Padding(
-                  padding: const EdgeInsets.all(12),
-                  child: Column(
-                    spacing: 12,
-                    children: [
-                      LastGameDataWidget(game: data.last),
-                      Flexible(
-                        child: Column(
-                          spacing: 12,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text(
-                              'Previous Games',
-                              style: GoogleFonts.poppins(
-                                fontSize: 11,
-                                fontWeight: FontWeight.w600,
-                                color: const Color.fromARGB(255, 43, 35, 44),
-                              ),
-                            ),
-                            Flexible(
-                              child: Container(
-                                padding: const EdgeInsets.only(
-                                  bottom: kBottomNavigationBarHeight + 10,
+              : SafeArea(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 24,
+                      horizontal: 16,
+                    ),
+                    child: Column(
+                      spacing: 24,
+                      children: [
+                        LastGameDataWidget(game: data.last),
+                        Flexible(
+                          child: Column(
+                            spacing: 12,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                'Previous Games',
+                                style: GoogleFonts.poppins(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: const Color.fromARGB(255, 43, 35, 44),
                                 ),
-                                child: ListView.separated(
-                                  clipBehavior: Clip.antiAlias,
+                              ),
+                              Flexible(
+                                child: Container(
+                                  padding: const EdgeInsets.only(
+                                    bottom: kBottomNavigationBarHeight + 10,
+                                  ),
+                                  child: ListView.separated(
+                                    clipBehavior: Clip.antiAlias,
 
-                                  shrinkWrap: true,
-                                  itemCount: data.length > 1
-                                      ? data.length - 1
-                                      : 0,
-                                  separatorBuilder: (context, index) =>
-                                      Transform.scale(
-                                        scale: .5,
-                                        child: Divider(
-                                          radius: BorderRadius.circular(12),
+                                    shrinkWrap: true,
+                                    itemCount: data.length > 1
+                                        ? data.length - 1
+                                        : 0,
+                                    separatorBuilder: (context, index) =>
+                                        Transform.scale(
+                                          scale: .5,
+                                          child: Divider(
+                                            radius: BorderRadius.circular(12),
 
-                                          // indent: 20,
-                                          // endIndent: 400,
-                                          height: 16,
-                                          color: Colors.black26,
+                                            // indent: 20,
+                                            // endIndent: 400,
+                                            height: 16,
+                                            color: Colors.black26,
+                                          ),
                                         ),
-                                      ),
-                                  itemBuilder: (context, index) {
-                                    // Skip the last (most recent) game, which is shown above
-                                    int newIndex = data.length - 2 - index;
-                                    return GameScoreDataWidget(
-                                      game: data.elementAt(newIndex),
-                                    );
-                                  },
+                                    itemBuilder: (context, index) {
+                                      // Skip the last (most recent) game, which is shown above
+                                      int newIndex = data.length - 2 - index;
+                                      return GameScoreDataWidget(
+                                        game: data.elementAt(newIndex),
+                                      );
+                                    },
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 );
         },

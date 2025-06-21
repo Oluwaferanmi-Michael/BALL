@@ -120,13 +120,7 @@ class LocationInfoWidget extends HookConsumerWidget {
                     type: ButtonType.secondary,
                     icon: const Icon(Icons.directions_outlined, size: 18),
                     color: const Color(0xFFBEADFF),
-                    label: Text(
-                      'get directions',
-                      style: GoogleFonts.poppins(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
+                    label: 'Get Directions',
                   ),
                 ],
               ),
