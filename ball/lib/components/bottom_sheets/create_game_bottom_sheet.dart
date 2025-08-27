@@ -11,6 +11,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:top_snackbar_flutter/custom_snack_bar.dart';
+import 'package:top_snackbar_flutter/top_snack_bar.dart';
 
 class CreateGameBottomSheet extends AppBottomSheets {
   CreateGameBottomSheet({
@@ -186,20 +188,44 @@ class CreateGamePresentation extends HookConsumerWidget {
 
                       if (selected.value != GameConditions.none) {
                         if (scoreLimitController.value.text.isEmpty) {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(
-                              dismissDirection: DismissDirection.up,
-                              margin: EdgeInsets.only(
-                                bottom: MediaQuery.of(context).size.height - 70,
-                                left: 10,
-                                right: 10,
+                          // ScaffoldMessenger.of(context).showSnackBar(
+                          //   const SnackBar(
+                          //     dismissDirection: DismissDirection.up,
+
+                          //     // margin: EdgeInsets.only(
+                          //     //   bottom: MediaQuery.of(context).size.height - 70,
+                          //     //   left: 10,
+                          //     //   right: 10,
+                          //     // ),
+                          //     content: const Text(
+                          //       'add a score limit or time limit',
+                          //       textAlign: TextAlign.center,
+                          //     ),
+                          //     // shape: const BeveledRectangleBorder(),
+                          //     behavior: SnackBarBehavior.fixed,
+                          //   ),
+                          // );
+
+                          showTopSnackBar(
+                            Overlay.of(context),
+                            Material(
+                              color: Colors.transparent,
+
+                              child: Container(
+                                padding: const EdgeInsets.all(8),
+                                decoration: BoxDecoration(
+                                  color: Colors.black87,
+                                  borderRadius: BorderRadius.circular(4),
+                                ),
+                                alignment: Alignment.center,
+                                child: Text(
+                                  'add a score limit or time limit',
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 12,
+                                    color: Colors.white60,
+                                  ),
+                                ),
                               ),
-                              content: const Text(
-                                'add a score limit or time limit',
-                                textAlign: TextAlign.center,
-                              ),
-                              shape: const BeveledRectangleBorder(),
-                              behavior: SnackBarBehavior.floating,
                             ),
                           );
 

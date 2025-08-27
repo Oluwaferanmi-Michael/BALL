@@ -32,8 +32,8 @@ class MainPage extends HookConsumerWidget {
             controller: controller,
             physics: const NeverScrollableScrollPhysics(),
             children: const [
-              // HomePage(),
-              // NewsPage(),
+              // Stats(),
+              // Team(),
               GameList(),
               CourtMapPage(),
             ],
