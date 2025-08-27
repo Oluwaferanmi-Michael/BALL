@@ -1,7 +1,6 @@
 import 'package:ball/firebase_options.dart';
 import 'package:ball/pages/app_gateway.dart';
-import 'package:ball/pages/main_page.dart';
-import 'package:ball/pages/onboarding/onboarding.dart';
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -26,20 +25,20 @@ Future<void> main() async {
   runApp(const ProviderScope(child: MainApp()));
 }
 
-class MainApp extends StatelessWidget {
+class MainApp extends ConsumerWidget {
   const MainApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-
       theme: ThemeData(
         scaffoldBackgroundColor: const Color(0xFFFFFDEF),
         useMaterial3: true,
       ),
+      
       home: const Gateway(),
-      // const Scaffold(body: SafeArea(child: MainPage())),
+
     );
   }
 }

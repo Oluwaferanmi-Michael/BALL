@@ -30,7 +30,8 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
-
+/lib/firebase_options.dart
+/fastlane/
 # Symbolication related
 app.*.symbols
 
@@ -41,6 +42,9 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+/android/app/
+
+*google-services.json
 
 
 # 
@@ -49,3 +53,16 @@ app.*.map.json
 firebase.json
 local.properties
 key.properties
+
+
+# fastlane specific
+**/fastlane/report.xml
+
+# deliver temporary files
+**/fastlane/Preview.html
+
+# snapshot generated screenshots
+**/fastlane/metadata
+
+# scan temporary files
+**/fastlane/test_output
