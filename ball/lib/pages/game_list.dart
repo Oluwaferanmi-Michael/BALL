@@ -19,108 +19,120 @@ class GameList extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final gameList = ref.watch(gameDataNotifierProvider);
     return Scaffold(
-      // appBar: AppBar(
-      //   backgroundColor: Colors.transparent,
-      //   leading: Builder(
-      //     builder: (context) {
-      //       return IconButton(
-      //         icon: const Icon(FeatherIcons.menu, size: 18),
-      //         onPressed: () => Scaffold.of(context).openDrawer(),
-      //       );
-      //     },
-      //   ),
-      // ),
-      // drawer: const Drawer(
-      //   // backgroundColor: Colors.transparent,
-      //   child: DrawerUIComponent(),
-      // ),
-      body: gameList.when(
-        data: (data) {
-          return data.isEmpty
-              ? Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    spacing: 8,
-                    children: [
-                      const Text('no games yet'),
-                      AppButtonComponent(
-                        onTap: () => CreateGameBottomSheet().present(context),
-                        type: ButtonType.primary,
-                        label: 'new game',
-                        icon: const Icon(FeatherIcons.plus),
-                      ),
-                    ],
-                  ),
-                )
-              : SafeArea(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 24,
-                      horizontal: 16,
-                    ),
-                    child: Column(
-                      spacing: 24,
-                      children: [
-                        LastGameDataWidget(game: data.last),
-                        Flexible(
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          // NavigationRail(
+          //   selectedIndex: 0,
+          //   destinations: const [
+          //     NavigationRailDestination(
+          //       icon: Icon(Icons.ac_unit),
+          //       label: Text('team'),
+          //     ),
+          //   ],
+          // ),
+          Expanded(
+            child: gameList.when(
+              data: (data) {
+                return data.isEmpty
+                    ? Center(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          spacing: 8,
+                          children: [
+                            const Text('no games yet'),
+                            AppButtonComponent(
+                              onTap: () =>
+                                  CreateGameBottomSheet().present(context),
+                              type: ButtonType.primary,
+                              label: 'new game',
+                              icon: const Icon(FeatherIcons.plus),
+                            ),
+                          ],
+                        ),
+                      )
+                    : SafeArea(
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                            vertical: 24,
+                            horizontal: 16,
+                          ),
                           child: Column(
-                            spacing: 12,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisSize: MainAxisSize.min,
+                            spacing: 24,
                             children: [
-                              Text(
-                                'Previous Games',
-                                style: GoogleFonts.poppins(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w600,
-                                  color: const Color.fromARGB(255, 43, 35, 44),
-                                ),
-                              ),
+                              LastGameDataWidget(game: data.last),
                               Flexible(
-                                child: Container(
-                                  padding: const EdgeInsets.only(
-                                    bottom: kBottomNavigationBarHeight + 10,
-                                  ),
-                                  child: ListView.separated(
-                                    clipBehavior: Clip.antiAlias,
-
-                                    shrinkWrap: true,
-                                    itemCount: data.length > 1
-                                        ? data.length - 1
-                                        : 0,
-                                    separatorBuilder: (context, index) =>
-                                        Transform.scale(
-                                          scale: .5,
-                                          child: Divider(
-                                            radius: BorderRadius.circular(12),
-
-                                            // indent: 20,
-                                            // endIndent: 400,
-                                            height: 16,
-                                            color: Colors.black26,
-                                          ),
+                                child: Column(
+                                  spacing: 12,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Text(
+                                      'Previous Games',
+                                      style: GoogleFonts.poppins(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w600,
+                                        color: const Color.fromARGB(
+                                          255,
+                                          43,
+                                          35,
+                                          44,
                                         ),
-                                    itemBuilder: (context, index) {
-                                      // Skip the last (most recent) game, which is shown above
-                                      int newIndex = data.length - 2 - index;
-                                      return GameScoreDataWidget(
-                                        game: data.elementAt(newIndex),
-                                      );
-                                    },
-                                  ),
+                                      ),
+                                    ),
+                                    Flexible(
+                                      child: Container(
+                                        padding: const EdgeInsets.only(
+                                          bottom:
+                                              kBottomNavigationBarHeight + 10,
+                                        ),
+                                        child: ListView.separated(
+                                          clipBehavior: Clip.antiAlias,
+
+                                          shrinkWrap: true,
+                                          itemCount: data.length > 1
+                                              ? data.length - 1
+                                              : 0,
+                                          separatorBuilder: (context, index) =>
+                                              Transform.scale(
+                                                scale: .5,
+                                                child: Divider(
+                                                  radius: BorderRadius.circular(
+                                                    12,
+                                                  ),
+
+                                                  // indent: 20,
+                                                  // endIndent: 400,
+                                                  height: 16,
+                                                  color: Colors.black26,
+                                                ),
+                                              ),
+                                          itemBuilder: (context, index) {
+                                            // Skip the last (most recent) game, which is shown above
+                                            int newIndex =
+                                                data.length - 2 - index;
+                                            return GameScoreDataWidget(
+                                              game: data.elementAt(newIndex),
+                                            );
+                                          },
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ],
                           ),
                         ),
-                      ],
-                    ),
-                  ),
-                );
-        },
-        error: (error, stck) =>
-            const Center(child: Text('Something Went Wrong')),
-        loading: () => const Loadingindicator(),
+                      );
+              },
+              error: (error, stck) =>
+                  const Center(child: Text('Something Went Wrong')),
+              loading: () => const Loadingindicator(),
+            ),
+          ),
+        ],
       ),
     );
   }

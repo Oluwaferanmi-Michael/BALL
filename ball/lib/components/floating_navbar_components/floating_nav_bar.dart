@@ -2,7 +2,6 @@ import 'package:ball/components/bottom_sheets/create_game_bottom_sheet.dart';
 import 'package:ball/components/floating_navbar_components/floating_navbar_items.dart';
 import 'package:ball/components/floating_navbar_components/nav_bar_tile.dart';
 import 'package:ball/state/models/enums/enums.dart';
-import 'package:dartz/dartz.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
@@ -189,20 +188,16 @@ class AppButtonComponent extends StatelessWidget {
 
     return GestureDetector(
       onTap: onTap,
-      child: Material(
-        color: Colors.white,
-        type: MaterialType.button,
-        child: InkWell(
-          borderRadius: BorderRadius.circular(
-            100,
-          ), // Match container's border radius
-          splashColor: splashColor,
-          highlightColor: Colors.transparent,
-          child: Container(
-            padding: const EdgeInsets.all(12),
-            decoration: decoration,
-            child: _buildContent(),
-          ),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(
+          100,
+        ), // Match container's border radius
+        splashColor: splashColor,
+        highlightColor: Colors.transparent,
+        child: Container(
+          padding: const EdgeInsets.all(12),
+          decoration: decoration,
+          child: _buildContent(),
         ),
       ),
     );
